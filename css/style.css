@@ -74,6 +74,7 @@ img {
 }
 
 /* user defined classes*/
+
 .Navbar{
 	display:flex;
 }
@@ -100,36 +101,66 @@ img {
 }
 
 
-.button {
+/*.button {
 	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-	/*background:linear-gradient(#e6640e,#eb9834);*/
+	/*background:linear-gradient(#e6640e,#eb9834);
 	background-color:#eb9834;
-	color: #ffffff; /* needed to override the default link color */
+	color: #ffffff; /* needed to override the default link color 
 	font-weight: 400;
 	text-decoration: none;    
 	padding: 10px;   
 	border-radius: 10px;   
-	/*border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	/*border-bottom: 2px solid #994c30; /* width of the border, type, color 
 	transition: 0.2s opacity;
 }
 
 
 .button:visited {
-	/*background:linear-gradient(#e62107,#830F72);*/
+	/*background:linear-gradient(#e62107,#830F72);
 	background-color:#830F72;
 	color:#fff;
 }
 
 .button:hover, .button:focus {
     color:#fff;
-	opacity: 0.8; /*Reduces the opacity of the button to 80% */
+	opacity: 0.8; /*Reduces the opacity of the button to 80% 
 	text-decoration: none;
 }
 
 .button:active {
-	/*background:linear-gradient(#e62107,#e63707);*/
+	/*background:linear-gradient(#e62107,#e63707);
 	background-color:#e62107;
 
+}*/
+
+.button {
+    border-radius: 10px; 
+    padding: 10px;     
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    background: linear-gradient(#ee7752, #e73c7e);
+}
+
+.button:hover {
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #7B026A, #EB560C);
+    background-size: 400% 400%;
+    animation: gradient 5s ease;
+    text-decoration: none;
+    color:#fff;
+   
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .button.contact {
@@ -154,32 +185,5 @@ img {
 } 
 
 
-
-/* Gradient fill on button
-
-.button {
-    display: inline-block;
-    padding: 0.75rem;
-    border-radius: 8px;
-    background: linear-gradient(to left, #f5640a 50%, #f5870a 50%);
-    background-size: 200% 100%;
-    background-position:right bottom;
-    margin-left:10px;
-    
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15 ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.button:hover {
-	background-position:left bottom;
-    transition: all .3s ease;
-}
-*/
 
 
