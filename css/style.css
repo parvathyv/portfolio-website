@@ -24,9 +24,9 @@ h1, h2, h3, h4 {
     line-height: 1.4;
 
 }
+
 h1 {
     font-size: 2.75em;
-   
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     margin-inline-start: 1px;
@@ -73,6 +73,7 @@ img {
     width: 100%;
 }
 
+/* user defined classes*/
 .Navbar{
 	display:flex;
 }
@@ -83,15 +84,12 @@ img {
 }
 
 .menu{
-
 	padding-right: 1rem;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.5em;
-	
 }
 
 .column{
-	
 	flex:50%;
 }
 
@@ -134,6 +132,27 @@ img {
 
 }
 
+.button.contact {
+	background: transparent;
+	color: #e6640e;
+	border: 2px solid #f5870a;
+}
+
+.button.contact:visited {
+	background:linear-gradient(#e62107,#e63707);
+	color:#fff;
+}
+
+.button.contact:hover, .button:focus{
+	background-color:#f5870a;
+	color: #fff;
+}  
+
+.button.contact:active {
+	background-color:#e63707;
+
+} 
+
 
 
 /* Gradient fill on button
@@ -162,26 +181,5 @@ img {
     transition: all .3s ease;
 }
 */
-
-.button.contact {
-	background: transparent;
-	color: #e6640e;
-	border: 2px solid #f5870a;
-}
-
-.button.contact:visited {
-	background:linear-gradient(#e62107,#e63707);
-	color:#fff;
-}
-
-.button.contact:hover, .button:focus{
-	background-color:#f5870a;
-	color: #fff;
-}  
-
-.button.contact:active {
-	background-color:#e63707;
-
-} 
 
 
