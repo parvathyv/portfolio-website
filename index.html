@@ -4,27 +4,35 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Parvathy Iyer UX/UI Designer</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="myicon.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
         <!--<link rel="icon" type="image/png" href="./favicon.png">-->
     </head>
 
     <body>
 <!--Header-->  
         <header>
-            <div>
-                <img src="img/logo.svg" alt="Parvathy Iyer" >
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="fitted.html">Work</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <div class="Navbar">
+                <div class="column">
+                    <img class = "logo" src="img/logo.svg" alt="Parvathy Iyer" >
+                </div>
+                <div class="column">
+                    <nav>
+                        <a href="index.html" class="menu">Home</a>
+                        <a href="about.html" class="menu" >About</a>
+                        <a href="fitted.html" class="menu" >Work</a>
+                        <a href="#contact" class="menu">Contact</a>
+                    </nav>
+                </div>
             </div>  
         </header>
 <!--End Header--> 
         <main> 
-<!--Hero-->
+            <!--Hero-->
             <div id="about">
                 <div>
                     <h1>Designer.<br>
@@ -37,9 +45,9 @@
               
                 </div>
             </div>
-    <!--End Hero-->
+            <!--End Hero-->
 
-    <!--Work-->
+            <!--Work-->
             <div id="work">
                 <div>
                     <h2>My Work</h2>
@@ -51,8 +59,8 @@
                             <h3>Fitted</h3>
                             <p>Created for Careerfoundry’s UI for UX Designers course, Fitted is an app that is designed to guide users through an easy, fun and interactive journey to reach their fitness goals, whatever they may be.
                               Role: UX/UI Designer
-                            <a href="https://www.behance.net/gallery/97584707/Fitted">Learn More</a>
-                            </p>
+                            <a href="https://www.behance.net/gallery/97584707/Fitted" class="button" target="_blank">Learn more</a>  
+                           
                         </div>
                     </div>
 
@@ -64,21 +72,23 @@
                             <h3>Vela</h3>
                             <p>Created for Careerfoundry’s UX Immersion course, Vela is a forecasting app that carters to water enthusiasts of any skill level providing reliable, accurate, easy to read and hyper local weather reports.
                               Role: UX/UI Designer
-                            <a href="https://www.behance.net/gallery/97626827/Vela">Learn More</a>
+                            <a href="https://www.behance.net/gallery/97626827/Vela" class="button" target="_blank">Learn More</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--End Work-->
         </main>    
-    <!--End Work-->
+      
 
-<!--Footer-->
+        <!--Footer-->
         <footer>
+            <!--Contact-->
             <div id="contact">
               <h2>Get in Touch</h2>
-              <p> Please call me at <a href="tel:12037273926">203 727 3926</a>  to discuss how I can help you.  Prefer sending an email ?  <a href="mailto:parvathyv@gmail.com">Email</a></p>
-        <!--- Social media -->
+              <p> Please call me at <a href="tel:12037273926">203 727 3926</a>  to discuss how I can help you.  Prefer sending an email ?  <a href="mailto:parvathyv@gmail.com" class="button contact">Email</a>
+              <!--- Social media -->
               <div>
                 <p>Git</p>
                 <a href="https://github.com/parvathyv" target="_blank">
@@ -116,8 +126,9 @@
                 </a>
               </div>
             </div>
+            <!--End Contact-->
         </footer>
-<!--End Footer-->
+        <!--End Footer-->
 
     </body>
 </html>

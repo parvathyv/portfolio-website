@@ -1,0 +1,187 @@
+/*Colors used
+Primary color : #e62107;
+Secondary color :#830F72  ;
+
+Typography
+color :#fff ;
+*/
+
+body {
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	margin-left:2rem;
+	margin-right:2rem;
+	font-size: 16px; /* Sets the font size to 16px */
+  	font-weight: 300; /* Sets the font weight to 300 */
+  	line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  	color: #4a4a4a;
+  	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	padding:1rem;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1.4;
+
+}
+h1 {
+    font-size: 2.75em;
+   
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+h2 {
+    font-size: 2.5em;
+    /*font-weight: 700;*/
+}
+
+h3 {
+    font-size: 2em;
+    /*font-weight: 400;*/
+}
+h4 {
+  font-size: 1.5em;
+  /*font-weight: 400;*/
+}
+
+p{
+    padding-left:1rem;
+    font-size: 1em;
+    
+    /*font-weight: 300;*/
+}
+
+a {
+    color: #ff7f50;
+    text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+    color: #830F72;
+}
+a:hover, a:focus {
+    color: #cc6540;
+    text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+    color: #994c30;
+}
+
+img {
+    width: 100%;
+}
+
+.Navbar{
+	display:flex;
+}
+
+.logo{
+	width:40%;
+	padding:1rem;
+}
+
+.menu{
+
+	padding-right: 1rem;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	
+}
+
+.column{
+	
+	flex:50%;
+}
+
+.profile_pic{
+	display:block;
+	margin: auto;
+	width:40%;
+}
+
+
+.button {
+	display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+	/*background:linear-gradient(#e6640e,#eb9834);*/
+	background-color:#eb9834;
+	color: #ffffff; /* needed to override the default link color */
+	font-weight: 400;
+	text-decoration: none;    
+	padding: 10px;   
+	border-radius: 10px;   
+	/*border-bottom: 2px solid #994c30; /* width of the border, type, color */
+	transition: 0.2s opacity;
+}
+
+
+.button:visited {
+	/*background:linear-gradient(#e62107,#830F72);*/
+	background-color:#830F72;
+	color:#fff;
+}
+
+.button:hover, .button:focus {
+    color:#fff;
+	opacity: 0.8; /*Reduces the opacity of the button to 80% */
+	text-decoration: none;
+}
+
+.button:active {
+	/*background:linear-gradient(#e62107,#e63707);*/
+	background-color:#e62107;
+
+}
+
+
+
+/* Gradient fill on button
+
+.button {
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: linear-gradient(to left, #f5640a 50%, #f5870a 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    margin-left:10px;
+    
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15 ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button:hover {
+	background-position:left bottom;
+    transition: all .3s ease;
+}
+*/
+
+.button.contact {
+	background: transparent;
+	color: #e6640e;
+	border: 2px solid #f5870a;
+}
+
+.button.contact:visited {
+	background:linear-gradient(#e62107,#e63707);
+	color:#fff;
+}
+
+.button.contact:hover, .button:focus{
+	background-color:#f5870a;
+	color: #fff;
+}  
+
+.button.contact:active {
+	background-color:#e63707;
+
+} 
+
+
