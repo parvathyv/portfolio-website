@@ -9,8 +9,6 @@ color :#fff ;
 body {
 	background-color: #ffffff;
 	font-family: 'Roboto', sans-serif;
-	margin-left:2rem;
-	margin-right:2rem;
 	font-size: 16px; /* Sets the font size to 16px */
   	font-weight: 300; /* Sets the font weight to 300 */
   	line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -74,23 +72,46 @@ img {
 }
 
 /* user defined classes*/
-.Navbar{
-	display:flex;
+.container{
+    /*background-color: black;*/
+    max-width:2000px;
+    padding:0 15px 0 15px;
+	
 }
 
-.logo{
-	width:40%;
-	padding:1rem;
-}
+#navbar.container{
+    display:flex;
 
-.menu{
-	padding-right: 1rem;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.5em;
 }
 
 .column{
-	flex:50%;
+    flex:50%;
+}
+
+
+.logo
+{
+	width:30%;
+	padding:1rem;
+    
+
+}
+
+.menu{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+    text-align:right;
+
+}
+
+.menu>a{
+    padding:1.5rem;
+    display: inline-block;
+    align-self: center;
+}
+   
+#about.container{
+    height:80vh;
 }
 
 .profile_pic{
