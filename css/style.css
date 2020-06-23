@@ -75,7 +75,7 @@ img {
 .container{
     /*background-color: black;*/
     max-width:2000px;
-    padding:0 15px 0 15px;
+    padding:2rem 7rem 0 7rem;
 	
 }
 
@@ -93,8 +93,6 @@ img {
 {
 	width:30%;
 	padding:1rem;
-    
-
 }
 
 .menu{
@@ -111,7 +109,32 @@ img {
 }
    
 #about.container{
-    height:80vh;
+    height:85vh;
+}
+
+.illustration {
+  /*background: red;*/
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+
+.describe,
+.story {
+  /*background: green;*/
+  position:relative;
+  overflow: hidden;
+  height: 50%;
+}
+
+.story {
+  /*background: lightblue;*/
+}
+
+.describe>h1{
+    position:absolute;
+    bottom:0;
+    left:0;
 }
 
 .profile_pic{
