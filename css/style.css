@@ -73,8 +73,8 @@ img {
 
 /* user defined classes*/
 .container{
-    background-color: black;
     padding:4rem 15rem 0 15rem;
+    /*padding:1rem 1rem 0 1rem;*/
     max-width:2000px;
     
 	
@@ -82,20 +82,26 @@ img {
 
 #navbar.container{
     display:flex;
+    height:10vh;
     background-color: #5B0130;
 
 
 }
 
+
+
 .column{
-    flex:50%;
+  flex:50%;
 }
 
+img:not(.png,.jpg){
+  width:100%;
+}
 
 .logo
-{
-	width:30%;
-	padding:1rem;
+
+{ 
+  padding:1rem;
 }
 
 .menu{
@@ -112,7 +118,7 @@ img {
     color:#fff;
 }
    
-#about.container
+#about.container,#work1_fitted.container
 {
   height:85vh;
   
@@ -125,7 +131,7 @@ img {
 #about.container{
   background: linear-gradient(#5B0130,#B5054D);
 }
-#fitted.container{
+#fitted.container,#work1_fitted.container{
   background-color:#EB560C;
 }
 
@@ -157,6 +163,13 @@ img {
     bottom:0;
     left:0;
 }
+
+#work1_fitted.describe>h1{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
 
 .profile_pic{
 	display:block;
