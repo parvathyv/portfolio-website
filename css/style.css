@@ -10,10 +10,10 @@ body {
 	background-color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px; /* Sets the font size to 16px */
-  	font-weight: 300; /* Sets the font weight to 300 */
-  	line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  	color: #4a4a4a;
-  	box-sizing: border-box;
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #fff;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
@@ -74,14 +74,16 @@ img {
 /* user defined classes*/
 .container{
     background-color: black;
-    border: 2px solid white;
+    padding:4rem 15rem 0 15rem;
     max-width:2000px;
-    padding:2rem 7rem 0 7rem;
+    
 	
 }
 
 #navbar.container{
     display:flex;
+    background-color: #5B0130;
+
 
 }
 
@@ -99,7 +101,7 @@ img {
 .menu{
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.5em;
-    text-align:right;
+  text-align:right;
 
 }
 
@@ -107,16 +109,34 @@ img {
     padding:1.5rem;
     display: inline-block;
     align-self: center;
+    color:#fff;
 }
    
-#about.container,#fitted.container,#vela.container{
-    height:90vh;
+#about.container
+{
+  height:85vh;
+  
+}
+#fitted.container,#vela.container{
+    height:100vh;
+    
+}
+
+#about.container{
+  background: linear-gradient(#5B0130,#B5054D);
+}
+#fitted.container{
+  background-color:#EB560C;
+}
+
+#vela.container{
+  background-color: #0C99EB;
 }
 
 .illustration {
   /*background: red;*/
   float: right;
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 
