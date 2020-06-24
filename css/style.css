@@ -73,7 +73,8 @@ img {
 
 /* user defined classes*/
 .container{
-    /*background-color: black;*/
+    background-color: black;
+    border: 2px solid white;
     max-width:2000px;
     padding:2rem 7rem 0 7rem;
 	
@@ -108,8 +109,8 @@ img {
     align-self: center;
 }
    
-#about.container{
-    height:85vh;
+#about.container,#fitted.container,#vela.container{
+    height:90vh;
 }
 
 .illustration {
@@ -131,7 +132,7 @@ img {
   /*background: lightblue;*/
 }
 
-.describe>h1{
+.describe>h1,.describe>h3{
     position:absolute;
     bottom:0;
     left:0;
