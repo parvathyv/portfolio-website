@@ -75,7 +75,7 @@ img {
 
 /* user defined classes*/
 
-.Navbar{
+.navbar{
 	display:flex;
 }
 
@@ -88,10 +88,12 @@ img {
 	padding-right: 1rem;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.5em;
+    text-align: right;
 }
 
 .menu>a{
     display:inline-block;
+    align-self:center;
 }
 .column{
 	flex:50%;
@@ -143,6 +145,11 @@ img {
     text-transform: uppercase;
     color:#fff;
     background: linear-gradient(#ee7752, #e73c7e);
+}
+
+.button:visited{
+    background: linear-gradient(#7B026A, #EB560C);
+    color:#fff;
 }
 
 .button:hover {
