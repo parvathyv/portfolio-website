@@ -8,7 +8,7 @@ color :#fff ;
 
 body {
 	background-color: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -18,8 +18,8 @@ body {
 
 h1, h2, h3, h4 {
 	padding:1rem;
-    font-family: 'Bebas Neue', cursive;
-    line-height: 1.4;
+  font-weight: 700;
+  line-height: 1.4;
 
 }
 
@@ -76,26 +76,23 @@ img {
     padding:4rem 15rem 0 15rem;
     /*padding:1rem 1rem 0 1rem;*/
     max-width:2000px;
-    
-	
 }
 
 #navbar.container{
+
     display:flex;
-    height:10vh;
+    height: 5vh;
     background-color: #5B0130;
 
-
 }
 
-
+#work_header .container{
+    background-color: #EB560C;
+}
 
 .column{
+  
   flex:50%;
-}
-
-img:not(.png,.jpg){
-  width:100%;
 }
 
 .logo
@@ -105,27 +102,47 @@ img:not(.png,.jpg){
 }
 
 .menu{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.5em;
+  
+  
+	font-weight: 400;
+	font-size: 1.2em;
   text-align:right;
 
 }
 
-.menu>a{
-    padding:1.5rem;
+.menu a{
+    padding:1.2rem;
     display: inline-block;
     align-self: center;
     color:#fff;
 }
    
-#about.container,#work1_fitted.container
+#about.container
 {
-  height:85vh;
+  height:90vh;
   
 }
+
+#work1_fitted.container{
+
+height:90vh;
+display:flex;
+
+
+}
+
 #fitted.container,#vela.container{
     height:100vh;
     
+}
+
+#work1_vela.container{
+  background-color: #0C99EB; 
+  height:100vh;
+  display:flex;
+ 
+
+
 }
 
 #about.container{
@@ -139,37 +156,85 @@ img:not(.png,.jpg){
   background-color: #0C99EB;
 }
 
+.feather_illus{
+  width:50%;
+  height:100%;
+  float:right;
+}
+
+
 .illustration {
-  /*background: red;*/
-  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 50%;
   height: 100%;
+  
+}
+
+.illustration img{
+  width:auto;
+  height:auto;
+  max-width:80%;
+  max-height:85%;
+  align-self:flex-end;
+  
+}
+
+#work1_vela .illustration{
+  justify-content: center;
 }
 
 .describe,
 .story {
-  /*background: green;*/
   position:relative;
   overflow: hidden;
   height: 50%;
 }
 
 .story {
-  /*background: lightblue;*/
+  
 }
 
-.describe>h1,.describe>h3{
+#work1_fitted .describe, #work1_vela .describe{
+  width: 50%;
+  height: 80%;
+  
+}
+
+#work1_vela .describe{
+    align-self: center;
+}
+
+#work1_fitted .button,#work1_vela .button{
+  width:200px;
+}
+
+.describe h1,.describe h3{
     position:absolute;
     bottom:0;
     left:0;
 }
 
-#work1_fitted.describe>h1{
-    position:absolute;
-    top:0;
-    left:0;
+#work1_fitted p,h2, #work1_vela p,h2{
+  padding:0;
+  /*background-color: blue;
+  border:1px solid white;*/
 }
 
+.next{
+   display:flex;
+   position:relative;
+}
+
+
+
+#learn{
+  /*text-align: right;*/
+  position:absolute;
+  bottom:0.2rem;
+  right:0;
+}
 
 .profile_pic{
 	display:block;
@@ -179,8 +244,12 @@ img:not(.png,.jpg){
 
 
 .button {
-    border-radius: 10px; 
-    padding: 10px;     
+    display:inline-block;
+    width:200px;
+    border-radius: 25px; 
+    padding: 10px;
+    font-size:0.8em;    
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color:#fff;
@@ -217,6 +286,7 @@ img:not(.png,.jpg){
   background: transparent;
   color: #e6640e;
   border: 2px solid #f5870a;
+
 }
 
 .button.contact:visited {
