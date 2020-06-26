@@ -173,32 +173,25 @@ display:flex;
 
 }
 
-#work_intro.container, 
-#work_wireframe.container{
+
+.container.work_dark{
   background-color: #363535;
   padding-bottom: 6rem;
   color:#fff;
 }
 
-
-#work_process.container{
+.container.work_light{
 background-color: #fff;
-
- color:#363535;
-
+color:#363535;
 }
 
-#work1_fitted p,h2,h3, #work1_vela p,h2,h3, #work_intro p,h2,h3 #work_process p,h2,h3, #work_wireframe p,h2,h3{
+
+#work1_fitted p,h2,h3, #work1_vela p,h2,h3,.container.work_light p,h2,h3, .container.work_dark p,h2,h3,h4{
   padding:0 0 0 0;
-  /*background-color: blue;
-  border:1px solid white;*/
-}
-
-#work_process.container p, #work_wireframe.container p{
  
-  padding:0 0 0 0;
-
 }
+
+
   
 
 #contact.container{
@@ -295,7 +288,7 @@ justify-content: center;
   
 }
 
-#work_intro .describe,#work_wireframe .describe, #work_process .describe{
+.container.work_dark .describe, .container.work_light .describe{
   width: 70%;
   height: 100%;
   margin: 0 auto;
@@ -305,8 +298,8 @@ justify-content: center;
     align-self: center;
 }
 
-#work1_fitted .button,#work1_vela .button{
-  width:150px;
+#work1_fitted .button,#work1_vela .button,#work_intro .button{
+  width:200px;
 
 }
 
@@ -316,7 +309,9 @@ justify-content: center;
     left:0;
 }
 
-
+body.work{
+  background-color: white;
+}
 
 .next{
 
@@ -325,7 +320,14 @@ justify-content: center;
   
 }
 
+#interactions{
+  display:flex;
+  flex-direction:row;
 
+}
+#interactions div{
+  margin-right:0.5rem;
+}
 #learn, #tools{
   align-self: flex-end;
 }
@@ -345,6 +347,12 @@ justify-content: center;
 	width:40%;
 }
 
+#my-video{
+  background-color: white;
+ 
+
+  margin:0 auto;
+}
 
 .button {
     display:inline-block;

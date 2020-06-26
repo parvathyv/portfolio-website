@@ -9,11 +9,13 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="myicon.ico"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">        <!--<link rel="icon" type="image/png" href="./favicon.png">-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">  
+        <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
     </head>
 
 
-    <body>
+    <body class="work">
 <!--Header-->  
        <header id="work_header">
             <div id="navbar" class="container">
@@ -40,7 +42,7 @@
             <a href="https://projects.invisionapp.com/prototype/Fitted-ck7vex1x0000efk01f8suit50/play/5d98deb3" target="_blank"><picture><source srcset="img/fitted1200_800.jpg" media="(max-width:767px)"><img src="img/fitted1200_800.jpg" alt="Work"></picture></a>
         </div>   
 
-        <section id="work_intro" class="container">
+        <section id="work_intro" class="container work_dark">
             <div class="describe">
                 
                 <h2>Fitted</h2>
@@ -58,13 +60,14 @@
                 <h3>Tools</h3>
                 <p>Photoshop, Sketch, Invision</p>
             
-                
+                <a href="https://projects.invisionapp.com/prototype/Fitted-ck7vex1x0000efk01f8suit50/play/5d98deb3" class="button contact">View Prototype</a>
+
             </div>    
         </section>
 
 
 
-        <section id="work_process" class="container">
+        <section class="container work_light">
             <div class="describe">
                 
                 <h3>Process</h3>
@@ -79,12 +82,12 @@
         </section>
 
 
-         <section id="work_wireframe" class="container">
+         <section class="container work_dark">
             <div class="describe">
                 
                 <h3>Low Fidelity Wireframe</h3>
 
-                <p>User centered design was the focus for this app. I placed an emphasis on the users who are beginners and developed visual mood boards, and researched interactive web approaches. Then mapped out a user flow and began some quick sketching, which led to digitized wireframes and prototypes. I continued to refine the design based on feedback and research.</p>
+                <p>Sketches were then digitized, and I began to get a feel for the architecture & design of the app.</p>
 
                 <img  src="img/fitted/low_fidelity.png" alt="user">
 
@@ -92,5 +95,151 @@
             </div>    
         </section>
 
+        <section class="container work_light">
+            <div class="describe">
+                
+                <h3>Moodboards</h3>
+
+                <p>I drew inspiration from sources of flat design, bright colors and a desire for a high level of web interactivity for the moodboards</p>
+
+                
+                <img  src="img/fitted/moodboard.png" alt="user">
+
+                
+            </div>    
+        </section>
+
+        <section class="container work_light">
+            <div class="describe">
+                
+                <h3>High Fidelity Screens</h3>
+
+                           
+                <img  src="img/fitted/high_fidelity.png" alt="user">
+
+                
+            </div>    
+        </section>
+
+        <section class="container work_light">
+            <div class="describe">
+                
+                <h3>Responsive</h3>
+
+                <p>I approached the design process with a Mobile first strategy, but the idea of Fitted is of an app that can handle multiple screen sizes well, so responsive and wearable design were constant aspects of the creative process.</p>           
+                <img  src="img/fitted/responsive.png" alt="user">
+
+                
+            </div>    
+        </section>
+
+        <section class="container work_light">
+            <div class="describe">
+                
+                <h3>Interactions & Gestures</h3>
+
+                <p>I approached the design process with a Mobile first strategy, but the idea of Fitted is of an app that can handle multiple screen sizes well, so responsive and wearable design were constant aspects of the creative process.</p> 
+
+                <div id="interactions">
+                    <div ><img src="img/fitted/open.gif" alt="user"></div>
+                    <div><img src="img/fitted/goals.gif" alt="user"></div>
+                    <div><img src="img/fitted/level.gif" alt="user"></div>
+                    <div><img src="img/fitted/menu.gif" alt="user"></div>
+                    
+                </div>          
+                         
+            </div>    
+        </section>
+
+
+        <section class="container work_light">
+            <div class="describe">
+                
+                <h3>Animation</h3>
+                <h4>Onboarding</h4>
+
+                <p>Fitted has an extensive, fun and interactive onboarding section that collects relevant information to personalize user experience. This section also offers a glimpse all the features that the app provides. The user can opt out of onboarding at any point in the process.</p> 
+
+                <video
+                    id="my-video"
+                    class="video-js vjs-theme-fantasy"            
+                    controls
+                    preload="auto"
+                    width="920"
+                    height="500"
+                    poster="img/fitted/pic01.png"
+                    data-setup="{}"
+                    >
+                    <source src="img/fitted/onboarding.mp4" type="video/mp4" />
+                 
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a
+                      web browser that
+                      <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                </video>
+
+                
+                <h4>Scheduling</h4>
+
+                <p>Users can search for exercises based on keywords and explore the exercise in detail on the Info page for a Step by Step breakdown. Users can then proceed to schedule their desired sessions easily by using the calendar to set up a workout plan.
+                </p> 
+
+                <video
+                    id="my-video"
+                    class="video-js vjs-theme-fantasy"            
+                    controls
+                    preload="auto"
+                    width="920"
+                    height="500"
+                    poster="img/fitted/pic01.png"
+                    data-setup="{}"
+                    >
+                    <source src="img/fitted/schedule.mp4" type="video/mp4" />
+                 
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a
+                      web browser that
+                      <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                </video>
+
+
+                <h4>Step By Step Instructions</h4>
+
+                <p>Users can get a detailed breakdown of the steps involved in an exercise by using the Info button on the Exercise screens.</p> 
+
+                <video
+                    id="my-video"
+                    class="video-js vjs-theme-fantasy"            
+                    controls
+                    preload="auto"
+                    width="920"
+                    height="500"
+                    poster="img/fitted/pic01.png"
+                    data-setup="{}"
+                    >
+                    <source src="img/fitted/yogasana.mp4" type="video/mp4" />
+                 
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a
+                      web browser that
+                      <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                </video>
+
+
+
+
+         </div>    
+        </section>
+
     </body>
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </html>    
