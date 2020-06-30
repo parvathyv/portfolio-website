@@ -12,9 +12,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">        <!--<link rel="icon" type="image/png" href="./favicon.png">-->
     </head>
 
-    <body>
+    <body class="about">
 <!--Header-->  
-       <header>
+       <header id="about_header">
             <div id="navbar" class="container">
                 <div class="column">
                     <!--<a href="index.html"><img class = "logo" src="img/logo.svg" alt="Parvathy Iyer" ></a>-->
@@ -29,6 +29,117 @@
                 </div>
             </div>  
         </header>
+
+         <main>
+            <div id ="about_main" class="container"> <!-- open orange container one -->
+                
+                <h1>About Me</h1>
+               
+      
+            <div id ="about_image" > <!-- open orange container two -->
+                <div> <!-- open yellow container two -->
+                    <picture>
+                        <source srcset="img/about/profile_small.jpg" media="(max-width:767px)">
+                        <img src="img/about/profile_small.jpg" alt="Parvathy">
+                    </picture>
+                    <div> <!-- open primary green row for columns -->
+                        <div> <!-- open primary light blue column one -->
+                            <h2>My Story</h2>
+                            <p>As a young child, I was fascinated by stories, especially of the illustrated variety. Growing up in India, there was no shortage of tales and myths and I devoured any book I could lay my hand on.  I sketched as much as I could, inspired by all the characters in the books I came across and enjoyed watching animated movies. I loved the access to different and complex worlds, delivered in a fun and easy to absorb format.</p>
+                            <p> This interest has stayed with me throughout my life, guiding my education and career. I obtained degrees in Media Arts from Emerson College, Computer Science from the University of Chennai and a diploma in Traditional Animation.</p>
+                            <p>TMy professional life began at Sikorky Aircraft as a Graphic Designer making some illustrations, and changed over a period of time into adapting Business Intelligence Development into my skillset. This position taught me the the importance of communication and transperancy, a commitment to deadlines and the creative thinking to navigate through changing needs of business to produce an user centric product. Iterative, feedback based improvements and interactions with clients were a constant in the process. Throughout the journey, I was learning to tell stories, albeit of a very different world than the ones I learnt about in my childhood, but in the same simple and aesthetic way.</p>
+                            <p>After a few years of making steady progess at Sikorsky, I realized that my love for design would be better served by working on websites, which are a great medium for storytelling. I attended a bootcamp in Full Stack Web Development and ended up thoroughly enjoying the Front End part of the course. The time at the bootcamp only served to strengthen my resolve that the design aspects of a website were what interested me the most. I also wanted a deeper understanding of the process that leads to developing well rounded websites, irrespective of screen size. This led to the UX course at Careerfoundry, which not only gives me a very well rounded look at the detail oriented research and analytical aspects, but also advocates a Mobile first approach, which helps me adapt to a ever changing world of design. </p>
+                            <p>Through my life, the biggest takeaway is that from analog to digital, the tools of content creation and distribution have changed tremendously, yet the importance of a human centered approach to storytelling has remained the same.</p>
+                          
+                            <a href="files/resume.pdf" target="_blank">My Resume</a>
+                        </div> <!-- close primary light blue column one -->
+                        
+                        <div> <!-- open primary light blue column two -->
+                            <h2>Skill & Tools</h2>
+                            <div> <!-- open green container for skills and tools -->
+                                <div> <!-- open light blue skills container -->
+                                    <h3>Skills</h3>
+                                    <ul>
+                                        <li>Interviews</li>
+                                        <li>Persona developement</li>
+                                        <li>Usability testing</li>
+                                        <li>Preference testing</li>
+                                        <li>Wireframing</li>
+                                        <li>Prototyping</li>
+                                        <li>Interaction Design</li>
+                                        <li>Motion Design</li>
+                                    </ul>
+                                </div> <!-- close light blue skills container-->
+                                <div> <!-- open light blue tools container -->
+                                    <h3>Tools</h3>
+                                    <ul>
+                                        <li>Sketch</li>
+                                        <li>InVision</li>
+                                        <li>Photoshop</li>
+                                        <li>Illustrator</li>
+                                        <li>Balsamiq</li>
+                                    </ul>
+                                </div> <!-- close light blue tools container -->
+                                <div> <!-- open light blue skills container -->
+                                    <h3>Development Skills</h3>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JS</li>
+                                    </ul>
+                                </div> <!-- close light blue development skills container -->
+                            </div> <!-- close green container for skills and tools and dev skills -->
+                        </div> <!-- close major light blue column two -->
+                    </div> <!-- close major green row for columns -->
+                </div> <!-- close yellow container two -->
+            </div> <!-- close orange container two -->
+        </div>
+        </main>
+
+
+         <!--Footer-->
+        <footer>
+            <h3>Get in touch</h3>
+
+            <div id="contact_details" class="container">
+
+                <div class="contact_form">
+                    <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last name..">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject..">
+                    <label for="subject">Content</label>
+                    <textarea id="subject" name="subject" placeholder="..." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div><!--Image-->
+                    
+                <div class="phone">
+                    
+                    <p>Tel -   <a href="tel:12037273926">203 727 3926</a> </p>
+                    
+                   
+                </div>  
+
+                <div class="email">
+                   <p> Email - <a href="mailto:parvathyv@gmail.com">parvathyv@gmail.com</a></p>
+                </div>  
+
+                 <div class ="social">
+                    <a href="#" class="fa fa-github fa-lg"></a>
+                    <a href="#" class="fa fa-linkedin fa-lg"></a>
+                    <a href="#" class="fa fa-behance fa-lg"></a>
+                </div>     
+                
+            </div>
+                            
+               
+            <!--End Contact-->
+        </footer>
+        <!--End Footer-->
 
        
     </body>

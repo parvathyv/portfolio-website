@@ -14,9 +14,9 @@
     </head>
 
     <body>
-<!--Header-->  
+        <!--Header-->  
         <header>
-            <div id="navbar" class="container">
+            <section id="navbar" class="container">
                 <div class="column">
                     <!--<a href="index.html"><img class = "logo" src="img/logo.svg" alt="Parvathy Iyer" ></a>-->
                 </div>
@@ -28,12 +28,13 @@
                         <a href="#contact">Contact</a>
                     </nav>
                 </div>
-            </div>  
+            </section>  
         </header>
-<!--End Header--> 
+        <!--End Header--> 
         <main> 
             <!--Hero-->
-            <div id="about" class="container">
+            <section id="intro" class="container">
+                
                 <div class="feather_illus">
                      <img src="img/feather.png" alt="Fitted" ></a>
                 </div><!--Image-->
@@ -49,20 +50,32 @@
                     <p> I also enjoy traveling to new places with my family, photography & reading. </p>
                 </div>    
                 
-            </div>
+            </section>
             <!--End Hero-->
 
-
+            <!--Work Grid-->
+            <section id="grid_work" class="container">
+                <div class="item">
+                    <a href="fitted.html#work1_fitted" target="_blank"><img src="img/fitted/fitted_grid.png" alt="Fitted" ></a>
+                </div><!--Image-->
+                <div class="item">
+                    <a href="parallax/index.html" target="_blank"><img src="img/fitted/parallax_grid.png" alt="Parallax" ></a>
+                </div><!--Image-->
+                <div class="item"><img src="img/fitted/5question_grid.png" alt="the5questiontrip" ></a></div>
+                <div class="item"><img src="img/fitted/vela_grid.png" alt="Vela" ></a></div>
+            </section>    
+            <!--End Work Grid-->
         </main>    
       
 
         <!--Footer-->
         <footer>
-            <h3>Get in touch</h3>
+
+            <div><h3>Get in touch</h3></div>
 
             <div id="contact_details" class="container">
 
-                <div class="contact_form">
+                <div class="column contact_form">
                     <form action="/action_page.php">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="First name..">
@@ -75,24 +88,26 @@
                     <input type="submit" value="Submit">
                   </form>
                 </div><!--Image-->
-                    
-                <div class="phone">
-                    
-                    <p>Tel -   <a href="tel:12037273926">203 727 3926</a> </p>
-                    
-                   
-                </div>  
-
-                <!--<div class="email">
-                   <p> Email - <a href="mailto:parvathyv@gmail.com">parvathyv@gmail.com</a></p>
-                </div>  
-
-                 <div class ="social">
-                    <a href="#" class="fa fa-github fa-lg"></a>
-                    <a href="#" class="fa fa-linkedin fa-lg"></a>
-                    <a href="#" class="fa fa-behance fa-lg"></a>
-                </div>    -->  
                 
+                <div class="column contact_information">    
+                    <div class="phone">
+                        
+                        <p>Tel -   <a href="tel:12037273926">203 727 3926</a> </p>
+                        
+                       
+                    </div>  
+
+                    <div class="email">
+                       <p> Email - <a href="mailto:parvathyv@gmail.com">parvathyv@gmail.com</a></p>
+                    </div>  
+
+                     <div class ="social">
+                        <a href="#" class="fa fa-github fa-lg"></a>
+                        <a href="#" class="fa fa-linkedin fa-lg"></a>
+                        <a href="#" class="fa fa-behance fa-lg"></a>
+                    </div>
+                </div>        
+                    
             </div>
                             
                
