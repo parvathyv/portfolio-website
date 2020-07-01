@@ -98,12 +98,12 @@ img {
     position:fixed;
     display:flex;
     width:100%;
-    height:20vh;
+    height:15vh;
     background-color:#02305E;
     z-index:999;
 }
 main{
-    padding-top:150px;
+    padding-top:200px;
 }
 
 #intro.container
@@ -412,14 +412,16 @@ body.work{
 #fitted_work_header .container{
     background-color: #EB560C;
     width:100%;
-    height:20vh;
+    height:15vh;
 }
 
 body.portfolio{
-    background-color: white;
+    background-color: #EB560C;
 }
 
-
+.portfolio_header{
+    padding-top:100px;
+}
 
 #containerfull img{
     height:100vh;
@@ -483,7 +485,7 @@ body.about{
 #about_header .container{
     background-color: #5B0130;
     width:100%;
-    height:20vh;
+    height:15vh;
 }
 
 .profile{
