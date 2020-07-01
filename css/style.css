@@ -7,20 +7,20 @@ color :#fff ;
 */
 
 body {
-  /*background: linear-gradient(#5B0130,#B5054D);*/
-  background-color:#02305E;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #fff;
-  box-sizing: border-box;
+  
+    background-color:#02305E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #fff;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
-	padding:1rem;
-  font-weight: 700;
-  line-height: 1.4;
+    padding:1rem;
+    font-weight: 700;
+    line-height: 1.4;
 
 }
 
@@ -49,7 +49,6 @@ h4 {
 p{
     padding-left:1rem;
     font-size: 1em;
-    
     font-weight: 400;
 }
 
@@ -78,14 +77,6 @@ img {
 
 /*Index*/
 
-.container{
-    margin:0 auto;
-    padding:0 0 0 0;
-    width:80%;
-    max-width:2000px;
-}
-
-
 .wrapper{
     margin:0 auto;
     padding:0 0 0 0;
@@ -95,30 +86,33 @@ img {
 
 }
 
+.container{
+    margin:0 auto;
+    padding:0 0 0 0;
+    width:80%;
+    max-width:2000px;
+}
+
+
 .container.navbar{
     display:flex;
     width:100%;
     height:20vh;
     background-color:#02305E;
-
 }
 
 #intro.container
 {
     height:80vh;
-    
     background-color:#02305E;
-    /*background-color: #5B0130;*/
-
-
 }
+
 
 .column{
     flex:50%;
     display: flex;
     justify-content: center;
 }
-
 
 .logo
 { 
@@ -145,14 +139,16 @@ img {
     height:80%;
     float:right;
     display:flex;
+    align-items: center;
     justify-content: flex-end;
+    overflow:hidden;
+   
 }
 
 
 .feather_illus img{
-    align-self: flex-end;
-    max-width:50%;
-    max-height:70%;
+    
+    
 }
 
 
@@ -173,6 +169,7 @@ img {
 .describe p,h2,h3,h4,a,.story p{
     padding:0 0 0 0;
 }
+
 .grid_work{
     margin:0 auto;
     padding:0 0 0 0;
@@ -183,7 +180,6 @@ img {
     height:100vh;
     overflow:hidden;
     background-color:white;
-  
 }
 
 .item{
@@ -199,8 +195,8 @@ img {
     max-height:100%;
 }
 
-/*Footer*/
 
+/*Footer*/
 
 .container.contact_details{
     height:50vh;
@@ -209,8 +205,6 @@ img {
     justify-content: flex-start;
     overflow:hidden;
 }
-
-
 
 .contact_information{
     display:flex;
@@ -241,55 +235,55 @@ footer h3{
 }
 
 input[type=text], select, textarea {
-  width: 90%;
-  padding: 12px;
-  background:transparent;
-  border: 1px solid #ccc;
-  border-radius:5px;
-  margin-top: 6px;
-  margin-bottom: 16px;
+    width: 90%;
+    padding: 12px;
+    background:transparent;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
 
 
 
 input[type=submit] {
-  background: transparent;
-  color: #fff;
-  border-radius:10px;
-  padding: 12px 20px;
-  border: 1px solid white;
-  cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border-radius:10px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+    color: white;
+    opacity: 1; /* Firefox */
 }
 
 input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+    color: white;
 }
 
 input [type=text]::-ms-input-placeholder { /* Microsoft Edge */
-  color: white;
+    color: white;
 }
 
 
 input textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+    color: white;
+    opacity: 1; /* Firefox */
 }
 
 input textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+    color: white;
 }
 
 input textarea::-ms-input-placeholder { /* Microsoft Edge */
-  color: white;
+    color: white;
 }
 
 .fa {
@@ -322,20 +316,16 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
 
 
 #git{
-  align-self: flex-end;
+    align-self: flex-end;
 }
 #linkedin{
-  align-self: center;
+    align-self: center;
 }
 #behance{
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 /*About*/
-
-
-
-
 
 #about_header.container{
     background-color: #5B0130;
@@ -354,8 +344,6 @@ body.work{
 }
 
 
-
-
 #work1_fitted{
     height:90vh;
 }
@@ -364,36 +352,34 @@ body.work{
 #work1_vela{
     height:100vh;
     background-color: #0C99EB;
-   
 }
 
 
 #work1_fitted .container{
-  background-color:#EB560C;
-  display:flex;
-  height:80%;
+    background-color:#EB560C;
+    display:flex;
+    height:80%;
 }
 
 #work1_vela .container{
 
-  background-color: #0C99EB; 
-  display:flex;
-  height:80%;
-  align-self: flex-end;
+    background-color: #0C99EB; 
+    display:flex;
+    height:80%;
+    align-self: flex-end;
 
 
 }
 
 #work1_fitted .describe, #work1_vela .describe {
-  width: 50%;
-  height: 100%;
-  
+    width: 50%;
+    height: 100%;
 }
 
 
 #work1_fitted .button,#work1_vela .button,#work_intro .button{
-  margin-top:1.5rem;
-  width:200px;
+    margin-top:1.5rem;
+    width:200px;
 
 
 }
@@ -425,14 +411,14 @@ body.work{
 }
 
 body.portfolio{
-  background-color: white;
+    background-color: white;
 }
 
 
 
 #containerfull img{
-  height:100vh;
-  width:100%;
+    height:100vh;
+    width:100%;
 }
 
 
@@ -468,25 +454,25 @@ body.portfolio{
 
 
 #interactions{
-  display:flex;
-  flex-direction:row;
+    display:flex;
+    flex-direction:row;
 
 }
 #interactions div{
-  margin-right:0.5rem;
+    margin-right:0.5rem;
 }
 
 #my-video{
-  background-color: white;
-  padding:0 0 0 0;
-  margin:0 auto;
+    background-color: white;
+    padding:0 0 0 0;
+    margin:0 auto;
 }
 
 
 
 /*About*/
 body.about{
-  background-color:#5B0130;
+    background-color:#5B0130;
 }
 
 #about_header .container{
@@ -531,7 +517,6 @@ body.about{
     margin-top:5rem;
     padding-top:3rem;
     padding-bottom:5rem;
-
 }
 
 #about_story p,h1,h2, #about_main p,h1,h2, #about_skills p,h1,h2{
