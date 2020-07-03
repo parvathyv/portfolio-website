@@ -33,12 +33,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     /*font-weight: 700;*/
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     /*font-weight: 400;*/
 }
 h4 {
@@ -87,8 +87,11 @@ img {
 }
 
 .container{
-    margin:0 auto;
-    padding:0 0 0 0;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5rem 0 0 0;
     width:80%;
     max-width:2000px;
 }
@@ -99,6 +102,7 @@ img {
     display:flex;
     width:100%;
     height:15vh;
+    padding-top:0;
     background-color:#02305E;
     z-index:999;
 }
@@ -561,6 +565,7 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
 
 #work_header .container{
     background-color: #EB560C;
+    z-index:9999;
 }
 
 body.work{
@@ -569,13 +574,16 @@ body.work{
 
 
 #work1_fitted{
-    height:90vh;
+    height:auto;
+    padding-bottom:5rem;
+    margin-top:-3rem;
 }
 
 
 #work1_vela{
-    height:100vh;
+    height:auto;
     background-color: #0C99EB;
+    padding-bottom:5rem;
 }
 
 
@@ -583,6 +591,7 @@ body.work{
     background-color:#EB560C;
     display:flex;
     height:80%;
+    padding-top:0;
 }
 
 #work1_vela .container{
@@ -597,9 +606,13 @@ body.work{
 
 #work1_fitted .describe, #work1_vela .describe {
     width: 50%;
-    height: 100%;
+    
 }
-
+#work1_fitted h2,h3,p{
+ 
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+}
 
 #work1_fitted .button,#work1_vela .button,#work_intro .button{
     margin-top:1.5rem;
@@ -614,15 +627,14 @@ body.work{
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    height: 100%;
+    height: auto;
   
 }
 
 .work_image img{
-    width:auto;
-    height:auto;
+    padding-top:2rem;
     max-width:90%;
-    max-height:90%;
+   
     align-self:flex-end;
   
 }

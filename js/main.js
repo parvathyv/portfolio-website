@@ -12,4 +12,11 @@ function myFunction() {
 {
     $(this).toggleClass('fullscreen');
 
+});
+
+$(document).ready(function(){
+	$('.menu:nth-child(2)').click(function(e){
+
+	});	
+    
 });*/
