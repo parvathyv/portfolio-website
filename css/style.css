@@ -500,7 +500,7 @@ body.portfolio{
 
 .light{
     background-color: white;
-    color:#202020;
+    color:#464646;
     height:100%;
 }
 
@@ -524,12 +524,17 @@ body.portfolio{
     margin-right:0.5rem;
 }
 
+#interactions div:last-child{
+    margin-right:0;
+}
 #my-video{
     background-color: white;
     padding:0 0 0 0;
-    margin:0 auto;
+    margin:4rem auto;
 }
-
+#animation{
+    padding-bottom:3rem;
+}
 
 
 /*About*/
@@ -735,7 +740,7 @@ body.about{
         font-size:1.3em;
     }
     h4{
-        font-size:1.1ems;
+        font-size:1.1em;
     }
 
    #work1_fitted .describe, #work1_vela .describe{
@@ -745,13 +750,41 @@ body.about{
     #work1_fitted h2, h3, p,h4 button,a {
     margin-block-start: 1em;
     margin-block-end: 1em;
-}
+    }
+   
+  
+    .my-video-dimensions {
+        width: 720px;
+        height: 500px;
+    }
+
+    #responsive img{
+        padding-top:0;
+    }
+    
+     .portfolio .wrapper{
+        padding-bottom:5rem;
+    }
+
+    #work_intro .button{
+       
+    }
+
+    #work_intro .button.contact:visited{
+        color:#EB560C;
+        background: transparent;
+        border:1px solid #EB560C;
+    }
 }
 
 @media screen and (max-width: 1024px) {
 
     body{
         font-size:14px;
+    }
+    .my-video-dimensions {
+        width: 600px;
+        height: 420px;
     }
 }
 
