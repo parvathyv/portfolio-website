@@ -7,3 +7,9 @@ function myFunction() {
     x.className = "menu";
   }
 }
+
+/*$('.myDiv').click(function(e)
+{
+    $(this).toggleClass('fullscreen');
+
+});*/
