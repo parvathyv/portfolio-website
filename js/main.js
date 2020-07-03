@@ -1,4 +1,6 @@
 /* Toggle between adding and removing the "responsive" class to menu when the user clicks on the icon */
+
+
 function myFunction() {
   var x = document.getElementById("myTopmenu");
   if (x.className === "menu") {
@@ -8,15 +10,3 @@ function myFunction() {
   }
 }
 
-/*$('.myDiv').click(function(e)
-{
-    $(this).toggleClass('fullscreen');
-
-});
-
-$(document).ready(function(){
-	$('.menu:nth-child(2)').click(function(e){
-
-	});	
-    
-});*/
