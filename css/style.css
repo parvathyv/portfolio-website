@@ -211,9 +211,9 @@ main{
     max-width:2000px;
     display:flex;
     flex-wrap:wrap; 
-    height:100vh;
+   
     overflow:hidden;
-    background-color:white;
+    
 }
 
 
@@ -386,17 +386,77 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
     visibility: hidden;
 }*/
 
+
+@media screen and (max-width: 1200px) {
+
+    #intro.container{
+        height:auto;
+        padding-bottom:5rem;
+        margin-top:2rem;
+        padding-top:2rem;
+    }
+    .container.navbar{
+        height:20vh;
+
+    }
+
+    .describe{
+        padding-right:2rem;
+    }
+    .describe h1{
+        position:relative;
+    }
+
+    .feather_illus{
+        height:50%;
+    }
+    .navbar .column:nth-child(2){
+        padding-right:0;
+    }
+
+    .grid_work{
+        height:auto;
+
+    }
+    .menu {
+        font-weight: 400;
+        font-size: 1.2em;
+        display: flex;
+        max-width:100%;
+
+    }
+
+    .menu a{
+        padding:1.2rem;
+
+    }
+
+    .container.contact_details{
+       
+        padding-bottom:5rem;
+    }
+    #index_footer{
+        margin-top:-2rem;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
 
     #intro.container{
         height:auto;
         padding-bottom:5rem;
+        margin-top:-4rem;
     }
 
     .feather_illus {
-    width: 50%;
+    width: 60%;
+    height:auto;
+    float:none;
     display: block;
+    margin:0 auto;
+    padding-bottom: 2rem;
     }
 
     .describe, .story {
@@ -409,14 +469,14 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
 
     .grid_work{
         display:block;
-        height:auto;
+        
     }
 
     .grid_work>div{
     flex:none;}
     
     body{
-        font-size:12px;
+        font-size:14px;
     }    
 
     .container.navbar{
@@ -465,7 +525,28 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
         padding:0;
     }
 }
+
+@media screen and (max-width: 500px) {
+  body{
+    font-size:12px;
+    }
+
+  .feather_illus {
+    width: 80%;
+    }
+
+   .describe h1{
+    font-size:2.5em;
+   }   
 }
+
+@media screen and (max-width: 320px) {
+  .menu a{
+    font-size:0.8em;
+   }
+}
+
+
 
 /*About*/
 
