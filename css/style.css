@@ -10,7 +10,7 @@ body {
   
     background-color:#02305E;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 14px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #fff;
@@ -403,7 +403,9 @@ body.work{
     background-color: #EB560C;
 }
 
-
+#work1_fitted.wrapper{
+    margin-top:2rem;
+}
 #work1_fitted{
     height:auto;
     padding-bottom:5rem;
@@ -460,16 +462,14 @@ body.work{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    height: auto;
+    width:50%;
+   
   
 }
 
 .work_image img{
-    padding-top:2rem;
-    max-width:90%;
    
-    align-self:flex-end;
+   align-self:flex-end;
   
 }
 
@@ -747,7 +747,7 @@ body.about{
   
     }
     img{
-        padding-top:2rem;
+        /*padding-top:2rem;*/
     }
     #process img{
         margin-top:-3rem;
@@ -804,6 +804,9 @@ body.about{
         width: 600px;
         height: 420px;
     }
+    #work1_fitted.wrapper {
+     margin-top: -4rem;
+}
 }
 
 
@@ -932,7 +935,29 @@ body.about{
 
    .describe h1{
     font-size:2.5em;
+   }
+   #work1_fitted .container,#work1_vela .container{
+    display:block;
    }   
+
+  
+   #work1_fitted.wrapper{
+    margin-top:-8rem;
+   }
+   #work1_fitted{
+    padding-bottom:2rem;
+   }
+   #work1_fitted .describe, #work1_vela .describe {
+    padding-right: 0;
+    width:auto;}
+
+    .work_image {
+        padding-top:2rem;
+     display: block; 
+    
+     width: auto; 
+}
+
 }
 
 @media screen and (max-width: 320px) {
