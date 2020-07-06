@@ -8,7 +8,7 @@ color :#fff ;
 
 body {
   
-    background-color:#02305E;
+    background-color:white/*#02305E*/;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -79,7 +79,10 @@ img {
 /*Index*/
 
 .wrapper{
-    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-top:-6rem;
     padding:0 0 0 0;
     width:100%;
     height:100vh;
@@ -87,6 +90,9 @@ img {
 
 }
 
+#intro.wrapper{
+    background-color:#000813;
+}
 .container{
     margin-top:0;
     margin-bottom:0;
@@ -104,7 +110,7 @@ img {
     width:100%;
     height:15vh;
     padding-top:0;
-    background-color:#02305E;
+    background-color:#000813;
     z-index:999;
 
 }
@@ -115,7 +121,7 @@ main{
 #intro .container
 {
     height:80vh;
-    background-color:#02305E;
+    background-color:#000813;
 }
 
 
@@ -194,7 +200,7 @@ main{
 
 .story p{
   position: absolute;
-  bottom: 10rem;
+ 
   left: 0;
 }
 
@@ -254,8 +260,15 @@ main{
  
  }
 
+#index_footer{
+    background-color:#000813;
+    margin-top:-6rem;
+     padding-bottom:4rem;
+}
 .footer_header{
     width:80%;
+    padding-top:4rem;
+
     margin:0 auto;
     text-align: left;
 }
@@ -798,7 +811,7 @@ body.about{
 @media screen and (max-width: 1024px) {
 
     body{
-        font-size:14px;
+        font-size:12px;
     }
     .my-video-dimensions {
         width: 600px;
@@ -816,12 +829,14 @@ body.about{
 
 
 @media screen and (max-width: 768px) {
-
+    
+    #intro{
+        margin-top:-6rem;
+    }
     
     #intro .container{
-        height:auto;
-        padding-bottom:5rem;
-        margin-top:-4rem;
+        margin-top:0;
+        
     }
 
     .feather_illus {
@@ -854,12 +869,9 @@ body.about{
     .grid_work>div{
     flex:none;}
     
-    body{
-        font-size:14px;
-    }    
 
     .container.navbar{
-        height:10vh;
+        height:12vh;
 
     }
 
@@ -925,9 +937,14 @@ body.about{
 }
 
 @media screen and (max-width: 500px) {
+
   body{
-    font-size:12px;
+    font-size:11px;
     }
+
+   #intro{
+        margin-top:-8rem;
+    } 
 
   .feather_illus {
     width: 80%;
