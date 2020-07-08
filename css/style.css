@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 2.5em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     margin-inline-start: 1px;
@@ -79,10 +79,7 @@ img {
 /*Index*/
 
 .wrapper{
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:0;
-    margin-top:-6rem;
+    margin:0 auto;
     padding:0 0 0 0;
     width:100%;
     height:100vh;
@@ -98,7 +95,7 @@ img {
     margin-bottom:0;
     margin-left:auto;
     margin-right:auto;
-    padding:5rem 0 0 0;
+    padding:0 0 0 0;
     width:80%;
     max-width:2000px;
 }
@@ -115,13 +112,16 @@ img {
 
 }
 main{
-    padding-top:200px;
+    padding-top:7rem;
 }
 
 #intro .container
 {
     height:80vh;
     background-color:#000813;
+    position:relative;
+    display:flex;
+    flex-flow:column wrap;
 }
 
 
@@ -162,64 +162,62 @@ main{
 
 }
 
-
 .feather_illus{
-    width:60%;
-    height:80%;
-    float:right;
-    display:flex;
-    max-width:100%;
-    max-height:100%;
-    align-items: center;
-    justify-content: flex-end;
+    align-self:flex-end;
+    background-color: orange;
+    width:50%;height:100%;
+}
+
+.feather_illus img{
+    width:100%;
     overflow:hidden;
-   
+}
+
+.col1 {
+  width:50%;height:50%;
+ }
+
+.col1 p{
+    padding:0 2rem 0 0;
 }
 
 
-
-
-.describe,
-.story {
-    position:relative;
-    overflow: hidden;
-    height:40%;
-   
-}
-
-
-.describe h1{
-    position:absolute;
-    bottom:0;
-    left:0;
-}
-
-.describe p,h2,h3,h4,a,.story p{
-    padding:0 0 0 0;
-}
-
-.story p{
-  position: absolute;
- 
-  left: 0;
-}
 
 .grid_work{
     margin:0 auto;
-    padding:0 0 0 0;
-    width:100%;
+    padding:4rem 0 0 0;
+    width:80%;
     max-width:2000px;
+    font-size:14px;
+    font-weight:400;
     display:flex;
     flex-wrap:wrap; 
-   
-    overflow:hidden;
-    
 }
 
+.grid_work p{
+    padding:0;
+    
+}
+.grid_work .item:nth-child(3) ul,.grid_work .item:nth-child(1) ul{
+    padding-right:2rem;
+
+}
 
 
 .item{
    width:100%;
+
+
+
+}
+.item h4{
+    padding:0 0 0 0;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.6rem;
+}
+.item p{
+    padding-right:1rem;
+    padding-left:0;
 }
 
 .grid_work>div{
@@ -274,7 +272,8 @@ main{
 }
 
 footer h3{
-    margin-top:6rem;
+    padding-top:6rem;
+    padding-left:0;
 }
 
 input[type=text], select, textarea {
@@ -463,11 +462,15 @@ body.work{
     margin-block-end: 0.6em;
 }
 
-#work1_fitted .button,#work1_vela .button,#work_intro .button{
+#work1_fitted .button,#work1_vela .button,#work_intro .button,#vela_work_intro .button{
     margin-top:1.5rem;
     width:200px;
+}
 
-
+#vela_work_intro .button{
+    background: transparent;
+    border:1px solid #2da8f0;
+    color:#2da8f0;
 }
 
 
@@ -495,8 +498,24 @@ body.work{
     height:15vh;
 }
 
-body.portfolio.vela{
+#vela{
     background-color: #011217;
+}
+#vela_process.wrapper{
+   background-color: white;
+   height:auto;
+   
+}
+
+#vela_process p,h1,h2{
+    padding:0 0 0 0;
+}
+
+#process_phase2{
+    padding-top:0;
+}
+ul{
+    padding-inline-start:15px;
 }
 /*Fitted*/
 #fitted_work_header .container{
@@ -606,14 +625,14 @@ body.about{
 
 #about_story.wrapper, #about_main.wrapper{
     height:auto;
-    margin-top:2rem;
+   
 }
 
 
 #about_skills.wrapper{
    background-color: #880148;
    height:auto;
-   margin-bottom:5rem;
+   
 }
 
 #about_skills .container{
@@ -696,7 +715,11 @@ body.about{
         padding-bottom:5rem;
         margin-top:2rem;
         padding-top:2rem;
+        position:relative;
+        display:flex;
+        flex-flow:column wrap;
     }
+
     .container.navbar{
         height:15vh;
 
@@ -707,11 +730,9 @@ body.about{
         position:relative;
     }
 
-    .feather_illus{
-        height:50%;
-    }
+  
 
-    .story p{
+    .col1 p{
         position:relative;
         bottom:0;
     }
@@ -722,18 +743,21 @@ body.about{
     .grid_work{
         height:auto;
 
+
     }
+
 
     .grid_work img{
         padding-top:0;
     }
+ 
     .wrapper{
         height:auto;
     }
 
     .menu {
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1.3em;
         display: flex;
         max-width:100%;
 
@@ -759,11 +783,12 @@ body.about{
    
   
     }
-    img{
-        /*padding-top:2rem;*/
+    .about img{
+        margin-top:0;
+        padding-top:3rem;
     }
     #process img{
-        margin-top:-3rem;
+        /*margin-top:-3rem;*/
     }
     h1{
         font-size:2em;
@@ -798,7 +823,7 @@ body.about{
     }
     
     .portfolio .wrapper{
-        padding-bottom:5rem;
+        padding-bottom:3rem;
     }
 
     .portfolio .button.contact:visited{
@@ -811,15 +836,21 @@ body.about{
 @media screen and (max-width: 1024px) {
 
     body{
-        font-size:12px;
+        font-size:14px;
     }
     .my-video-dimensions {
         width: 600px;
         height: 420px;
     }
-    #work1_fitted.wrapper {
-     margin-top: -4rem;
-}
+   
+    /*.grid_work .item:nth-child(4) p:nth-child(1) {
+    padding-top: 1.3rem;
+    }*/
+    
+    .grid_work .item:nth-child(2) p,.grid_work .item:nth-child(4) p{
+    padding-right:0;
+  
+    }
 }
 
 
@@ -848,11 +879,11 @@ body.about{
     padding-bottom: 2rem;
     }
 
-    .describe, .story {
+    .describe, .col1 {
         overflow:visible;
     }
 
-    .story p{
+    .col1 p{
         position:relative;
         bottom:0;
     }
@@ -863,6 +894,7 @@ body.about{
 
     .grid_work{
         display:block;
+
         
     }
 
@@ -941,7 +973,9 @@ body.about{
   body{
     font-size:11px;
     }
-
+   main{
+    padding-top:5rem;
+   }
    #intro{
         margin-top:-8rem;
     } 
@@ -953,13 +987,27 @@ body.about{
    .describe h1{
     font-size:2.5em;
    }
+
+   #about_skills .container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    }
+
+   #about_skills h3,#about_skills h4{
+    padding-bottom:0;
+    margin-block-start: 0; 
+    margin-block-end: 0;
+}
+   }
+
    #work1_fitted .container,#work1_vela .container{
     display:block;
    }   
 
   
    #work1_fitted.wrapper{
-    margin-top:-8rem;
+    
    }
    #work1_fitted{
     padding-bottom:2rem;
@@ -974,7 +1022,11 @@ body.about{
     
      width: auto; 
 }
-
+.grid_work{
+    font-size:12px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
 }
 
 @media screen and (max-width: 320px) {
