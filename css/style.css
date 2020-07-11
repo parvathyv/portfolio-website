@@ -552,11 +552,14 @@ body.portfolio{
     padding-top:100px;
 }
 
-/*.containerfull img{
-    width:100%;
-}*/
+.containerfull{
+   background-color: white;
+}
 
-
+.containerfull h3,.containerfull p{
+    margin-left:150px;
+    padding-bottom:1rem;
+}
 
 .work_sections{
     width:60%;
@@ -952,7 +955,7 @@ body.about{
     
 
     .container.navbar{
-        height:10vh;
+        height:15vh;
 
     }
 
