@@ -416,8 +416,9 @@ body.work{
 }
 
 #work1_fitted.wrapper{
-    margin-top:2rem;
+  padding-top:6rem;
 }
+
 #work1_fitted{
     height:auto;
     padding-bottom:5rem;
@@ -438,6 +439,7 @@ body.work{
     display:flex;
     height:80%;
     padding-top:0;
+    padding-bottom:3rem;
 }
 
 #work1_vela .container{
@@ -445,10 +447,13 @@ body.work{
     background-color: #011217; 
     display:flex;
     height:80%;
-    align-self: flex-end;
+    /*align-self: flex-end;*/
+    padding-top:3rem;
+    padding-bottom:3rem;
 
 
 }
+
 .icon{
     z-index:100000;
 }
@@ -460,6 +465,7 @@ body.work{
  
     margin-block-start: 0.6em;
     margin-block-end: 0.6em;
+    padding:0 0 0 0;
 }
 
 #work1_fitted .button,#work1_vela .button,#work_intro .button,#vela_work_intro .button{
@@ -511,8 +517,22 @@ body.work{
     padding:0 0 0 0;
 }
 
-#process_phase2{
+.work_sections.process{
     padding-top:0;
+    padding-bottom:0;
+
+}
+
+.row{
+
+    border:0.5px solid #fff;
+    padding-left:1rem;
+    background-color: #176987;
+    color:#fff;
+}
+
+#phase1{
+margin-top:3rem;
 }
 ul{
     padding-inline-start:15px;
@@ -521,7 +541,7 @@ ul{
 #fitted_work_header .container{
     background-color: #EB560C;
     width:100%;
-    height:15vh;
+    
 }
 
 body.portfolio{
@@ -539,21 +559,34 @@ body.portfolio{
 
 
 .work_sections{
-    width:50%;
-    margin:auto;
+    width:60%;
+    margin:0 auto;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    
   
 }
+.work_sections img{
+    padding-top:2rem;
+}
+.work_sections p,h2,h3,h4{
+    padding:0 0 0 0;
+}
+.work_sections .button.contact:visited {
+    border: 1px solid #e62107;
+    color: #e62107;
+}
 
-.dark{
+/*.dark{
     background-color: #202020;
     color:#fff;
     height:100%;
     padding-bottom:5rem; 
-}
+}*/
 
 .light{
     background-color: white;
-    color:#464646;
+    color:#0C71AC;
     height:100%;
 }
 
@@ -651,7 +684,8 @@ body.about{
     width:100px;
     border-radius: 20px; 
     padding: 10px;
-    font-size:0.8em;    
+    font-size:1em; 
+    font-weight:400;   
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -750,14 +784,17 @@ body.about{
     .grid_work img{
         padding-top:0;
     }
- 
+    .grid_work{
+    font-size:14px;
+   
+}
     .wrapper{
         height:auto;
     }
 
     .menu {
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 1.2em;
         display: flex;
         max-width:100%;
 
@@ -778,10 +815,9 @@ body.about{
     }
 
     .work_sections{
-        width:70%;
+        width:60%;
         padding-top:2rem;
-   
-  
+    
     }
     .about img{
         margin-top:0;
@@ -803,15 +839,21 @@ body.about{
         font-size:1.1em;
     }
 
+     #work1_fitted .container{
+        display:flex;
+    }
    #work1_fitted .describe, #work1_vela .describe{
     padding-right:2rem;
+    width:50%;
    }
 
     #work1_fitted h2, h3, p,h4 button,a {
     margin-block-start: 1em;
     margin-block-end: 1em;
     }
-   
+    .work_sections{
+    width:60%;
+}
   
     .my-video-dimensions {
         width: 720px;
@@ -823,7 +865,8 @@ body.about{
     }
     
     .portfolio .wrapper{
-        padding-bottom:3rem;
+        padding-bottom:2rem;
+        padding-top:2rem;
     }
 
     .portfolio .button.contact:visited{
@@ -850,6 +893,12 @@ body.about{
     .grid_work .item:nth-child(2) p,.grid_work .item:nth-child(4) p{
     padding-right:0;
   
+    }
+
+     .work_sections{
+        width:70%;
+        padding-top:1rem;
+    
     }
 }
 
@@ -903,7 +952,7 @@ body.about{
     
 
     .container.navbar{
-        height:12vh;
+        height:10vh;
 
     }
 
@@ -913,7 +962,7 @@ body.about{
 
     .menu {
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1.1em;
         display: flex;
         max-width:100%;
 
@@ -941,7 +990,9 @@ body.about{
     justify-content: flex-end;
     }
 
-  
+    #work1_fitted .container,#work1_vela .container{
+        display:block;
+    }
 
     .container.contact_details{
         display:block;
@@ -960,12 +1011,28 @@ body.about{
     .contact_information>p{
         width:auto;
     }
-
+    .grid_work{
+    font-size:14px;
+    
+    }
     .fa{
         border:0px;
         margin:0;
         padding:0;
     }
+       .work_image {
+    padding-top:4rem;
+     display: block; 
+    
+     width: auto; 
+    }
+    #work1_fitted .button.contact, #work1_vela .button.contact{
+        width:150px;
+        margin-left:auto;
+        margin-right:auto;
+    
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -983,7 +1050,9 @@ body.about{
   .feather_illus {
     width: 80%;
     }
-
+  .container .navbar{
+    height:10vh;
+  }
    .describe h1{
     font-size:2.5em;
    }
@@ -999,34 +1068,32 @@ body.about{
     margin-block-start: 0; 
     margin-block-end: 0;
 }
-   }
-
-   #work1_fitted .container,#work1_vela .container{
-    display:block;
-   }   
-
   
-   #work1_fitted.wrapper{
-    
-   }
+
+   .portfolio .wrapper,.work_sections {
+    padding-bottom: 0.5rem;
+}
+    .work_sections{
+        width:80%;
+    }
+   
+
    #work1_fitted{
     padding-bottom:2rem;
    }
    #work1_fitted .describe, #work1_vela .describe {
     padding-right: 0;
-    width:auto;}
-
-    .work_image {
-        padding-top:2rem;
-     display: block; 
-    
-     width: auto; 
+    width:auto;
 }
-.grid_work{
+.my-video-dimensions {
+        width: 320px;
+        height: 200px;
+    }
+ .grid_work{
     font-size:12px;
-    padding-top:2rem;
-    padding-bottom:2rem;
+   
 }
+
 }
 
 @media screen and (max-width: 320px) {
