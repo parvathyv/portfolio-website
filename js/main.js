@@ -11,6 +11,8 @@ function myFunction() {
 
 }
 
+console.log("Hello. Welcome to my UX/UI portfolio website!")
+
 /*$('.myDiv').click(function(e)
 {
     $(this).toggleClass('fullscreen');

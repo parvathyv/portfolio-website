@@ -1155,15 +1155,23 @@ body.about{
     opacity:0.9;
    
 }
+
+.cloud{
+    animation: cloud_move 8s linear;
+}
 .meditate{
      animation: meditate_move 15s linear;
 }
 
 @keyframes meditate_move {
   from {transform: translate(2507px,657px);}
-  to {transform: translate(2507px,-700px);}
+  to {transform: translate(2507px,-1200px);}
 }
 
+@keyframes cloud_move {
+  from {transform: translate(0%,0%);}
+  to {transform: translate(25%,0%);}
+}
 .star{
     
     animation: glow 1s ease infinite;
