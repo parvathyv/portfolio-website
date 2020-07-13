@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     margin-inline-start: 1px;
@@ -34,16 +34,16 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 2em;
     /*font-weight: 700;*/
 }
 
 h3 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     /*font-weight: 400;*/
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   /*font-weight: 400;*/
 }
 
@@ -73,7 +73,11 @@ img {
 }
 
 
-
+.col1.story p, .col1.story h1{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
 /* user defined classes*/
 
 /*Index*/
@@ -112,7 +116,7 @@ img {
 
 }
 main{
-    padding-top:7rem;
+    padding-top:9rem;
 }
 
 #intro .container
@@ -155,33 +159,26 @@ main{
     display:none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the menu (.icon) */
-@media screen and (max-width: 768px) {
-  /*.menu a:not(:first-child) {display: none;}*/
-  
 
-}
 
 .feather_illus{
     align-self:flex-end;
-    background-color: orange;
+    
     width:50%;height:100%;
 }
 
 .feather_illus img{
-    width:100%;
+    width:60%;
     overflow:hidden;
 }
 
 .col1 {
-  width:50%;height:50%;
- }
+    width:50%;height:50%;
+}
 
 .col1 p{
     padding:0 2rem 0 0;
 }
-
-
 
 .grid_work{
     margin:0 auto;
@@ -196,19 +193,15 @@ main{
 
 .grid_work p{
     padding:0;
-    
 }
+
 .grid_work .item:nth-child(3) ul,.grid_work .item:nth-child(1) ul{
     padding-right:2rem;
-
 }
 
 
 .item{
-   width:100%;
-
-
-
+    width:100%;
 }
 .item h4{
     padding:0 0 0 0;
@@ -261,7 +254,7 @@ main{
 #index_footer{
     background-color:#000813;
     margin-top:-6rem;
-     padding-bottom:4rem;
+    padding-bottom:4rem;
 }
 .footer_header{
     width:80%;
@@ -402,7 +395,6 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 
-   
 
 /*Work*/
 
@@ -416,19 +408,20 @@ body.work{
 }
 
 #work1_fitted.wrapper{
-  padding-top:6rem;
+    padding-top:6rem;
 }
 
 #work1_fitted{
     height:auto;
     padding-bottom:5rem;
-    margin-top:-3rem;
+    
 }
 
 
 #work1_vela{
     height:auto;
     background-color: #011217;
+    padding-top:3rem;
     padding-bottom:5rem;
 }
 
@@ -459,8 +452,10 @@ body.work{
 }
 #work1_fitted .describe, #work1_vela .describe {
     width: 50%;
-    
 }
+#work1_vela .describe{
+    padding-right:2rem;
+}   
 #work1_fitted h2,h3,p{
  
     margin-block-start: 0.6em;
@@ -501,15 +496,16 @@ body.work{
 #vela_work_header .container{
     background-color:#011217;
     width:100%;
-    height:15vh;
+   
 }
 
 #vela{
-    background-color: #011217;
+    background-color: #fff;
 }
 #vela_process.wrapper{
-   background-color: white;
-   height:auto;
+    background-color: white;
+    height:auto;
+    padding-bottom:4rem;
    
 }
 
@@ -532,7 +528,7 @@ body.work{
 }
 
 #phase1{
-margin-top:3rem;
+    margin-top:3rem;
 }
 ul{
     padding-inline-start:15px;
@@ -546,6 +542,7 @@ ul{
 
 body.portfolio{
     background-color: #EB560C;
+
 }
 
 .portfolio_header{
@@ -553,7 +550,7 @@ body.portfolio{
 }
 
 .containerfull{
-   background-color: white;
+    background-color: white;
 }
 
 .containerfull h3,.containerfull p{
@@ -589,10 +586,28 @@ body.portfolio{
 
 .light{
     background-color: white;
-    color:#0C71AC;
+    
     height:100%;
+    border-bottom:0.5px solid gray;
 }
 
+#vela .light{
+    color:#0C71AC;
+}
+#fitted .light{
+    color:#F15A0C;
+}
+
+.work h2,.work h3,.work h4{
+    color:#fff;
+}
+
+#fitted h2,#fitted h3,#fitted h4{
+    color:#00873D;
+}
+#vela h2,#vela h3,#vela h4{
+    color:#238EB6;
+}
 
 #gestures img,#wireframe img,#high_fidelity img{
     margin-bottom:5rem;
@@ -647,9 +662,10 @@ body.about{
     flex:50%;
 }
 
-.row.pic{
-    flex:none;
+#about_skills .row{
+    background: transparent;
 }
+
 
 .skills{
     justify-content: space-around;
@@ -666,9 +682,9 @@ body.about{
 
 
 #about_skills.wrapper{
-   background-color: #880148;
-   height:auto;
-   
+    background-color: #880148;
+    height:auto;
+
 }
 
 #about_skills .container{
@@ -682,79 +698,26 @@ body.about{
 }
 
 
-.button {
-    display:inline-block;
-    width:100px;
-    border-radius: 20px; 
-    padding: 10px;
-    font-size:1em; 
-    font-weight:400;   
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#fff;
-    background: linear-gradient(#ee7752, #e73c7e);
-}
-
-.button:visited{
-    background: linear-gradient(#7B026A, #EB560C);
-    color:#fff;
-}
-
-.button:hover {
-    background: linear-gradient(-90deg, #ee7752, #e73c7e, #7B026A, #EB560C);
-    background-size: 400% 400%;
-    animation: gradient 5s ease;
-    text-decoration: none;
-    color:#fff;
-   
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+@media screen and (min-width: 1201px) {
+    .containerfull{
+        padding-top:2rem;
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+    .containerfull h3, .containerfull p {
+    margin-left:28vh;
+    padding-bottom: 1rem;
     }
 }
-
-.button.contact {
-  background: transparent;
-  color: #e6640e;
-  width:200px;
-  border: 2px solid white;
-
-}
-
-.button.contact:visited {
-  background:linear-gradient(#e62107,#e63707);
-  color:#fff;
-}
-
-.button.contact:hover, .button:focus{
-  background-color:#f5870a;
-  color: #fff;
-}  
-
-.button.contact:active {
-  background-color:#e63707;
-
-} 
 
 @media screen and (max-width: 1200px) {
 
-    #intro .container{
-        height:auto;
-        padding-bottom:5rem;
-        margin-top:2rem;
-        padding-top:2rem;
-        position:relative;
-        display:flex;
-        flex-flow:column wrap;
+  
+    #intro .container
+    {
+    height:80vh;
+    background-color:#000813;
+    position:relative;
+    display:flex;
+    flex-flow:column wrap;
     }
 
     .container.navbar{
@@ -788,9 +751,9 @@ body.about{
         padding-top:0;
     }
     .grid_work{
-    font-size:14px;
+        font-size:14px;
    
-}
+    }
     .wrapper{
         height:auto;
     }
@@ -826,9 +789,7 @@ body.about{
         margin-top:0;
         padding-top:3rem;
     }
-    #process img{
-        /*margin-top:-3rem;*/
-    }
+    
     h1{
         font-size:2em;
     }
@@ -845,18 +806,18 @@ body.about{
      #work1_fitted .container{
         display:flex;
     }
-   #work1_fitted .describe, #work1_vela .describe{
-    padding-right:2rem;
-    width:50%;
-   }
+    #work1_fitted .describe, #work1_vela .describe{
+        padding-right:2rem;
+        width:50%;
+    }
 
     #work1_fitted h2, h3, p,h4 button,a {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
     }
     .work_sections{
-    width:60%;
-}
+        width:60%;
+    }
   
     .my-video-dimensions {
         width: 720px;
@@ -877,6 +838,7 @@ body.about{
         background: transparent;
         border:1px solid #EB560C;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -894,7 +856,7 @@ body.about{
     }*/
     
     .grid_work .item:nth-child(2) p,.grid_work .item:nth-child(4) p{
-    padding-right:0;
+        padding-right:0;
   
     }
 
@@ -903,55 +865,59 @@ body.about{
         padding-top:1rem;
     
     }
+    .feather_illus img{
+        width:80%;
+    }
+
 }
 
 
 
-/* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
- (display the links vertically instead of horizontally) */
 
 
 @media screen and (max-width: 768px) {
     
     #intro{
-        margin-top:-6rem;
+        padding-top:4rem;
+        margin-top:0;
     }
     
     #intro .container{
-        margin-top:0;
-        
+      
+        height:auto;
+        display:block;
+    }
+
+    .col1{
+        width:auto;
+
     }
 
     .feather_illus {
-    width: 60%;
-    height:auto;
-    float:none;
-    display: block;
-    margin:0 auto;
-    padding-bottom: 2rem;
+       /* width: 60%;*/
+        
+        margin:0 auto;
+        padding-bottom: 2rem;
+        padding-top:2rem;
     }
 
-    .describe, .col1 {
-        overflow:visible;
-    }
+    
+   
 
-    .col1 p{
-        position:relative;
-        bottom:0;
-    }
-
-    .describe h1{
-        position:relative;
-    }
+    
 
     .grid_work{
         display:block;
 
         
     }
-
+    .containerfull h3,.containerfull p{
+        margin-left:100px;
+        width:70%;
+    
+    }
     .grid_work>div{
-    flex:none;}
+        flex:none;}
     
 
     .container.navbar{
@@ -973,8 +939,8 @@ body.about{
 
     .menu a{display: none;}
     .menu a.icon {
-    float: right;
-    display: block;
+        float: right;
+        display: block;
     }
 
     /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
@@ -983,14 +949,14 @@ body.about{
     .menu.responsive {position: relative;}
 
     .menu.responsive a {
-    float: none;
-    display: block;
-    padding:0.7rem;
-    text-align: right;
+        float: none;
+        display: block;
+        padding:0.7rem;
+        text-align: right;
     }
 
     .column{
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
 
     #work1_fitted .container,#work1_vela .container{
@@ -1024,7 +990,7 @@ body.about{
         padding:0;
     }
        .work_image {
-    padding-top:4rem;
+    
      display: block; 
     
      width: auto; 
@@ -1035,74 +1001,176 @@ body.about{
         margin-right:auto;
     
     }
+    #work1_fitted .describe, #work1_vela .describe {
+        padding-right: 0;
+        width: 100%;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
 
-  body{
-    font-size:11px;
-    }
-   main{
-    padding-top:5rem;
-   }
-   #intro{
-        margin-top:-8rem;
-    } 
-
-  .feather_illus {
-    width: 80%;
-    }
-  .container .navbar{
-    height:10vh;
-  }
-   .describe h1{
-    font-size:2.5em;
-   }
-
-   #about_skills .container {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    body{
+        font-size:11px;
     }
 
-   #about_skills h3,#about_skills h4{
-    padding-bottom:0;
-    margin-block-start: 0; 
-    margin-block-end: 0;
-}
-  
+    main{
+        padding-top:5rem;
+    }
+ 
 
-   .portfolio .wrapper,.work_sections {
-    padding-bottom: 0.5rem;
-}
+    /*.feather_illus {
+        width: 80%;
+    }*/
+
+    .container.navbar{
+        height:12vh;
+    }
+    .describe h1{
+        font-size:2.5em;
+    }
+
+    #about_skills .container {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #about_skills h3,#about_skills h4{
+        padding-bottom:0;
+        margin-block-start: 0; 
+        margin-block-end: 0;
+    }
+
+
+    .portfolio .wrapper,.work_sections {
+        padding-bottom: 0.5rem;
+    }
     .work_sections{
         width:80%;
     }
-   
 
-   #work1_fitted{
-    padding-bottom:2rem;
-   }
-   #work1_fitted .describe, #work1_vela .describe {
-    padding-right: 0;
-    width:auto;
-}
-.my-video-dimensions {
+
+    #work1_fitted{
+        padding-bottom:2rem;
+    }
+    #work1_fitted .describe, #work1_vela .describe {
+        padding-right: 0;
+        width:auto;
+    }
+
+    .my-video-dimensions {
         width: 320px;
         height: 200px;
     }
- .grid_work{
-    font-size:12px;
-   
-}
+    .grid_work{
+        font-size:12px;
 
+    }
+    .containerfull h3,.containerfull p{
+        margin-left:44px;
+        width:80%;
+
+    }
 }
 
 @media screen and (max-width: 320px) {
-  .menu a{
-    font-size:0.8em;
-   }
+    .menu a{
+        font-size:0.8em;
+    }
 }
 
 
+.button {
+    display:inline-block;
+    width:100px;
+    border-radius: 20px; 
+    padding: 10px;
+    font-size:1em; 
+    font-weight:400;   
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    background: linear-gradient(#ee7752, #e73c7e);
+}
+
+.button:visited{
+    background: linear-gradient(#7B026A, #EB560C);
+    color:#fff;
+}
+
+.button:hover {
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #7B026A, #EB560C);
+    background-size: 400% 400%;
+    animation: gradient 5s ease;
+    text-decoration: none;
+    color:#fff;
+   
+}
+
+
+
+.button.contact {
+    background: transparent;
+    color: #e6640e;
+    width:200px;
+    border: 2px solid white;
+
+}
+
+.button.contact:visited {
+    background-color:#e63707;
+    color:#fff;
+}
+
+.button.contact:hover, .button:focus{
+    background: linear-gradient(-90deg, #ee7752,#EB560C);
+    color: #fff;
+
+    animation: gradientfill 5s ease;
+   
+
+}  
+
+.button.contact:active {
+    background-color:#e63707;
+
+} 
+
+@keyframes gradientfill {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.menu a:hover{
+    opacity:0.9;
+   
+}
+.meditate{
+     animation: meditate_move 15s linear;
+}
+
+@keyframes meditate_move {
+  from {transform: translate(2507px,657px);}
+  to {transform: translate(2507px,-700px);}
+}
+
+.star{
+    
+    animation: glow 1s ease infinite;
+}
+
+@keyframes glow {
+    0% {fill: #fff;}
+    50%{fill:#FA980D;}
+    100% {fill: none;}
+}
