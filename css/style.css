@@ -1165,7 +1165,7 @@ body.about{
 @keyframes meditate_move {
   0% {transform: translate(73px,480px);}
   2%{transform: translate(73px,380px);}
-   20%{transform: translate(73px,250px);}
+   20%{transform: translate(73px,280px);}
 
   100% {transform: translate(73px,-100px);}
 }
@@ -1180,19 +1180,19 @@ body.about{
     0% {transform:  translate(554px,762px);}
     10% {transform:  translate(554px,762px);}
     60% {transform:  translate(554px,790px);}
-    100% {transform:  translate(554px,748px);}
+    100% {transform: translate(554px,750px);}
 }
 
 
 
 .star{
        
-    animation: glow 1.5s ease infinite;
+    animation: glow 1s ease infinite;
 }
 
 .star_fast{
     
-    animation: glow 1s ease infinite;
+    animation: glow 0.7s ease infinite;
 }
 
 @keyframes glow {
