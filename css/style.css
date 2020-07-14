@@ -1156,29 +1156,50 @@ body.about{
    
 }
 
-.cloud{
-    animation: cloud_move 8s linear;
-}
+
 .meditate{
-     animation: meditate_move 15s linear;
+     animation: meditate_move 10s linear;
+     animation-delay:0.4s;
 }
 
 @keyframes meditate_move {
-  from {transform: translate(2507px,657px);}
-  to {transform: translate(2507px,-1200px);}
+  0% {transform: translate(73px,480px);}
+  2%{transform: translate(73px,380px);}
+   20%{transform: translate(73px,250px);}
+
+  100% {transform: translate(73px,-100px);}
 }
 
-@keyframes cloud_move {
-  from {transform: translate(0%,0%);}
-  to {transform: translate(25%,0%);}
+
+.logo_cover_fitted{
+    animation: text_move 0.4s ease;
 }
+
+@keyframes text_move {
+   
+    0% {transform:  translate(554px,762px);}
+    10% {transform:  translate(554px,762px);}
+    60% {transform:  translate(554px,790px);}
+    100% {transform:  translate(554px,748px);}
+}
+
+
+
 .star{
+       
+    animation: glow 1.5s ease infinite;
+}
+
+.star_fast{
     
     animation: glow 1s ease infinite;
 }
 
 @keyframes glow {
-    0% {fill: #fff;}
-    50%{fill:#FA980D;}
-    100% {fill: none;}
+    0% {fill:#fff;
+       }
+    50%{fill:orange;}   
+    100% {
+        fill:none;
+    }
 }
