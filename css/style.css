@@ -252,7 +252,7 @@ main{
  }
 
 #index_footer{
-    background-color:#000813;
+    background-color:#011531;
     margin-top:-6rem;
     padding-bottom:4rem;
 }
@@ -742,18 +742,14 @@ body.about{
 
     .grid_work{
         height:auto;
+         font-size:14px;
 
 
     }
-
-
     .grid_work img{
         padding-top:0;
     }
-    .grid_work{
-        font-size:14px;
-   
-    }
+ 
     .wrapper{
         height:auto;
     }
@@ -790,7 +786,7 @@ body.about{
         padding-top:3rem;
     }
     
-    h1{
+    /*h1{
         font-size:2em;
     }
     h2{
@@ -801,7 +797,7 @@ body.about{
     }
     h4{
         font-size:1.1em;
-    }
+    }*/
 
      #work1_fitted .container{
         display:flex;
@@ -1202,15 +1198,15 @@ body.about{
 }
 
 
-.surf{
-    animation:  surfer_horizontal_move 7s 6 linear ;
+/*.surf{
+    animation:  surfer_horizontal_move 10s linear ;
 }
 
 @keyframes surfer_horizontal_move {
   0% {transform: translate(0px,455px);}
   50%{transform: translate(600px,455px);}
   100% {transform: translate(1024px,455px);}
-}
+}*/
 
 .ocean{
     
@@ -1223,39 +1219,79 @@ body.about{
 }
 
 @keyframes wave_move {
-    0% { transform: translate(-420px,800px); }
-    50% { transform: translate(-420px,760px);} 
-    100% { transform: translate(-420px,800px); }
+    0% { transform: translate(-420px,760px); }
+    50% { transform: translate(-420px,800px);} 
+    100% { transform: translate(-420px,760px); }
 }
 
 .surfboard{
     
     
-    animation-name: board_flap, board_flap;
-    animation-duration: 1s, 2s;
-    animation-delay: 0ms, 10s; /* add this */
-    animation-timing-function: linear, linear;
-    animation-iteration-count: 10, infinite;
+    animation-name: board_flap/*, board_flap;*/;
+    animation-duration: 4s/*, 4s*/;
+    animation-delay: 0ms;/*, 10s; /* add this */
+    animation-timing-function: linear/*, linear*/;
+    animation-iteration-count:infinite/* 4, infinite*/;
 }
 
 @keyframes board_flap {
     0% { transform: translate(103px,214px); }
-    50% { transform: translate(110px,220px);} 
+    50% { transform: translate(110px,225px);} 
     100% { transform: translate(103px,214px); }
 }
 
 .surfer{
     
-    animation-name: surfer_bob, surfer_bob;
-    animation-duration: 1s, 2s;
-    animation-delay: 0ms, 10s; /* add this */
-    animation-timing-function: linear, linear;
-    animation-iteration-count: 10, infinite;
+    animation-name: surfer_bob/*, board_flap;*/;
+    animation-duration: 4s/*, 4s*/;
+    animation-delay: 0ms;/*, 10s; /* add this */
+    animation-timing-function: linear/*, linear*/;
+    animation-iteration-count:infinite/* 4, infinite*/;
 }
 
 @keyframes surfer_bob {
     0% { transform: translate(28px,119px); }
-    50% { transform: translate(28px,125px);} 
+    50% { transform: translate(28px,130px);} 
     100% { transform: translate(28px,119px); }
 }
 
+.skyline_background{
+    
+    animation: day_to_night 20s linear;
+
+}
+
+@keyframes day_to_night {
+    0% {fill:#046FFF;
+       }
+    30%{fill:#003A89;}   
+    100% {
+        fill:#000E21;
+    }
+}
+
+#Moon{
+    
+    animation: fade_in 30s linear;
+}
+
+@keyframes fade_in {
+    0% { transform: translate(220px,1024px);opacity:0; }
+    20% { opacity:0; }
+    50% { transform: translate(220px,650px);opacity:0.7;} 
+    100% { transform: translate(220px,298px);opacity:1; }
+}
+
+
+#Zakim1,#Chicago,#Fanieul,#SanFran{
+    
+    animation: glow_in 30s linear;
+  
+  
+}
+
+@keyframes glow_in {
+    0% {  opacity:0.1; }
+    98%{opacity:0.1;}
+    100% { opacity:1; }
+}
