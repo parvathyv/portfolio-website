@@ -1155,6 +1155,7 @@ body.about{
 .meditate{
      animation: meditate_move 10s linear;
      animation-delay:0.4s;
+     animation-iteration-count: 5;
 }
 
 @keyframes meditate_move {
@@ -1272,26 +1273,64 @@ body.about{
 
 #Moon{
     
-    animation: fade_in 30s linear;
+    animation: fade_in 25s linear;
 }
 
 @keyframes fade_in {
     0% { transform: translate(220px,1024px);opacity:0; }
     20% { opacity:0; }
-    50% { transform: translate(220px,650px);opacity:0.7;} 
+    50% { transform: translate(220px,650px);opacity:1;} 
     100% { transform: translate(220px,298px);opacity:1; }
 }
 
 
-#Zakim1,#Chicago,#Fanieul,#SanFran{
-    
-    animation: glow_in 30s linear;
-  
-  
+/*#ChiTown1>*{
+    stroke:#fff;
+    fill:none;
+    /*animation: glow_in 30s linear;
 }
+
+#ChiTown2>*{
+    stroke:#fff;
+    fill:none;
+    /*animation: glow_in 30s linear;
+}
+#ChiTown3>*{
+    stroke:#fff;
+    fill:none;
+    /*animation: glow_in 30s linear;
+}
+#Building1>*{
+    stroke:#fff;
+    fill:none;
+}
+
+#Bridge>*{
+    stroke:#fff;
+    fill:none;
+}
+
+#Boston1>*,#Boston2>*,#Fanieul>*,#Zakim1>*,#Zakim2>*,#Fan1>*,#Fan2>*,#Fan3>*,#Home1>*,#Home2>*,#Home3>*,#Home4>*{
+    stroke:#fff;
+    fill:none;
+}*/
+#Skyline{
+    animation: title_in 3s ease-in;
+}
+
+@keyframes title_in {
+    0% { transform: translate(200px,0px); }
+    100% { transform: translate(0px,0px); }
+}
+
+#Zakim1{
+ animation:glow-in 25s linear;
+}
+
+
 
 @keyframes glow_in {
     0% {  opacity:0.1; }
-    98%{opacity:0.1;}
+    99%{opacity:0.1;}
     100% { opacity:1; }
 }
