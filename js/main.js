@@ -11,6 +11,13 @@ function myFunction() {
 
 }
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 console.log("Hello. Welcome to my UX/UI portfolio website!")
 
 /*$('.myDiv').click(function(e)
