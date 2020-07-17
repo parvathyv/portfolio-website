@@ -629,6 +629,21 @@ body.portfolio{
     color: #e62107;
 }
 
+.work_sections .describe p{
+    padding-top:2rem;
+}
+
+.modalbox img{
+    width:27%;
+    margin-right:2rem;
+    margin-top:2rem;
+    padding-top:0;
+   border-radius: 10px;
+   border:2px solid #EB560C;
+
+
+}
+
 /*.dark{
     background-color: #202020;
     color:#fff;

@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
         <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+       
     </head>
 
 
@@ -49,15 +52,15 @@
 
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a id="process_button" href="#sidebar_process">Process</a>
-              <a id="wireframe_button" href="#sidebar_low">Wireframes</a>
-              <a href="#sidebar_mood">Moodboard</a>
-              <a href="#sidebar_brand">Branding</a>
-              <a href="#sidebar_illus">Illustrations</a>
-              <a href="#sidebar_high">Polished Screens</a>
-              <a href="#sidebar_responsive">Responsive</a>
-              <a href="#gestures">Interactions</a>
-              <a href="#animation">Animation</a>
+              <a class="menu_button" href="#sidebar_process">Process</a>
+              <a class="menu_button" href="#sidebar_low">Wireframes</a>
+              <a class="menu_button" href="#sidebar_mood">Moodboard</a>
+              <a class="menu_button" href="#sidebar_brand">Branding</a>
+              <a class="menu_button" id="illus_button" href="#sidebar_illus">Illustrations</a>
+              <a class="menu_button" href="#sidebar_high">Polished Screens</a>
+              <a class="menu_button" href="#sidebar_responsive">Responsive</a>
+              <a class="menu_button" href="#gestures">Interactions</a>
+              <a class="menu_button" href="#sidebar_animation">Animation</a>
             </div>
             <span class="menubutton" onclick="openNav()">&#9776;</span>
             
@@ -82,7 +85,7 @@
                             <h3>Tools</h3>
                             <p>Photoshop, Sketch, Invision</p>
                         
-                            <a href="https://projects.invisionapp.com/prototype/Fitted-ck7vex1x0000efk01f8suit50/play/5d98deb3" class="button contact">View Prototype</a>
+                            <a id="sidebar_process" href="https://projects.invisionapp.com/prototype/Fitted-ck7vex1x0000efk01f8suit50/play/5d98deb3" class="button contact">View Prototype</a>
 
                         </div>
                     </div> 
@@ -92,88 +95,84 @@
 
 
 
-            <section id="sidebar_process" class="wrapper light">
+            <section  class="wrapper light">
                 <div class="work_sections">
                     <div class="describe">
                         
                         <h2>Process</h2>
 
-                        <p>User centered design was the focus for this app. I placed an emphasis on the users who are beginners and developed visual mood boards, and researched interactive web approaches. Then mapped out a user flow and began some quick sketching, which led to digitized wireframes and prototypes. I continued to refine the design based on feedback and research.</p>
+                     
 
                         <h3>User Flow & Sketches</h3>
-                        <img  src="img/fitted/Usersketches.png" alt="user">
-
+                    
+                        <!--<img  src="img/fitted/Usersketches.png" alt="user">-->
+                        <p id="sidebar_low">User centered design was the focus for this app. I placed an emphasis on the users who are beginners and developed visual mood boards, and researched interactive web approaches. Then mapped out a user flow and began some quick sketching, which led to digitized wireframes and prototypes. I continued to refine the design based on feedback and research.</p>
                     </div>    
                 </div>    
             </section>
 
 
-            <section id="sidebar_low" class="wrapper light">
+            <section  class="wrapper light">
                 <div class="work_sections">
-                    <div class="describe">
+                    <div class="describe modalbox">
                         
                         <h3>Low Fidelity Wireframes</h3>
 
-                        <p>Sketches were then digitized, and I began to get a feel for the architecture & design of the app.</p>
+                       
+                        <a data-fancybox="gallery" href="img/fitted/low_fidelity.png"><img src="img/fitted/Wireframe_small.png"></a>
 
-                        <img  src="img/fitted/low_fidelity.png" alt="user"> 
+                        
+                        <!--<img  src="img/fitted/low_fidelity.png" alt="user">--> 
+                        <p id="sidebar_mood">Analog sketches were then digitized to low fidelty wireframes. Through this, I began to get a feel for the architecture & design of the app.</p>
                     </div>    
                     
-                </div>    
-            </section>
-
-            <section id="sidebar_mood" class="wrapper light">
-                <div class="work_sections">
-                    <div class="describe">
-                        <h3>Moodboards</h3>
-                        <p>I drew inspiration from sources of flat design, bright colors and a desire for a high level of web interactivity for the moodboards</p>             
-                        <img  src="img/fitted/moodboard.png" alt="user">
-                    </div>    
-                    
-                </div>    
-            </section>
-
-            <section  id="sidebar_brand" class="wrapper light">
-                <div class="work_sections">
-                    <div class="describe">
-                        <h3>Logo</h3>
-                        <img  src="img/fitted/logo_fitted.png" alt="user">
-                    </div>    
                 </div>    
             </section>
 
             <section class="wrapper light">
                 <div class="work_sections">
-                    <div class="describe">
-                        <h3>Typography</h3>
+                    <div class="describe modalbox">
+                        <h3>Moodboards</h3>
+                               
+                        <a data-fancybox="gallery" href="img/fitted/moodboard1.png"><img src="img/fitted/moodboard1_small.png"></a>
+                        <a data-fancybox="gallery" href="img/fitted/moodboard2.png"><img src="img/fitted/moodboard2_small.png"></a>
+                        <p  id="sidebar_brand">I drew inspiration from sources of flat design, bright colors and a desire for a high level of web interactivity for the moodboards. My choice of colors was a blend of the two moodboards.</p>   
+                    </div>    
+                    
+                </div>    
+            </section>
+
+            <section class="wrapper light">
+                <div class="work_sections">
+                    <div class="describe modalbox">
+                        <h3>Logo, Typography & Color</h3>
+                       
+                        <a data-fancybox="gallery" href="img/fitted/moodboard1.png"><img src="img/fitted/moodboard1_small.png"></a>
+                        <a data-fancybox="gallery" href="img/fitted/moodboard2.png"><img src="img/fitted/moodboard2_small.png"></a>
+                        <a data-fancybox="gallery" href="img/fitted/moodboard2.png"><img src="img/fitted/moodboard2_small.png"></a>
                         <p>The primary typeface, Futura has an appearance of efficiency and forwardness and uses simple geometric forms: near-perfect circles, triangles 
                             and squares. It is also easy to read from a distance. Avenir, an organic interpretation of the geometric style, even in color and suitable for extended text is used for body copy and accents or moments of discovery.</p>
-                        <img  src="img/fitted/typeface_fitted.png" alt="user">
+                         
+                        <p id="sidebar_illus"> Since boldness was a big theme with the design, I used a complementary set of lively colors from the moodboards. These choices signify activity, positivity, peace and change.</p>
+                        
                     </div>    
                 </div>    
             </section>
 
-            <section class="wrapper light">
-                <div class="work_sections">
-                    <div class="describe">
-                        <h3>Color</h3>
-                        <p>Since boldness was a big theme with the design, I used a complementary set of lively colors from the moodboards. These choices signify activity, positivity, peace and change.  </p>
-                        <img src="img/fitted/color_fitted.png" alt="user">
-                    </div>    
-                </div>    
-            </section>
+         
 
-            <section id="sidebar_illus" class="wrapper light">
+            <section  class="wrapper light">
                 <div class="work_sections">
                     <div class="describe">
                         <h3>Illustrations</h3>
-                        <p>I used my own illustrations for this app, with heavy influence from flat(ish) design.</p>
+                        <p>I used my own illustrations for this app, with influence from flat(ish) design.</p>
                         <img  src="img/fitted/illus_fitted.png" alt="user">
+                        <p id="sidebar_high">Fitted makes use of illustrations liberally, with the idea of fun and ease behind the app.</p>
                     </div>    
                 </div>    
             </section>
 
-            <section id="sidebar_high" class="wrapper light">
+            <section class="wrapper light">
                 <div class="work_sections">
                     <div class="describe">
                         
@@ -181,7 +180,7 @@
 
                                    
                         <img  src="img/fitted/high_fidelity.png" alt="user">
-
+                         <p id="sidebar_responsive">Some polished screens from the final prototype.</p>
                     </div>    
                 </div>    
             </section>
@@ -205,7 +204,7 @@
                         
                         <h3>Interactions & Gestures</h3>
 
-                        <p>Interactivity and motion exploration were high priority for the design of this app. I explored different masking and animation techniques to best achieve the goals of making Fitted fun and easy to use.</p> 
+                        <p>Interactivity and motion exploration were high priority for the design of this app.</p> 
 
                         <div id="interactions">
                             <div ><img src="img/fitted/open.gif" alt="user"></div>
@@ -213,7 +212,8 @@
                             <div><img src="img/fitted/level.gif" alt="user"></div>
                             <div><img src="img/fitted/menu.gif" alt="user"></div>
                             
-                        </div>          
+                        </div>       
+                        <p id="sidebar_animation">I explored different masking and animation techniques to best achieve the goals of making Fitted fun and easy to use.</p>   
                      </div>            
                 </div>    
             </section>
@@ -312,6 +312,10 @@
     
 
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script src="js/main.js"></script>
+   
     <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </html>    

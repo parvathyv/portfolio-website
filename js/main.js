@@ -27,8 +27,20 @@ function closeNav() {
 }, 3000);*/
 
 
-var el = document.getElementById("process_button");
-el.addEventListener("click", function() {setTimeout(closeNavTimer() , 200)});
+var els = document.getElementsByClassName("menu_button");
+
+for(var i = 0; i < els.length; i++) {
+            var el = els[i];
+            el.addEventListener("click", function() {setTimeout(closeNavTimer() , 200)});
+        }
+
+
+/*el.addEventListener("click", function() {setTimeout(closeNavTimer() , 200)});
+
+var el1 = document.getElementById("wireframe_button");
+el.addEventListener("click", function() {setTimeout(closeNavTimer() , 200)});*/
+
+
 
 function closeNavTimer() {
   document.getElementById("mySidenav").style.width = "0";
