@@ -88,7 +88,10 @@ img {
   -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         1px 1px 1px 1px orange;
     }
-
+   
+    .vela_sidebar{
+    background-color: #055C76;
+    }
 
     .menubutton{
         margin-top:2rem;
@@ -109,8 +112,11 @@ img {
       text-decoration: none;
       font-size: 1.1rem;
       color: #fff;
+     
+       
+
       display: block;
-      transition: 0.3s;
+      transition:0.3s;
     }
 
     .sidenav a:hover {
@@ -639,9 +645,18 @@ body.portfolio{
     margin-top:2rem;
     padding-top:0;
    border-radius: 10px;
-   border:2px solid #EB560C;
+   border:1px solid #EB560C;
+   -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
 
 
+
+.modalbox img:hover{
+ webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  
 }
 
 /*.dark{
@@ -714,6 +729,8 @@ body.about{
 
 }
 
+
+
 #about_header .container{
     background-color: #5B0130;
     width:100%;
@@ -725,6 +742,30 @@ body.about{
     overflow:hidden;
 
 }
+.content_img{
+   
+    width:100%;
+     background: #36001C;
+
+}
+.content_img div{
+width:80%;
+ margin: 0 auto;
+
+ bottom: 20%;
+ left:0 ;
+
+ color: white;
+ padding-bottom:3rem;
+
+ font-size:16px;
+
+
+
+}
+
+
+
 .row{
     flex:50%;
 }
@@ -850,7 +891,7 @@ body.about{
     }
     .about img{
         margin-top:0;
-        padding-top:3rem;
+       
     }
     
     /*h1{
@@ -1080,7 +1121,11 @@ body.about{
     main{
         padding-top:5rem;
     }
- 
+    
+    .about img{
+        margin-top:0;
+        padding-top:3rem;
+    }
 
     /*.feather_illus {
         width: 80%;
@@ -1400,4 +1445,12 @@ body.about{
     0% {  opacity:0.1; }
     99%{opacity:0.1;}
     100% { opacity:1; }
+}
+
+
+
+
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
 }
