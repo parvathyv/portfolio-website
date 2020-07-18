@@ -84,13 +84,13 @@ img {
       transition: 0.5s;
 
       padding-top: 60px;
-      webkit-box-shadow: 1px 1px 1px 1px orange;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         1px 1px 1px 1px orange;
+      /*webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 
+     box-shadow:         1px 1px 1px 1px #ccc;*/
     }
    
     .vela_sidebar{
-    background-color: #055C76;
+    background-color: #02212A;
     }
 
     .menubutton{
@@ -106,6 +106,10 @@ img {
         font-size:1.5em;
         color:#00873D;
     }
+
+   #vela .menubutton{
+     color:#055C76;
+   }
 
     .sidenav a {
       padding: 8px 8px 8px 32px;
@@ -589,6 +593,8 @@ body.work{
 #phase1{
     margin-top:3rem;
 }
+
+
 ul{
     padding-inline-start:15px;
 }
@@ -640,8 +646,8 @@ body.portfolio{
 }
 
 .modalbox img{
-    width:27%;
-    margin-right:2rem;
+    width:30%;
+    margin-right:1rem;
     margin-top:2rem;
     padding-top:0;
    border-radius: 10px;
@@ -651,7 +657,23 @@ body.portfolio{
 
 }
 
+.modalbox.one img{
+     width:70%;
+     margin-right:1rem;
+   
+}
 
+.modalbox.two img{
+     width:45%;
+     margin-right:1rem;
+   
+}
+
+.modalbox.four img{
+     width:23%;
+     margin-right:0.5rem;
+   
+}
 
 .modalbox img:hover{
  webkit-transform: scale(1.2);
@@ -721,7 +743,9 @@ body.portfolio{
 #animation{
     padding-bottom:3rem;
 }
-
+#vela .skills h3{
+    color:#fff;
+}
 
 /*About*/
 body.about{

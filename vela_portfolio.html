@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
         <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     </head>
 
 
@@ -48,17 +50,17 @@
 
             <div id="mySidenav" class="sidenav vela_sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a class="menu_button" href="#sidebar_process">Process</a>
-              <a class="menu_button" href="#sidebar_low">Research</a>
-              <a class="menu_button" href="#sidebar_mood">Journey Mapping</a>
-              <a class="menu_button" href="#sidebar_brand">Branding</a>
-              <a class="menu_button" id="illus_button" href="#sidebar_illus">Wireframes</a>
-              <a class="menu_button" href="#sidebar_high">Testing</a>
-              <a class="menu_button" href="#sidebar_responsive">Branding</a>
-              <a class="menu_button" href="#sidebar_responsive">Illustrations</a>
-            <a class="menu_button" href="#sidebar_responsive">Polished Screens</a>
-              <a class="menu_button" href="#gestures">Interactions</a>
-              <a class="menu_button" href="#sidebar_animation">Animation</a>
+              <a class="menu_button" href="#sidebar_vela_process">Process</a>
+              <a class="menu_button" href="#sidebar_research">Research</a>
+              <a class="menu_button" href="#sidebar_vela_map">Journey Mapping</a>
+           
+              <a class="menu_button" id="illus_button" href="#sidebar_vela_wireframes">Wireframes</a>
+              <a class="menu_button" href="#sidebar_vela_testing">Testing</a>
+              <a class="menu_button" href="#sidebar_vela_branding">Branding</a>
+              <a class="menu_button" href="#sidebar_vela_illus">Illustrations</a>
+              <a class="menu_button" href="#sidebar_vela_screens">Polished Screens</a>
+              <a class="menu_button" href="#sidebar_vela_gestures">Interactions</a>
+              <a class="menu_button" href="#sidebar_vela_animation">Animation</a>
             </div>
             <span class="menubutton" onclick="openNav()">&#9776;</span>
 
@@ -81,7 +83,7 @@
                         <h3>Tools</h3>
                         <p>Photoshop, Sketch, Invision</p>
                     
-                        <a href="https://drive.google.com/file/d/17CBziSg5e_nuVQnSlFhxRX5CSJgMxxyY/view?usp=sharing" target="blank" class="button contact">View Prototype</a>
+                        <a  href="https://drive.google.com/file/d/17CBziSg5e_nuVQnSlFhxRX5CSJgMxxyY/view?usp=sharing" target="blank" class="button contact">View Prototype</a>
 
                     </div>
                 </div>    
@@ -90,6 +92,7 @@
             <section class="containerfull">
 
                 <img src="img/vela/screens.png" alt="vela" >
+               
             </section>   
 
 
@@ -162,7 +165,7 @@
                                     <li>Peer Review</li>
                                     <li> Iteration</li>
                                     <li>Style Guide</li>
-                                    <li>Polished Prototype</li>
+                                    <li id="sidebar_research">Polished Prototype</li>
                                 </ul>
                             </div>
                         </div> <!-- close light blue development skills container -->
@@ -173,15 +176,20 @@
 
             <section id="research" class="wrapper light">
                 <div class="work_sections">
-                    <div class="describe">
+                    <div class="describe modalbox four">
                         
                         <h2>Research</h2>
 
-                        <p>I carried out detailed research into the subjects of water based sports and weather forecasts, looked at existing apps on the market and conducted user surveys and interviews to gain an understanding of the persona that the app is aimed at.</p>
+                       
+                        <h3>SWOT Analysis, Affinity Maps & User Personas</h3>
+                            <a data-fancybox="gallery" href="img/vela/vela_problem.png"><img src="img/vela/vela_problem_small.png"></a>
+                            <a data-fancybox="gallery" href="img/vela/swot_vela.png"><img src="img/vela/swot_small.png"></a>
 
-                        <h3>SWOT Analysis, Affinity Maps & User personas</h3>
-                        <img  src="img/vela/swot.png" alt="user">
-                        <img  src="img/vela/user_personas.png" alt="user">
+                            <a data-fancybox="gallery" href="img/vela/affinity_map.png"><img src="img/vela/affinity_map_small.png"></a>
+                            <a data-fancybox="gallery" href="img/vela/user_persona.png"><img src="img/vela/user_persona_small.png"></a>
+                       
+                         <p id="sidebar_vela_map">I carried out detailed research into the subjects of water based sports and weather forecasts, looked at existing apps on the market and conducted user surveys and interviews to gain an understanding of the persona that the app is aimed at.</p>
+
 
                     </div>    
                 </div>    
@@ -189,15 +197,19 @@
 
             <section id="journey" class="wrapper light">
                 <div class="work_sections">
-                    <div class="describe">
+                    <div class="describe modalbox">
                         
                         <h2>Journey Mapping</h2>
 
-                        <p> I created maps that would help determine user interactions and possible path with app screens, both individually and as a whole. This process also helped me consider the structure and layout that would be necessary for specific screens.</p>
+                        
 
                         <h3>SiteMaps, User Flows & User Journeys</h3>
                         
-                        <img  src="img/vela/sitemap.png" alt="user">
+                         <a data-fancybox="gallery" href="img/vela/vela_problem.png"><img src="img/vela/vela_problem_small.png"></a>
+                            <a data-fancybox="gallery" href="img/vela/vela_problem.png"><img src="img/vela/vela_problem_small.png"></a>
+
+                            <a data-fancybox="gallery" href="img/vela/affinity_map.png"><img src="img/vela/affinity_map_small.png"></a>
+                        <p id="sidebar_vela_wireframes"> I created maps that would help determine user interactions and possible path with app screens, both individually and as a whole. This process also helped me consider the structure and layout that would be necessary for specific screens.</p>
 
                     </div>    
                 </div>    
@@ -210,10 +222,11 @@
                         
                         <h3>Sketches & Wireframes</h3>
 
-                        <p>Once all the features and functionality were figured out, I began a visualization of the app with quick sketches. In an iterative process, these sketches were digitized into lo-fi wireframes.  Then I continued to refine the IA and components of each screen. </p>
-
+                       
                         <img  src="img/vela/sketches.png" alt="user">
-                        <img  src="img/vela/low_fidelity.png" alt="user"> 
+                        <img  src="img/vela/low_fidelity.png" alt="user">
+                         <p id="sidebar_vela_testing" >Once all the features and functionality were figured out, I began a visualization of the app with quick sketches. In an iterative process, these sketches were digitized into lo-fi wireframes.  Then I continued to refine the IA and components of each screen. </p>
+ 
                     </div>    
                     
                 </div>    
@@ -223,8 +236,9 @@
                 <div class="work_sections">
                     <div class="describe">
                         <h3>Testing</h3>
-                        <p>I tested the prototype with users to get a sense of the ease of use and the product experience. I also conducted Preference tests to nail down the design theme. I continued refining the prototype based on user feedback.</p>             
+                           
                         <img  src="img/vela/test.png" alt="user">
+                         <p id="sidebar_vela_branding">I tested the prototype with users to get a sense of the ease of use and the product experience. I also conducted Preference tests to nail down the design theme. I continued refining the prototype based on user feedback.</p>         
                     </div>    
                     
                 </div>    
@@ -240,7 +254,7 @@
                         <p>The primary typeface, Futura has an appearance of efficiency and forwardness and uses simple geometric forms: near-perfect circles, triangles 
                             and squares. It is also easy to read from a distance. Avenir, an organic interpretation of the geometric style, even in color and suitable for extended text is used for body copy and accents or moments of discovery.</p>
                         <h3>Color</h3>    
-                        <img  src="img/vela/typecolor.png" alt="user">
+                        <img id="sidebar_vela_illus" src="img/vela/typecolor.png" alt="user">
                     </div>    
                 </div>    
             </section>
@@ -250,8 +264,9 @@
             <section  class="wrapper light">
                 <div class="containerfull">
                     <h3> Illustrations</h3>
-                    <p>Illustrations are not a big part of Vela, but can be used sparingly for a touch of lightness as required.</p>
+                   
                     <img src="img/vela/illus.png" alt="vela" >
+                     <p id="sidebar_vela_screens">Illustrations are not a big part of Vela, but can be used sparingly for a touch of lightness as required.</p>
                 </div>   
             </section>
 
@@ -259,6 +274,7 @@
                 <div class="containerfull">
                     <h3> High Fidelity Screens</h3>
                     <img src="img/vela/scr3.png" alt="vela" >
+                     <p id="sidebar_vela_gestures">Some polished screens.</p>
                 </div>
             </section>   
 
@@ -271,7 +287,7 @@
                         
                         <h3>Interactions & Gestures</h3>
 
-                        <p> I incorporated interactions and gestures to make use of the mobile platform and to add a touch of lightness to the app.</p> 
+                     
 
                         <div id="interactions">
                             <div ><img src="img/vela/onboarding.gif" alt="user"></div>
@@ -279,7 +295,8 @@
                             <div><img src="img/vela/waves.gif" alt="user"></div>
                            
                             
-                        </div>          
+                        </div>  
+                           <p id="sidebar_vela_animation"> I incorporated interactions and gestures to make use of the mobile platform and to add a touch of lightness to the app.</p>         
                      </div>            
                 </div>    
             </section>
@@ -408,6 +425,10 @@
     
 
     </body>
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script src="js/main.js"></script>
+   
     <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </html>    
