@@ -694,6 +694,9 @@ body.portfolio{
   
 }
 
+#wireframe .modalbox img{
+    margin-bottom:0;
+}
 /*.dark{
     background-color: #202020;
     color:#fff;
@@ -1467,6 +1470,7 @@ width:80%;
     stroke:#fff;
     fill:none;
 }*/
+
 #Skyline{
     animation: title_in 3s ease-in;
 }
@@ -1480,8 +1484,6 @@ width:80%;
  animation:glow-in 25s linear;
 }
 
-
-
 @keyframes glow_in {
     0% {  opacity:0.1; }
     99%{opacity:0.1;}
@@ -1489,9 +1491,58 @@ width:80%;
 }
 
 
+#q1{
+    animation:pop 1s linear;
+    animation-delay:200ms;
+}
+#marker2{
+    animation:hide_item 3s linear;
+}
+#a1{
+    animation:pop 1s linear;
+    animation-delay:1400ms;
+}
+/*
+
+#marker1{
+    animation-name: hide_item, pop;
+    animation-duration: 4s, 1s;
+    animation-delay: 0s,4s; /* add this 
+    animation-timing-function: linear, linear;
+    animation-iteration-count:1,1;
+
+}
 
 
-    
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
+/*#marker2{
+    animation:pop 1s linear;
+    animation-delay:4s;
+
+}
+
+#marker3{
+    animation:pop 1s linear;
+    animation-delay:6s;
+
+}
+
+#marker4{
+    animation:pop 1s linear;
+    animation-delay:8s;
+
+}
+#marker5{
+    animation:pop 1s linear;
+    animation-delay:10s;
+
+}*/
+
+@keyframes pop {
+    0% {  opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes hide_item {
+    0% {  opacity:0; }
+    100% { opacity:0; }
 }
