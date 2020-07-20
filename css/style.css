@@ -526,6 +526,11 @@ body.work{
     padding:0 0 0 0;
 }
 
+#vela_work_intro{
+    padding-top:6rem;
+    padding-bottom:8rem;
+}
+
 #work1_fitted .button,#work1_vela .button,#work_intro .button,#vela_work_intro .button{
     margin-top:1.5rem;
     width:200px;
@@ -535,6 +540,7 @@ body.work{
     background: transparent;
     border:1px solid #2da8f0;
     color:#2da8f0;
+
 }
 
 
@@ -568,7 +574,8 @@ body.work{
 #vela_process.wrapper{
     background-color: white;
     height:auto;
-    padding-bottom:4rem;
+    padding-bottom:2rem;
+    padding-top:10rem;
    
 }
 
@@ -626,8 +633,8 @@ body.portfolio{
 .work_sections{
     width:60%;
     margin:0 auto;
-    padding-top:4rem;
-    padding-bottom:4rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
  
 }
 .work_sections img{
@@ -642,7 +649,10 @@ body.portfolio{
 }
 
 .work_sections .describe p{
-    padding-top:2rem;
+    padding-top:1rem;
+}
+#logo_vela h3{
+    padding-top: 1rem;
 }
 
 .modalbox img{
@@ -657,6 +667,9 @@ body.portfolio{
 
 }
 
+#vela .modalbox img{
+      border:1px solid #035D7D;
+}
 .modalbox.one img{
      width:70%;
      margin-right:1rem;
@@ -692,7 +705,7 @@ body.portfolio{
     background-color: white;
     
     height:100%;
-    border-bottom:0.5px solid gray;
+  
 }
 
 #vela .light{
@@ -829,6 +842,10 @@ width:80%;
     padding:0 0 0 0;
 }
 
+ .portfolio .wrapper{
+        padding-bottom:0.5rem;
+        padding-top:0.5rem;
+    }
 
 @media screen and (min-width: 1201px) {
     .containerfull{
@@ -956,7 +973,7 @@ width:80%;
     
     .portfolio .wrapper{
         padding-bottom:2rem;
-        padding-top:2rem;
+        padding-top:6rem;
     }
 
     .portfolio .button.contact:visited{
