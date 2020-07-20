@@ -13,9 +13,20 @@ function myFunction() {
 
 }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+/*function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}*/
+function openSidebar(x) {
+  if (x.matches) { // If media query matches
+     document.getElementById("mySidenav").style.width = "150px";
+  } else {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
 }
+
+var x = window.matchMedia("(max-width: 500px)")
+openSidebar(x); // Call listener function at run time
+x.addListener(openSidebar); 
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -40,7 +51,6 @@ function closeNavTimer() {
         xpos =this.scrollX;
      	
 }, false);*/
-
 
 
 console.log("Hello. Welcome to my UX/UI portfolio website!")
