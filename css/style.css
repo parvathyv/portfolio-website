@@ -72,67 +72,64 @@ img {
     width: 100%;
 }
 
-    .sidenav {
-      height: 100vh;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 15vh;
-      left: 0;
-      background-color: #EB3C0C;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-bottom:1rem;
-      padding-top: 40px;
-      /*webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 
-     box-shadow:         1px 1px 1px 1px #ccc;*/
-    }
-   
-    .vela_sidebar{
+.sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 15vh;
+    left: 0;
+    background-color: #EB3C0C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-bottom:1rem;
+    padding-top: 40px;
+    /*webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 
+    box-shadow:         1px 1px 1px 1px #ccc;*/
+}
+
+.vela_sidebar{
     background-color: #02212A;
-    }
+}
 
-    .menubutton{
-        margin-top:2rem;
-        padding-left:0.5rem;
-        padding-right:0.5rem;
-        position: fixed;
-        top: 15vh;
-        /*border-radius:50%;
-        border:2px solid #00873D;*/
-        left:3rem;
-        cursor:pointer;
-        font-size:1.5em;
-        color:#00873D;
-    }
+.menubutton{
+    margin-top:2rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    position: fixed;
+    top: 15vh;
+    /*border-radius:50%;
+    border:2px solid #00873D;*/
+    left:3rem;
+    cursor:pointer;
+    font-size:1.5em;
+    color:#12EE98;
+}
 
-   #vela .menubutton{
-     color:#055C76;
-   }
+#vela .menubutton{
+    color:#055C76;
+}
 
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      color: #fff;
-     
-       
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    display: block;
+    transition:0.3s;
+}
 
-      display: block;
-      transition:0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 .col1.story p, .col1.story h1{
     width:100%;
@@ -224,7 +221,6 @@ main{
 
 .feather_illus{
     align-self:flex-end;
-    
     width:50%;height:100%;
 }
 
@@ -526,7 +522,7 @@ body.work{
     padding:0 0 0 0;
 }
 
-#vela_work_intro{
+#vela_work_intro,#work_intro{
     padding-top:6rem;
     padding-bottom:8rem;
 }
@@ -549,8 +545,6 @@ body.work{
     flex-direction: column;
     justify-content: center;
     width:50%;
-   
-  
 }
 
 .work_image img{
@@ -574,8 +568,8 @@ body.work{
 #vela_process.wrapper{
     background-color: white;
     height:auto;
-    padding-bottom:2rem;
-    padding-top:10rem;
+    padding-bottom:7rem;
+    padding-top:8em;
    
 }
 
@@ -633,8 +627,8 @@ body.portfolio{
 .work_sections{
     width:60%;
     margin:0 auto;
-    padding-top:2rem;
-    padding-bottom:2rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
  
 }
 .work_sections img{
@@ -660,20 +654,21 @@ body.portfolio{
     margin-right:1rem;
     margin-top:2rem;
     padding-top:0;
-   border-radius: 10px;
-   border:1px solid #EB560C;
-   -webkit-transition: .3s ease-in-out;
+    border-radius: 10px;
+    border:1px solid #EB560C;
+    -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 
 }
 
 #vela .modalbox img{
-      border:1px solid #035D7D;
+    border:1px solid #035D7D;
 }
+
 .modalbox.one img{
      width:70%;
      margin-right:1rem;
-   
+
 }
 
 .modalbox.two img{
@@ -689,7 +684,7 @@ body.portfolio{
 }
 
 .modalbox img:hover{
- webkit-transform: scale(1.2);
+    webkit-transform: scale(1.2);
     transform: scale(1.2);
   
 }
@@ -769,8 +764,6 @@ body.about{
 
 }
 
-
-
 #about_header .container{
     background-color: #5B0130;
     width:100%;
@@ -789,19 +782,16 @@ body.about{
 
 }
 .content_img div{
-width:80%;
- margin: 0 auto;
+    width:80%;
+    margin: 0 auto;
 
- bottom: 20%;
- left:0 ;
+    bottom: 20%;
+    left:0 ;
 
- color: white;
- padding-bottom:3rem;
+    color: white;
+    padding-bottom:3rem;
 
- font-size:16px;
-
-
-
+    font-size:16px;
 }
 
 
@@ -845,18 +835,39 @@ width:80%;
     padding:0 0 0 0;
 }
 
- .portfolio .wrapper{
-        padding-bottom:0.5rem;
-        padding-top:0.5rem;
-    }
+.portfolio .wrapper{
+    padding-bottom:3rem;
+    padding-top:2rem;
+    border-bottom:0.5px dashed gray;
+}
+
+.portfolio h1{
+    font-size:2em;
+
+}
+.portfolio h2{
+    font-size:1.5em;
+
+}
+
+.portfolio h3{
+    font-size:1.2em;
+
+}
+
+.portfolio h4{
+    font-size:1em;
+
+}
+
 
 @media screen and (min-width: 1201px) {
     .containerfull{
         padding-top:2rem;
     }
     .containerfull h3, .containerfull p {
-    margin-left:28vh;
-    padding-bottom: 1rem;
+        margin-left:28vh;
+        padding-bottom: 1rem;
     }
 }
 
@@ -865,11 +876,11 @@ width:80%;
   
     #intro .container
     {
-    height:80vh;
-    background-color:#000813;
-    position:relative;
-    display:flex;
-    flex-flow:column wrap;
+        height:80vh;
+        background-color:#000813;
+        position:relative;
+        display:flex;
+        flex-flow:column wrap;
     }
 
     .container.navbar{
@@ -894,7 +905,7 @@ width:80%;
 
     .grid_work{
         height:auto;
-         font-size:14px;
+        font-size:14px;
 
 
     }
@@ -1022,12 +1033,24 @@ width:80%;
        padding:0 0 0 32px;
     }
     .sidenav .closebtn {
-    top:-2rem;
-    right: 15px;
-    font-size: 36px;
-    margin-left: 15px;
-}
-
+        top:-2rem;
+        right: 15px;
+        font-size: 36px;
+        margin-left: 15px;
+    }
+    .portfolio .wrapper {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    #vela_work_intro, #work_intro{
+        padding-bottom: 4rem;
+        padding-top: 3rem;
+    }
+    #vela_process.wrapper {
+        
+        padding-bottom: 6em;
+        padding-top: 5em;
+    }
 }
 
 
@@ -1069,11 +1092,11 @@ width:80%;
        padding:0 0 0 32px;
     }
     .sidenav .closebtn {
-    top:-2rem;
-    right: 15px;
-    font-size: 28px;
-    margin-left: 15px;
-}
+        top:-2rem;
+        right: 15px;
+        font-size: 28px;
+        margin-left: 15px;
+    }
 
     
 
@@ -1179,6 +1202,35 @@ width:80%;
         width: 100%;
     }
 
+    .modalbox img{
+        width:28%;
+        margin-right:1rem;
+        margin-top:2rem;
+    }
+
+  
+    .modalbox.one img{
+         width:70%;
+         margin-right:1rem;
+       
+    }
+
+    .modalbox.two img{
+         width:40%;
+         margin-right:1rem;
+       
+    }
+
+    .modalbox.four img{
+         width:22%;
+         margin-right:0.5rem;
+       
+    }
+    .menubutton{
+        font-size:1.3em;
+    }
+
+       
 }
 
 @media screen and (max-width: 500px) {
@@ -1196,52 +1248,85 @@ width:80%;
         padding-top:3rem;
     }
 
-    /*.feather_illus {
-        width: 80%;
-    }*/
-
+    .containerfull{
+        margin-top:-2em;
+    }
     .container.navbar{
         height:12vh;
     }
     .describe h1{
-        font-size:2.5em;
+        font-size:1.7em;
     }
 
     #about_skills .container {
         margin-top: 1rem;
         padding-top: 1rem;
         padding-bottom: 2rem;
+       
     }
 
     #about_skills h3,#about_skills h4{
-        padding-bottom:0;
+        padding-top:1rem;
+        padding-bottom:1rem;
         margin-block-start: 0; 
         margin-block-end: 0;
     }
+    .profile.skills{
+       font-size:10px;
+        
+    }
+    .row{
+        padding-left:0.2rem;
+    }
 
+    .portfolio .wrapper {
+        padding-bottom:1rem;
+        padding-top:0;
+    }
 
-    .portfolio .wrapper,.work_sections {
-        padding-bottom: 0.5rem;
+    #work_intro{
+        padding-top:2rem;
+        padding-bottom:2rem;
     }
     .work_sections{
         width:80%;
+        padding-bottom:0.5rem;
     }
 
 
     #work1_fitted{
         padding-bottom:2rem;
     }
+    #work1_fitted.wrapper {
+        padding-top:0;
+    
+    }
+    #work1_vela{
+        padding-top:0;
+        padding-bottom:2rem;
+    }
     #work1_fitted .describe, #work1_vela .describe {
         padding-right: 0;
         width:auto;
     }
+    #work1_fitted .button, #work1_vela .button, #work_intro .button, #vela_work_intro .button {
+        margin-top: 1.5rem;
+        width: 125px;
+        color:orange;
+    }
 
+   #work1_fitted .button:visited {
+        color:#fff;
+        
+  
+    }
     .my-video-dimensions {
         width: 320px;
         height: 200px;
     }
     .grid_work{
         font-size:12px;
+        padding-bottom:2rem;
 
     }
     .containerfull h3,.containerfull p{
@@ -1249,21 +1334,49 @@ width:80%;
         width:80%;
 
     }
+    .content_img div{
+        font-size:12px;
+    }
     .menubutton {
-    margin-top: 0.5rem;
-    top:12vh;
-    left:0.5rem;
-    
-    font-size: 1.1em;
+        margin-top: 0rem;
+        top:13vh;
+        left:0.3rem;
+        
+        font-size: 1.1em;
   
-}
-.sidenav{
-    width:150px;
-    top:12vh;
-}
-.sidenav a{
-    padding-left:15px;
-}
+    }
+    .sidenav{
+        
+        top:12vh;
+    }
+    .sidenav a{
+        padding-left:15px;
+    }
+    .modalbox img{
+        width:25%;
+        margin-right:1rem;
+        margin-top:2rem;
+    }
+
+  
+    .modalbox.one img{
+         width:45%;
+         margin-right:1rem;
+       
+    }
+
+    .modalbox.two img{
+        width:38%;
+        margin-right:1rem;
+       
+    }
+
+    .modalbox.four img{
+        width:20%;
+        margin-right:0.5rem;
+       
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -1355,11 +1468,11 @@ width:80%;
 }
 
 @keyframes meditate_move {
-  0% {transform: translate(73px,480px);}
-  2%{transform: translate(73px,380px);}
-   20%{transform: translate(73px,280px);}
+    0% {transform: translate(73px,480px);}
+    2%{transform: translate(73px,380px);}
+    20%{transform: translate(73px,280px);}
 
-  100% {transform: translate(73px,-100px);}
+    100% {transform: translate(73px,-100px);}
 }
 
 

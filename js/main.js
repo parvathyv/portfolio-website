@@ -17,16 +17,23 @@ function myFunction() {
   document.getElementById("mySidenav").style.width = "250px";
 }*/
 function openSidebar(x) {
+
   if (x.matches) { // If media query matches
-     document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("mySidenav").style.width = "150px";
   } else {
       document.getElementById("mySidenav").style.width = "250px";
   }
 }
 
-var x = window.matchMedia("(max-width: 500px)")
-openSidebar(x); // Call listener function at run time
-x.addListener(openSidebar); 
+
+
+function openNav(){
+  var x = window.matchMedia("(max-width: 500px)");
+  if(document.getElementById("menubutton")){
+    openSidebar(x);
+  }
+};
+
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
