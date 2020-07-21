@@ -29,7 +29,7 @@ function openSidebar(x) {
 
 function openNav(){
   var x = window.matchMedia("(max-width: 500px)");
-  if(document.getElementById("menubutton")){
+  if(document.getElementById("menubutton")||document.getElementById("menubutton_vela")){
     openSidebar(x);
   }
 };
