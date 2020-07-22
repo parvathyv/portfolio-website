@@ -1646,10 +1646,10 @@ a.button.portfolio_vela:active{
    
 }
 
-.meditate{
+.animate_test{
      animation: meditate_move 10s linear;
      animation-delay:0.4s;
-     animation-iteration-count: 5;
+     animation-iteration-count: 2;
 }
 
 @keyframes meditate_move {

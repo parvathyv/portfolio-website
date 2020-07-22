@@ -121,4 +121,21 @@ $('a[href*="#"]')
     }
 });
 
+/*var y=screen.height;
+var z= ((15*y)/100-1);
+// Animation on scroll
+$(window).scroll(function () {
+    $('.meditate').each(function () {
+        console.log(z+' '+y);
+        console.log($(window).scrollTop());
+        if ($(window).scrollTop()>(y+z) && $(window).scrollTop()<(2*y)) {
+                $(this).addClass("animate_test");
+            } else {
+                $(this).removeClass("animate_test");
+            }
+    });
+});*/
+
+
+
 console.log("Hello. Welcome to my UX/UI portfolio website!")
