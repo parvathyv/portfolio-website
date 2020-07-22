@@ -58,7 +58,7 @@ a {
     text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-    color: #830F72;
+    color: orange;
 }
 a:hover, a:focus {
     color: #cc6540;
@@ -151,6 +151,7 @@ img {
 
 #intro.wrapper{
     background-color:#000813;
+   
 }
 .container{
     margin-top:0;
@@ -527,17 +528,6 @@ body.work{
     padding-bottom:8rem;
 }
 
-#work1_fitted .button,#work1_vela .button,#work_intro .button,#vela_work_intro .button{
-    margin-top:1.5rem;
-    width:200px;
-}
-
-#vela_work_intro .button{
-    background: transparent;
-    border:1px solid #2da8f0;
-    color:#2da8f0;
-
-}
 
 
 .work_image {
@@ -637,10 +627,6 @@ body.portfolio{
 .work_sections p,h2,h3,h4{
     padding:0 0 0 0;
 }
-.work_sections .button.contact:visited {
-    border: 1px solid #e62107;
-    color: #e62107;
-}
 
 .work_sections .describe p{
     padding-top:1rem;
@@ -684,8 +670,8 @@ body.portfolio{
 }
 
 .modalbox img:hover{
-    webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    webkit-transform: scale(1.1);
+    transform: scale(1.1);
   
 }
 
@@ -720,8 +706,11 @@ body.portfolio{
 #fitted h2,#fitted h3,#fitted h4{
     color:#00873D;
 }
-#vela h2,#vela h3,#vela h4{
+#vela h3,#vela h4{
     color:#238EB6;
+}
+#vela h2{
+    color:#03506D;
 }
 
 #gestures img,#wireframe img,#high_fidelity img{
@@ -776,7 +765,7 @@ body.about{
 
 }
 .content_img{
-   
+    font-size:12px;
     width:100%;
      background: #36001C;
 
@@ -860,6 +849,130 @@ body.about{
 
 }
 
+a.button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    display:inline-block;
+    width:200px;
+    border-radius: 15px; 
+    margin-top:3rem;
+    padding: 10px;
+    font-size:1em; 
+    font-weight:400;   
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.button.resume:visited{
+    background: linear-gradient(to bottom, #ff6699 0%, #ff3399 100%);
+    color:#fff;
+
+    font-weight:700;
+}
+
+.about a:visited{
+    color:#FB5B7D;
+}
+
+#home a:visited{
+    color:#3B87F8;
+}
+.work a:visited{
+     color:#F6C00B;
+}
+#vela a:visited{
+     color:#3B87F8;
+}
+
+a.button.resume:hover,a.button.resume:focus{
+    background-color:#EC1D49;
+    text-decoration:none;
+    color:#fff;
+}
+
+a.button.resume:active{
+    background-color:#36001C;
+}
+
+
+a.button.learn_fitted:visited{
+    background: linear-gradient(to bottom, #F43710 0%, #A92201 100%);
+    color:#F6C00B;
+    font-weight:700;
+}
+
+a.button.learn_fitted:hover,a.button.learn_fitted:focus{
+    background-color:#F43710;
+    text-decoration:none;
+    color:#fff;
+}
+
+a.button.learn_fitted:active{
+    background-color:#A92201;
+    color:#fff;
+}
+
+
+a.button.learn_vela:visited{
+    background: linear-gradient(to bottom, #0EB5F4 0%, #036C93 100%);
+    color:#036C93;
+    font-weight:700;
+}
+
+a.button.learn_vela:hover,a.button.learn_vela:focus{
+    background-color:#0EB5F4;
+    text-decoration:none;
+    color:#fff;
+}
+
+a.button.learn_vela:active{
+    background-color:#036C93;
+    color:#fff;
+}
+
+a.button.portfolio_fitted{
+    border:2px solid #F43710;
+}
+
+a.button.portfolio_fitted:visited{
+    background: linear-gradient(to bottom, #F43710 0%, #A92201 100%);
+    color:#F6C00B;
+    font-weight:700;
+}
+
+a.button.portfolio_fitted:hover,a.button.learn_fitted:focus{
+    background-color:#F43710;
+    text-decoration:none;
+    color:#fff;
+}
+
+a.button.portfolio_fitted:active{
+    background-color:#A92201;
+    color:#fff;
+}
+
+a.button.portfolio_vela{
+    border:2px solid #036C93;
+}
+
+a.button.portfolio_vela:visited{
+    background: linear-gradient(to bottom, #0EB5F4 0%, #036C93 100%);
+    color:#F6C00B;
+    font-weight:700;
+}
+
+a.button.portfolio_vela:hover,a.button.learn_vela:focus{
+    background-color:#0EB5F4;
+    text-decoration:none;
+    color:#fff;
+}
+
+a.button.portfolio_vela:active{
+    background-color:#036C93;
+    color:#fff;
+}
 
 @media screen and (min-width: 1201px) {
     .containerfull{
@@ -905,7 +1018,7 @@ body.about{
 
     .grid_work{
         height:auto;
-        font-size:14px;
+        font-size:15px;
 
 
     }
@@ -926,7 +1039,7 @@ body.about{
     }
 
     .menu a{
-        padding:0.8rem;
+        padding:0.7rem;
 
     }
 
@@ -970,7 +1083,7 @@ body.about{
         width:50%;
     }
 
-    #work1_fitted h2, h3, p,h4 button,a {
+    #work1_fitted h2, h3, p,h4,a {
         margin-block-start: 1em;
         margin-block-end: 1em;
     }
@@ -990,18 +1103,14 @@ body.about{
         padding-top:6rem;
     }
 
-    .portfolio .button.contact:visited{
-        color:#EB560C;
-        background: transparent;
-        border:1px solid #EB560C;
-    }
+  
 
 }
 
 @media screen and (max-width: 1024px) {
 
     body{
-        font-size:14px;
+        font-size:15px;
     }
     .my-video-dimensions {
         width: 600px;
@@ -1016,7 +1125,9 @@ body.about{
         padding-right:0;
   
     }
-
+    #intro.wrapper{
+      padding-bottom:4rem;
+    }  
      .work_sections{
         width:70%;
         padding-top:1rem;
@@ -1050,6 +1161,9 @@ body.about{
         
         padding-bottom: 6em;
         padding-top: 5em;
+    }
+    .col1.story h1{
+        font-size:1.8em;
     }
 }
 
@@ -1123,7 +1237,7 @@ body.about{
         padding-right:2rem;
     }
 
-    .menu {
+    /*.menu {
         font-weight: 400;
         font-size: 1.1em;
         display: flex;
@@ -1138,7 +1252,7 @@ body.about{
     }
 
     /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
-    (display the links vertically instead of horizontally) */
+    (display the links vertically instead of horizontally) 
 
     .menu.responsive {position: relative;}
 
@@ -1147,7 +1261,7 @@ body.about{
         display: block;
         padding:0.7rem;
         text-align: right;
-    }
+    }*/
 
 
 
@@ -1177,26 +1291,17 @@ body.about{
         width:auto;
     }
     .grid_work{
-    font-size:14px;
+    font-size:16px;
     
     }
-    .fa{
-        border:0px;
-        margin:0;
-        padding:0;
-    }
+    
        .work_image {
     
      display: block; 
     
      width: auto; 
     }
-    #work1_fitted .button.contact, #work1_vela .button.contact{
-        width:150px;
-        margin-left:auto;
-        margin-right:auto;
-    
-    }
+   
     #work1_fitted .describe, #work1_vela .describe {
         padding-right: 0;
         width: 100%;
@@ -1233,6 +1338,35 @@ body.about{
        
 }
 
+/*@media screen and(max-width:641px){
+    .menu {
+        font-weight: 400;
+        font-size: 1.1em;
+        display: flex;
+        max-width:100%;
+
+    }
+
+    .menu a{display: none;}
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+
+    /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
+    (display the links vertically instead of horizontally) 
+
+    .menu.responsive {position: relative;}
+
+    .menu.responsive a {
+        float: none;
+        display: block;
+        padding:0.7rem;
+        text-align: right;
+    }
+
+}*/
+
 @media screen and (max-width: 500px) {
 
     body{
@@ -1242,7 +1376,54 @@ body.about{
     main{
         padding-top:5rem;
     }
+
+    .menu {
+        font-weight: 400;
+        font-size: 1.2em;
+        display: flex;
+        max-width:100%;
+       
+
+    }
+
+    .menu a{display: none;}
+    .menu a.icon {
+        float: right;
+        display: block;
+
+    }
+
+    /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
+    (display the links vertically instead of horizontally) */
+
+    .menu.responsive {position: relative;}
+
+    .menu.responsive a {
+        float: none;
+        display: block;
+        padding-top: 0.7rem;
+        padding-right: 0.3rem;
+        padding-bottom: 0.7rem;
+        padding-left: 0.3rem;
+        text-align: right;
+    }
     
+
+    .fa {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    margin: 2px 5px 0 0;
+    }
+
+    .fa-bars{
+        border:none;
+        margin:0;
+        padding:0;
+    }
+
     .about img{
         margin-top:0;
         padding-top:3rem;
@@ -1255,7 +1436,7 @@ body.about{
         height:12vh;
     }
     .describe h1{
-        font-size:1.7em;
+        font-size:1.8em;
     }
 
     #about_skills .container {
@@ -1272,17 +1453,35 @@ body.about{
         margin-block-end: 0;
     }
     .profile.skills{
-       font-size:10px;
+       font-size:12px;
         
     }
+
+    .profile{
+        display:block;
+    }
+
     .row{
         padding-left:0.2rem;
     }
 
+    .row li{
+        list-style:none;
+    }
+
+    #about_skills h4 {
+        padding-left:1rem;
+        padding-bottom:0;
+    }
     .portfolio .wrapper {
         padding-bottom:1rem;
         padding-top:0;
     }
+
+    #work1_fitted h2, h3, p, h4, a {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+}
 
     #work_intro{
         padding-top:2rem;
@@ -1292,13 +1491,21 @@ body.about{
         width:80%;
         padding-bottom:0.5rem;
     }
-
+    #work_intro p{
+        padding-top:0;
+    }
+    .sidenav .closebtn {
+        top: 0.1rem;
+        right: 15px;
+        font-size: 20px;
+        margin-left: 15px; 
+    }
 
     #work1_fitted{
         padding-bottom:2rem;
     }
     #work1_fitted.wrapper {
-        padding-top:0;
+        padding-top:3rem;
     
     }
     #work1_vela{
@@ -1309,19 +1516,9 @@ body.about{
         padding-right: 0;
         width:auto;
     }
-    #work1_fitted .button, #work1_vela .button, #work_intro .button, #vela_work_intro .button {
-        margin-top: 1.5rem;
-        width: 125px;
-        color:orange;
-    }
 
-   #work1_fitted .button:visited {
-        color:#fff;
-        
-  
-    }
     .my-video-dimensions {
-        width: 320px;
+        width: 300px;
         height: 200px;
     }
     .grid_work{
@@ -1329,6 +1526,16 @@ body.about{
         padding-bottom:2rem;
 
     }
+
+    .portfolio h2,#work1_fitted h2,#work1_vela h2 {
+        font-size: 1.6em;
+      
+    }
+    .portfolio h3,#work1_fitted h3,#work1_vela h3 {
+        font-size: 1.2em;
+      
+    }
+
     .containerfull h3,.containerfull p{
         margin-left:44px;
         width:80%;
@@ -1342,7 +1549,7 @@ body.about{
         top:13vh;
         left:0.3rem;
         
-        font-size: 1.1em;
+        font-size: 1.3em;
   
     }
     .sidenav{
@@ -1351,31 +1558,59 @@ body.about{
     }
     .sidenav a{
         padding-left:15px;
+        padding-bottom:0.2rem;
     }
     .modalbox img{
-        width:25%;
+        width:100%;
         margin-right:1rem;
         margin-top:2rem;
+        border-radius:6px;
     }
 
   
     .modalbox.one img{
-         width:45%;
+         width:100%;
          margin-right:1rem;
        
     }
 
     .modalbox.two img{
-        width:38%;
+        width:100%;
         margin-right:1rem;
        
     }
 
     .modalbox.four img{
-        width:20%;
+        width:100%;
         margin-right:0.5rem;
        
     }
+
+    a.button {
+       
+        border: 1px solid white;
+        display:inline-block;
+        border-radius:8px;
+        width:100px;
+        margin-top:1rem;
+        padding: 4px;
+        font-size:1em; 
+        font-weight:400;   
+        
+    }
+    #interactions{
+        display:block;
+       text-align:center;
+    }
+    #interactions img{
+        width:50%;
+
+        margin:auto;
+    }
+    #about_skills a.button{
+        margin-top:2rem;
+    }
+
 
 }
 
@@ -1386,62 +1621,11 @@ body.about{
 }
 
 
-.button {
-    display:inline-block;
-    width:100px;
-    border-radius: 20px; 
-    padding: 10px;
-    font-size:1em; 
-    font-weight:400;   
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#fff;
-    background: linear-gradient(#ee7752, #e73c7e);
-}
-
-.button:visited{
-    background: linear-gradient(#7B026A, #EB560C);
-    color:#fff;
-}
-
-.button:hover {
-    background: linear-gradient(-90deg, #ee7752, #e73c7e, #7B026A, #EB560C);
-    background-size: 400% 400%;
-    animation: gradient 5s ease;
-    text-decoration: none;
-    color:#fff;
-   
-}
 
 
 
-.button.contact {
-    background: transparent;
-    color: #e6640e;
-    width:200px;
-    border: 2px solid white;
 
-}
 
-.button.contact:visited {
-    background-color:#e63707;
-    color:#fff;
-}
-
-.button.contact:hover, .button:focus{
-    background: linear-gradient(-90deg, #ee7752,#EB560C);
-    color: #fff;
-
-    animation: gradientfill 5s ease;
-   
-
-}  
-
-.button.contact:active {
-    background-color:#e63707;
-
-} 
 
 @keyframes gradientfill {
     0% {
