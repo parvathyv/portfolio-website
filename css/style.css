@@ -1591,13 +1591,14 @@ a.button.portfolio_vela:active{
         border: 1px solid white;
         display:inline-block;
         border-radius:8px;
-        width:100px;
+        width:120px;
         margin-top:1rem;
-        padding: 4px;
-        font-size:1em; 
+        padding: 5px;
+        font-size:0.9em; 
         font-weight:400;   
         
     }
+
     #interactions{
         display:block;
        text-align:center;
