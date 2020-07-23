@@ -78,6 +78,25 @@ function closeNavTimer() {
 }
 
 
+
+/*function setAnim(){
+    
+    var x = document.getElementById("meditate");
+
+    if (el_anim.className === "play") {
+        x.className += " animate_test";
+    } else {
+        x.className = "meditate";
+    }
+    $("this").removeClass("play");
+    jQuery('.pause').css('opacity') = '1';   
+}
+
+
+
+var el_anim = document.getElementById("play");
+el_anim.addEventListener("click", function() {setTimeout(setAnim() , 100)});
+
 /*window.addEventListener("scroll", function(event) {
         ypos = this.scrollY;
         xpos =this.scrollX;
@@ -121,20 +140,95 @@ $('a[href*="#"]')
     }
 });
 
-/*var y=screen.height;
-var z= ((15*y)/100-1);
+
+
+var fitted_height=document.getElementById('fitted_anim').clientHeight;
+var vela_height=document.getElementById('vela_anim').clientHeight;
+var trip_height=document.getElementById('trip_anim').clientHeight;
+var skyline_height=document.getElementById('skyline_anim').clientHeight;
+
+
+console.log(fitted_height);
+console.log(fitted_height+vela_height);
+console.log(trip_height+fitted_height+vela_height);
+console.log(trip_height+fitted_height+vela_height+skyline_height);
+
+
 // Animation on scroll
 $(window).scroll(function () {
+    var z=$(window).scrollTop();
+
+    $('.logo_cover').each(function () {
+     
+       
+        if (z > (fitted_height)) {
+                $(this).addClass("fitted_logo_anim");
+            } else {
+                $(this).removeClass("fitted_logo_anim");
+            }
+    });
+   
+
     $('.meditate').each(function () {
-        console.log(z+' '+y);
-        console.log($(window).scrollTop());
-        if ($(window).scrollTop()>(y+z) && $(window).scrollTop()<(2*y)) {
+     
+       
+        if (z > (fitted_height)) {
                 $(this).addClass("animate_test");
             } else {
                 $(this).removeClass("animate_test");
             }
     });
-});*/
+
+    $('.ocean').each(function () {
+      
+            
+                
+        if (z > (fitted_height+vela_height)) {
+        
+                $(this).addClass("wave_anim");
+            } else {
+                $(this).removeClass("wave_anim");
+            }
+    });
+
+    $('.surfer').each(function () {
+       
+        if (z > (fitted_height+vela_height)) {
+                $(this).addClass("surfer_anim");
+            } else {
+                $(this).removeClass("surfer_anim");
+            }
+    });
+
+    $('.surfboard').each(function () {
+       
+        if (z > (fitted_height+vela_height)) {
+                $(this).addClass("surfboard_anim");
+            } else {
+                $(this).removeClass("surfboard_anim");
+            }
+    });
+
+    $('.skyline_background').each(function () {
+     
+        if (z > (fitted_height+vela_height+trip_height+skyline_height)) {
+                $(this).addClass("day_to_night_anim");
+            } else {
+                $(this).removeClass("day_to_night_anim");
+                /*$(this).addClass("fading_anim");*/
+            }
+    });
+
+    $('.moon').each(function () {
+     
+        if (z > (fitted_height+vela_height+trip_height+skyline_height)) {
+                $(this).addClass("rising_anim");
+            } else {
+                $(this).removeClass("rising_anim");
+                /*$(this).addClass("fading_anim");*/
+            }
+    });
+});
 
 
 

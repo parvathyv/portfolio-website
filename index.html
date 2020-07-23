@@ -16,7 +16,7 @@
     <body id="home">
         <!--Header-->  
         <header>
-            <section class="container navbar">
+            <section id="header_height" class="container navbar">
                 <div class="column">
                     <!--<a href="index.html"><img class = "logo" src="img/logo.svg" alt="Parvathy Iyer" ></a>-->
                 </div>
@@ -76,7 +76,7 @@
             <section class="covers">
                 <picture>
                     
-                        <a href="fitted_portfolio.html"> <svg version="1.1" viewBox="0 0 1200 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a href="fitted_portfolio.html"><svg id="fitted_anim" version="1.1" viewBox="0 0 1200 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Artboard Copy 4</title>
                         <defs>
                         <linearGradient id="d" x1="50%" x2="50%" y2="77.93%">
@@ -93,7 +93,7 @@
                         <use xlink:href="#b"/>
                         </mask>
                         <g mask="url(#c)">
-                        <g class="meditate animate_test" transform="translate(73 473)" stroke="#fff" stroke-width="1.5">
+                        <g class="meditate" transform="translate(73 473)" stroke="#fff" stroke-width="1.5">
                         <polygon points="85.059 106.68 111.95 114.52 138.85 106.68 143.33 122.16 117.19 143.26 78.383 126.44" fill="none"/>
                         <path d="m81.921 57.178c-4.6403 6.1706-7.9332 14.538-9.8789 25.103-2.2242-4.9536-5.2844-7.4304-9.1808-7.4304s-20.802 1.7913-50.716 5.374c5.7462-0.52405 7.2707-3.0186 4.5734-7.4837-1.7723-2.9339-4.9671-2.8333-9.2223-5.5444-1.4806-0.9433-3.9793-3.3023-7.4961-7.0769l12.145 27.12 59.897 13.346 24.552-22.33-3.0374-32.535c-3.1172 1.4674-6.9959 5.2865-11.636 11.457z" fill="none"/>
                         <path transform="translate(179.17 73.154) scale(-1 1) translate(-179.17 -73.154)" d="m212.79 57.178c-4.6403 6.1706-7.9332 14.538-9.8789 25.103-2.2242-4.9536-5.2844-7.4304-9.1808-7.4304s-20.802 1.7913-50.716 5.374c5.7462-0.52405 7.2707-3.0186 4.5734-7.4837-1.7723-2.9339-4.9671-2.8333-9.2223-5.5444-1.4806-0.9433-3.9793-3.3023-7.4961-7.0769l12.145 27.12 59.897 13.346 24.552-22.33-3.0374-32.535c-3.1172 1.4674-6.9959 5.2865-11.636 11.457z" fill="none"/>
@@ -114,8 +114,8 @@
                         </g>
                         <g stroke="#fff" stroke-width="2">
                         <g transform="translate(5.1726 88.424)" fill-rule="nonzero">
-                        <polygon class="star" points="7.5742 3.0444 9.9139 8.0564 15.147 8.8589 11.361 12.759 12.254 18.266 7.5742 15.667 2.8934 18.266 3.7864 12.759 1.0378e-13 8.8589 5.2331 8.0564"/>
-                        <polygon class="star_fast" points="22.72 5.2061e-14 24.124 3.0079 27.265 3.489 24.992 5.83 25.529 9.1332 22.72 7.5736 19.912 9.1332 20.449 5.83 18.176 3.489 21.317 3.0079"/>
+                        <polygon class="star_fast" points="7.5742 3.0444 9.9139 8.0564 15.147 8.8589 11.361 12.759 12.254 18.266 7.5742 15.667 2.8934 18.266 3.7864 12.759 1.0378e-13 8.8589 5.2331 8.0564"/>
+                        <polygon class="star" points="22.72 5.2061e-14 24.124 3.0079 27.265 3.489 24.992 5.83 25.529 9.1332 22.72 7.5736 19.912 9.1332 20.449 5.83 18.176 3.489 21.317 3.0079"/>
                         </g>
                         <line x1="126.02" x2="233.16" y1="80.778" y2="80.622" stroke-linecap="round" stroke-linejoin="round"/>
                         <line x1="227.6" x2="293.4" y1="69.104" y2="69.226" stroke-linecap="round" stroke-linejoin="round"/>
@@ -132,7 +132,7 @@
                         <line x1="69.178" x2="100.57" y1="93.776" y2="93.776" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         </g>
-                        <g class="logo_cover_fitted" transform="translate(554 762)">
+                        <g class="logo_cover" transform="translate(554 762)">
                         <g transform="translate(16 51)">
                         <mask fill="white">
                         <use xlink:href="#a"/>
@@ -143,13 +143,15 @@
                         <tspan x="0" y="42">fitted</tspan>
                         </text>
                         </g>
+                       
                         </g>
-                        </svg></a>
+                        </svg>
+                    </a>
                 </picture>
                     
                <picture>
                           
-                    <a href="vela_portfolio.html"> <svg viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a href="vela_portfolio.html"> <svg id="vela_anim" viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Artboard Copy 5</title>
                         <defs>
                             <linearGradient x1="50%" y1="1.99145096%" x2="50%" y2="50%" id="linearGradient-1">
@@ -475,7 +477,7 @@
 
                 <picture>
                     <a href="https://drive.google.com/file/d/1nVzP8Ph3lNjhD1kvdN5eCN095FFCQBoz/view?usp=sharing" target="blank">
-                       <svg  viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                       <svg  id="trip_anim" viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Artboard Copy 6</title>
                         <g id="Artboard-Copy-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <rect id="Rectangle" fill="#042853" x="0" y="0" width="1200" height="1024"></rect>
@@ -544,7 +546,7 @@
 
 
                 <picture>
-                    <a href="parallax/index.html" target="blank"><svg viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <a href="parallax/index.html" target="blank"><svg id="skyline_anim" viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Artboard Copy 7</title>
                         <defs>
                             <circle id="path-1" cx="57.5" cy="57.5" r="57.5"></circle>
@@ -753,8 +755,8 @@
                             <image id="image-88" width="192" height="258" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAECCAYAAACoi9gMAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAwKADAAQAAAABAAABAgAAAAA2enPuAAAFOElEQVR4Ae3TwREBQQBEUeRAFpuEgKSgpCAgSciCJFinKQflosrWf3uatQ7Tv/uvr4fdcfV8pvPtNJ7n38b38bysb9vLfN/pfN//a4bxXt+cl8J/zPJ+5/f3T//95bfNfBEPAlUCBKg2L/eLAAEMIU2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAgRI1y88AWwgTYAA6fqFJ4ANpAkQIF2/8ASwgTQBAqTrF54ANpAmQIB0/cITwAbSBAiQrl94AthAmgAB0vULTwAbSBMgQLp+4QlgA2kCBEjXLzwBbCBNgADp+oUngA2kCRAgXb/wBLCBNAECpOsXngA2kCZAgHT9whPABtIECJCuX3gC2ECaAAHS9QtPABtIEyBAun7hCWADaQIESNcvPAFsIE2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAgRI1y88AWwgTYAA6fqFJ4ANpAkQIF2/8ASwgTQBAqTrF54ANpAmQIB0/cITwAbSBAiQrl94AthAmgAB0vULTwAbSBMgQLp+4QlgA2kCBEjXLzwBbCBNgADp+oUngA2kCRAgXb/wBLCBNAECpOsXngA2kCZAgHT9whPABtIECJCuX3gC2ECaAAHS9QtPABtIEyBAun7hCWADaQIESNcvPAFsIE2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAgRI1y88AWwgTYAA6fqFJ4ANpAkQIF2/8ASwgTQBAqTrF54ANpAmQIB0/cITwAbSBAiQrl94AthAmgAB0vULTwAbSBMgQLp+4QlgA2kCBEjXLzwBbCBNgADp+oUngA2kCRAgXb/wBLCBNAECpOsXngA2kCZAgHT9whPABtIECJCuX3gC2ECaAAHS9QtPABtIEyBAun7hCWADaQIESNcvPAFsIE2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAgRI1y88AWwgTYAA6fqFJ4ANpAkQIF2/8ASwgTQBAqTrF54ANpAmQIB0/cITwAbSBAiQrl94AthAmgAB0vULTwAbSBMgQLp+4QlgA2kCBEjXLzwBbCBNgADp+oUngA2kCRAgXb/wBLCBNAECpOsXngA2kCZAgHT9whPABtIECJCuX3gC2ECaAAHS9QtPABtIEyBAun7hCWADaQIESNcvPAFsIE2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAgRI1y88AWwgTYAA6fqFJ4ANpAkQIF2/8ASwgTQBAqTrF54ANpAmQIB0/cITwAbSBAiQrl94AthAmgAB0vULTwAbSBMgQLp+4QlgA2kCBEjXLzwBbCBNgADp+oUngA2kCRAgXb/wBLCBNAECpOsXngA2kCZAgHT9whPABtIECJCuX3gC2ECaAAHS9QtPABtIEyBAun7hCWADaQIESNcvPAFsIE2AAOn6hSeADaQJECBdv/AEsIE0AQKk6xeeADaQJkCAdP3CE8AG0gQIkK5feALYQJoAAdL1C08AG0gTIEC6fuEJYANpAg8ftd/aXFTqiwAAAABJRU5ErkJggg=="></image>
                         </defs>
                         <g id="Artboard-Copy-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <rect id="Rectangle-Copy-22" fill="#000E21" x="-1" y="0" width="1201" height="1024"></rect>
-                            <g id="Moon" transform="translate(220.000000, 298.000000)">
+                            <rect class="skyline_background day_to_night_anim" fill="#046FFF" x="-1" y="0" width="1201" height="1024"></rect>
+                            <g class="moon" transform="translate(220.000000, 1024.000000)">
                                 <g id="Oval">
                                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                                     <use stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>

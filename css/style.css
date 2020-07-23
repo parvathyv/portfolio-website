@@ -1661,7 +1661,7 @@ a.button.portfolio_vela:active{
 }
 
 
-.logo_cover_fitted{
+.fitted_logo_anim{
     animation: text_move 0.4s ease;
 }
 
@@ -1703,9 +1703,8 @@ a.button.portfolio_vela:active{
   100% {transform: translate(1024px,455px);}
 }*/
 
-.ocean{
+.wave_anim{
     
-   
     animation-name: wave_move;
     animation-duration: 4s;
     animation-delay: 0ms; /* add this */
@@ -1719,7 +1718,7 @@ a.button.portfolio_vela:active{
     100% { transform: translate(-420px,760px); }
 }
 
-.surfboard{
+.surfboard_anim{
     
     
     animation-name: board_flap/*, board_flap;*/;
@@ -1735,7 +1734,7 @@ a.button.portfolio_vela:active{
     100% { transform: translate(103px,214px); }
 }
 
-.surfer{
+.surfer_anim{
     
     animation-name: surfer_bob/*, board_flap;*/;
     animation-duration: 4s/*, 4s*/;
@@ -1750,7 +1749,7 @@ a.button.portfolio_vela:active{
     100% { transform: translate(28px,119px); }
 }
 
-.skyline_background{
+.day_to_night_anim{
     
     animation: day_to_night 20s linear;
 
@@ -1765,15 +1764,14 @@ a.button.portfolio_vela:active{
     }
 }
 
-#Moon{
+.rising_anim{
     
     animation: fade_in 25s linear;
 }
 
 @keyframes fade_in {
-    0% { transform: translate(220px,1024px);opacity:0; }
-    20% { opacity:0; }
-    50% { transform: translate(220px,650px);opacity:1;} 
+    0% { transform: translate(220px,900px);opacity:0; }
+  
     100% { transform: translate(220px,298px);opacity:1; }
 }
 
