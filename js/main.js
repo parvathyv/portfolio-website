@@ -276,19 +276,21 @@ $('a[href*="#"]')
             });
 
 
-            /*var i=1;
+            var i=1;
+
             $('.marker').each(function () {
              
                 if (z > (fitted_height+vela_height+trip_height)-offset) {
                         $(this).addClass("hide_anim");
                         var durationms=i*3000;
+                        console.log(durationms);
                         $(this).css('animation-duration',durationms  + 'ms');
                         i++;
                     } else {
                         $(this).removeClass("hide_anim");
                       
                     }
-            });*/
+            });
 
 
             var j=1;
@@ -318,7 +320,7 @@ $('a[href*="#"]')
                 if (z > (fitted_height+vela_height+trip_height)-offset) {
                         $(this).addClass("pop_anim");
                         var delayams=1900+((l-1)*3000);
-                         console.log(delayams+' '+l);
+                      
                         $(this).css('animation-delay',delayams  + 'ms');
                         
                     } else {
