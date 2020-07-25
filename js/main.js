@@ -78,24 +78,89 @@ function closeNavTimer() {
 }
 
 
+// code for the5questiontrip animation in JS
+/*
+var mls = document.getElementsByClassName("marker");
 
-/*function setAnim(){
-    
-    var x = document.getElementById("meditate");
+for(var i = 1; i < mls.length+1; i++) {
+   
+    var idName="marker"+i;
+    var x = document.getElementById(idName);
+    //for svg element, className does not work, use setAttribute 
+    x.setAttribute("class","marker hide_anim");
+    var durationinms=i*3000+"ms";
+    x.style.animationDuration=durationinms;
+}
 
-    if (el_anim.className === "play") {
-        x.className += " animate_test";
-    } else {
-        x.className = "meditate";
+var qls = document.getElementsByClassName("question");
+
+for(var i = 1; i < qls.length+1; i++) {
+   
+    var idName="q"+i;
+    var x = document.getElementById(idName);
+    //for svg element, className does not work, use setAttribute 
+    x.setAttribute("class","question pop_anim");
+    if(i==1){
+        var delayinms=700+'ms';
+    }else{
+        var delayinms=((i*3000)-2000)+"ms";
     }
-    $("this").removeClass("play");
-    jQuery('.pause').css('opacity') = '1';   
+    x.style.animationDelay=delayinms;
 }
 
 
+var als = document.getElementsByClassName("answer");
 
-var el_anim = document.getElementById("play");
-el_anim.addEventListener("click", function() {setTimeout(setAnim() , 100)});
+for(var i = 1; i < qls.length+1; i++) {
+   
+    var idName="a"+i;
+    var x = document.getElementById(idName);
+    //for svg element, className does not work, use setAttribute 
+    x.setAttribute("class","answer pop_anim");
+    if(i==1){
+        var delaynum=1900;
+        
+    }else{
+        delaynum=delaynum+3000;
+    }
+      
+    var delayinms=delaynum+"ms";  
+    x.style.animationDelay=delayinms;
+}
+
+var lls = document.getElementsByClassName("location");
+
+for(var i = 1; i < lls.length+1; i++) {
+   
+    var idName="loc"+i;
+    var x = document.getElementById(idName);
+    //for svg element, className does not work, use setAttribute 
+    x.setAttribute("class","location hide_anim");
+    if(i==1){
+        var durationnum=15500;
+        
+    }else{
+        durationnum=durationnum+300;
+        
+    }
+    var durationinms=durationnum+"ms";
+    x.style.animationDuration=durationinms;
+}
+
+var als = document.getElementsByClassName("answer");
+
+function answer_anim(i) {
+   
+    $(this).addClass("pop");
+    if (--i > -1) {
+      setTimeout(function () { answer_anim(i); }, 3000);
+    }
+}
+
+answer_anim(als.length);
+
+*/
+
 
 /*window.addEventListener("scroll", function(event) {
         ypos = this.scrollY;
@@ -142,94 +207,191 @@ $('a[href*="#"]')
 
 
 
-var fitted_height=document.getElementById('fitted_anim').clientHeight;
-var vela_height=document.getElementById('vela_anim').clientHeight;
-var trip_height=document.getElementById('trip_anim').clientHeight;
-var skyline_height=document.getElementById('skyline_anim').clientHeight;
-
-
-console.log(fitted_height);
-console.log(fitted_height+vela_height);
-console.log(trip_height+fitted_height+vela_height);
-console.log(trip_height+fitted_height+vela_height+skyline_height);
 
 
 // Animation on scroll
-$(window).scroll(function () {
-    var z=$(window).scrollTop();
 
-    $('.logo_cover').each(function () {
-     
-       
-        if (z > (fitted_height)) {
-                $(this).addClass("fitted_logo_anim");
-            } else {
-                $(this).removeClass("fitted_logo_anim");
-            }
-    });
-   
 
-    $('.meditate').each(function () {
-     
-       
-        if (z > (fitted_height)) {
-                $(this).addClass("animate_test");
-            } else {
-                $(this).removeClass("animate_test");
-            }
-    });
+   $(window).scroll(function () {
 
-    $('.ocean').each(function () {
-      
+        if(window.location.href.includes("index.html")){
+
+            var fitted_height=document.getElementById('fitted_anim').clientHeight;
+            var vela_height=document.getElementById('vela_anim').clientHeight;
+            var trip_height=document.getElementById('trip_anim').clientHeight;
+            var skyline_height=document.getElementById('skyline_anim').clientHeight;
+            var z=$(window).scrollTop();
+            var offset=100;
             
+
+            $('.logo_cover').each(function () {
+             
+               
+                if (z > (fitted_height)-offset) {
+                        $(this).addClass("fitted_logo_anim");
+                    } else {
+                        $(this).removeClass("fitted_logo_anim");
+                    }
+            });
+           
+
+            $('.meditate').each(function () {
+             
+               
+                if (z > (fitted_height)-offset) {
+                        $(this).addClass("animate_test");
+                    } else {
+                        $(this).removeClass("animate_test");
+                    }
+            });
+
+            $('.ocean').each(function () {
+              
+                    
+                        
+                if (z > (fitted_height+vela_height)-offset) {
                 
-        if (z > (fitted_height+vela_height)) {
-        
-                $(this).addClass("wave_anim");
-            } else {
-                $(this).removeClass("wave_anim");
-            }
-    });
+                        $(this).addClass("wave_anim");
+                    } else {
+                        $(this).removeClass("wave_anim");
+                    }
+            });
 
-    $('.surfer').each(function () {
-       
-        if (z > (fitted_height+vela_height)) {
-                $(this).addClass("surfer_anim");
-            } else {
-                $(this).removeClass("surfer_anim");
-            }
-    });
+            $('.surfer').each(function () {
+               
+                if (z > (fitted_height+vela_height)-offset) {
+                        $(this).addClass("surfer_anim");
+                    } else {
+                        $(this).removeClass("surfer_anim");
+                    }
+            });
 
-    $('.surfboard').each(function () {
-       
-        if (z > (fitted_height+vela_height)) {
-                $(this).addClass("surfboard_anim");
-            } else {
-                $(this).removeClass("surfboard_anim");
-            }
-    });
+            $('.surfboard').each(function () {
+               
+                if (z > (fitted_height+vela_height)-offset) {
+                        $(this).addClass("surfboard_anim");
+                    } else {
+                        $(this).removeClass("surfboard_anim");
+                    }
+            });
 
-    $('.skyline_background').each(function () {
+
+            /*var i=1;
+            $('.marker').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                        $(this).addClass("hide_anim");
+                        var durationms=i*3000;
+                        $(this).css('animation-duration',durationms  + 'ms');
+                        i++;
+                    } else {
+                        $(this).removeClass("hide_anim");
+                      
+                    }
+            });*/
+
+
+            var j=1;
+            $('.question').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                        $(this).addClass("pop_anim");
+                        if(j==1){
+                            var delayms=700;
+                        }
+                        else{
+                        var delayms=((j*3000)-2000);
+                        }
+                        $(this).css('animation-delay',delayms  + 'ms');
+                        
+                    } else {
+                        $(this).removeClass("pop_anim");
+                      
+                    }
+                    j++;
+            });
+
+
+            var l=1;
+            $('.answer').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                        $(this).addClass("pop_anim");
+                        var delayams=1900+((l-1)*3000);
+                         console.log(delayams+' '+l);
+                        $(this).css('animation-delay',delayams  + 'ms');
+                        
+                    } else {
+                        $(this).removeClass("pop_anim");
+                      
+                    }
+                    l++;
+            });
+
+            var k=1;
+            $('.location').each(function () {
+            
+                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                        $(this).addClass("hide_anim");
+                        var durationlocms=15500+((k-1)*300);
+                       
+                        $(this).css('animation-duration',durationlocms  + 'ms');
+                        k++;
+                        
+                    } else {
+                        $(this).removeClass("hide_anim");
+                      
+                    }
+                   
+            });
+
      
-        if (z > (fitted_height+vela_height+trip_height+skyline_height)) {
-                $(this).addClass("day_to_night_anim");
-            } else {
-                $(this).removeClass("day_to_night_anim");
-                /*$(this).addClass("fading_anim");*/
-            }
+            $('.skyline_background').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
+                        $(this).addClass("day_to_night_anim");
+                    } else {
+                        $(this).removeClass("day_to_night_anim");
+                      
+                    }
+            });
+
+
+
+
+            $('.moon').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
+                        $(this).addClass("rising_anim");
+                    } else {
+                        $(this).removeClass("rising_anim");
+                     
+                    }
+            });
+
+            $('.faniuel1').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
+                        $(this).addClass("faniuel1_anim");
+                    } else {
+                        $(this).removeClass("faniuel1_anim");
+                    
+                    }
+            });
+
+             
+            $('.sanfran').each(function () {
+             
+                if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
+                        $(this).addClass("sanfran_anim");
+                    } else {
+                        $(this).removeClass("sanfran_anim");
+                       
+                    }
+            });
+
+        }
     });
 
-    $('.moon').each(function () {
-     
-        if (z > (fitted_height+vela_height+trip_height+skyline_height)) {
-                $(this).addClass("rising_anim");
-            } else {
-                $(this).removeClass("rising_anim");
-                /*$(this).addClass("fading_anim");*/
-            }
-    });
-});
 
 
-
-console.log("Hello. Welcome to my UX/UI portfolio website!")
