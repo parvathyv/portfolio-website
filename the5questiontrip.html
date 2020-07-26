@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Parvathy Iyer UX/UI Designer</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="myicon.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    </head>
+
+
+    <body id="trip" class="portfolio">
+       <!--Header-->  
+        <header id="trip_work_header">
+            <section class="container navbar">
+                <div class="column">
+                    <!--<a href="index.html"><img class = "logo" src="img/logo.svg" alt="Parvathy Iyer" ></a>-->
+                </div>
+                <div class="column">
+                    <nav class="menu" id="myTopmenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                         <div class="dropdown">
+                              <button class="dropbtn">Work</button>
+                              <div href="fitted.html" id="work_click" class="dropdown-content">
+                                <a href="fitted_portfolio.html">Fitted</a>
+                                <a href="vela_portfolio.html">Vela</a>
+                                <a href="#">the5questiontrip</a>
+                                <a href="#">Skyline</a>
+                              </div>
+                        </div>
+                        <a href="index.html#index_footer">Contact</a>
+                        <a href="#" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                </div>
+            </section>  
+        </header>
+        <!--End Header--> 
+        
+      
+        
+        <!--Hero-->
+        <main class="portfolio_header">
+            <div class="containerfull">
+
+                <a href="https://github.com/parvathyv/breakable_toy" target="blank"><img src="img/thetrip/thetrip.png" alt="the5questiontrip" ></a>
+            </div>   
+
+          
+            <section id="trip_intro" class="wrapper light">
+    
+                    
+                    <div class="work_sections sidebar_menu">
+                        <div class="describe">
+                            
+                            <h1>The5Questiontrip</h1>
+
+                            <p>Created for Launch Academy's FullStack Development for Websites bootcamp, The5Questiontrip is a website that is designed to help users access or create personal travel 
+                            iteneraries via Q & A sessions on a Google Maps interface.</p>
+
+                            <h2>My Role</h2>
+
+                            <p>Full Stack Developer - Designing User Interactions, Developing Servers and Databases, Testing & Bug fixes. </p>
+
+                            <h2>Timeline</h2>
+                            <p>Nov 2014 - Jan 2015.</p>
+
+                           
+                            <h2>Programmed with</h2>
+                            <p>Ruby on Rails, SQL, Foundation.</p>
+                             
+                            <a href="https://drive.google.com/file/d/1nVzP8Ph3lNjhD1kvdN5eCN095FFCQBoz/view?usp=sharing" class="button portfolio_vela">View Demo</a>
+
+                        </div>
+                    </div> 
+                  
+            </section>
+
+            <section  class="wrapper light">
+                <div class="work_sections">
+                   
+                        <h2>Process</h2>
+                        <p>As someone who enjoys travel, I wanted to create a fun and interactive website where users could create itineraries. A Q & A session seemed like a good way to be able to achieve this.</p>
+                        <h3>The Rules of the Game</h3>
+                        <ul>
+                            <li>An itinerary to be unlocked in a location of choice in presented in the form of a hunt.</li>
+                            <li>A location has many hunts. Each hunt that can be played has 5 questions.</li>
+                            <li>A user has to answer all five questions to complete the hunt and obtain an itinerary.</li>
+                            <li>A user has to answer the questions in ascending numerical order to complete the hunt.</li>
+                            <li>A user can leave a hunt at any point during a session and return to continue the hunt.</li>
+                            <li>A user can play a hunt only once in a session. User has to sign out and login to replay a hunt.</li>
+                            <li>A user can use clues(infobox on the question page) for help.</li>
+
+                        <h3>The Interface - Google Maps</h3>
+                        <p> I used Google Maps API's capabilities of Geolocation to give the user an opportunity to use pins on the map or straight up answers to identify locations on the itinerary</p>
+                        <h3> Third party tools</h3>
+                        <ul>
+                            <li>Google Maps Javascript API for integration of the map.</li>
+                            <li>Geocoder gem for geolocation. The app uses the gem to store locations in the database for persistence of data.</li>
+                            <li>Sessions for keeping track of user sessions in the database.</li>
+                            <li>D3.js for data visualization.</li>
+                            <li>Devise for user management.</li>
+                            <li>Omniauth for user authentication.</li>
+                            <li>Imagemagick and Minimagick for image manipulation.</li>
+                            <li>Carrier Wave and Amazon's AWS S3 service for file uploads.</li>
+                        </ul>
+
+                    
+                </div>    
+            </section>
+
+
+          
+
+
+        </main>    
+         <!--Footer-->
+        
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+  
+    <script src="js/main.js"></script>
+
+</html>    

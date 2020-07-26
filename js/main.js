@@ -222,6 +222,7 @@ $('a[href*="#"]')
             var skyline_height=document.getElementById('skyline_anim').clientHeight;
             var z=$(window).scrollTop();
             var offset=100;
+            var tripoffset=300;
             
 
             $('.logo_cover').each(function () {
@@ -280,10 +281,10 @@ $('a[href*="#"]')
 
             $('.marker').each(function () {
              
-                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
                         $(this).addClass("hide_anim");
                         var durationms=i*3000;
-                        console.log(durationms);
+                       
                         $(this).css('animation-duration',durationms  + 'ms');
                         i++;
                     } else {
@@ -296,7 +297,7 @@ $('a[href*="#"]')
             var j=1;
             $('.question').each(function () {
              
-                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
                         $(this).addClass("pop_anim");
                         if(j==1){
                             var delayms=700;
@@ -317,7 +318,7 @@ $('a[href*="#"]')
             var l=1;
             $('.answer').each(function () {
              
-                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
                         $(this).addClass("pop_anim");
                         var delayams=1900+((l-1)*3000);
                       
@@ -333,7 +334,7 @@ $('a[href*="#"]')
             var k=1;
             $('.location').each(function () {
             
-                if (z > (fitted_height+vela_height+trip_height)-offset) {
+                if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
                         $(this).addClass("hide_anim");
                         var durationlocms=15500+((k-1)*300);
                        

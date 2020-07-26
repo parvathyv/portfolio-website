@@ -151,6 +151,7 @@ img {
 
 #intro.wrapper{
     background-color:#000813;
+
    
 }
 .container{
@@ -180,7 +181,7 @@ main{
 
 #intro .container
 {
-    height:80vh;
+    height:70vh;
     background-color:#000813;
     position:relative;
     display:flex;
@@ -236,6 +237,35 @@ main{
 
 .col1 p{
     padding:0 2rem 0 0;
+}
+
+
+/*#intro a span,#vela_scroll a span {*/
+.scrolldown span{    
+    position: absolute;
+    bottom:4rem;
+    left:50%;
+    width: 46px;
+    height: 46px;
+    /* margin-left: -23px; */
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+/*#intro a span::after, #vela_scroll a span::after {*/
+.scrolldown span::after{        
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
 }
 
 .grid_work{
@@ -1051,7 +1081,7 @@ a.button.portfolio_vela:active{
   
     #intro .container
     {
-        height:80vh;
+        height:75vh;
         background-color:#000813;
         position:relative;
         display:flex;
@@ -1195,6 +1225,12 @@ a.button.portfolio_vela:active{
         padding-top:1rem;
     
     }
+
+    #scrolldown span {
+    opacity:0;
+    }
+    
+
     .feather_illus img{
         width:80%;
     }
