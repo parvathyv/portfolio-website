@@ -574,6 +574,19 @@ body.work{
 }
 
 
+#trip_work_header .container{
+    background-color:#042853;
+    width:100%;
+   
+}
+
+#trip{
+
+    color: #042853;
+};
+
+
+
 /*Vela*/
 
 #vela_work_header .container{
@@ -989,7 +1002,7 @@ a.button.portfolio_vela{
 
 a.button.portfolio_vela:visited{
     background: linear-gradient(to bottom, #0EB5F4 0%, #036C93 100%);
-    color:#F6C00B;
+    color:#4F9BF5;
     font-weight:700;
 }
 
@@ -1052,7 +1065,8 @@ a.button.portfolio_vela:active{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #F59C45;}
+.dropdown-content.vela_submenu a:hover {background-color: #1B7DF3;}
 
 
 /* Show the dropdown menu on hover */
