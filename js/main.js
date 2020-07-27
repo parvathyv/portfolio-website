@@ -210,12 +210,14 @@ $('a[href*="#"]')
 
 
 // Animation on scroll
+$( document ).ready(function() {
+  
 
-
+   
    $(window).scroll(function () {
 
-        if(window.location.href.includes("index.html")){
-
+        if(window.location.href.includes("index.html")||window.location.href.includes("//paroiyer.net.s3-website-us-east-1.amazonaws.com")){
+             console.log("ready now");
             var fitted_height=document.getElementById('fitted_anim').clientHeight;
             var vela_height=document.getElementById('vela_anim').clientHeight;
             var trip_height=document.getElementById('trip_anim').clientHeight;
@@ -229,6 +231,7 @@ $('a[href*="#"]')
              
                
                 if (z > (fitted_height)-offset) {
+
                         $(this).addClass("fitted_logo_anim");
                     } else {
                         $(this).removeClass("fitted_logo_anim");
@@ -396,5 +399,4 @@ $('a[href*="#"]')
         }
     });
 
-
-
+});

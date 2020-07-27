@@ -508,14 +508,16 @@ body.work{
 }
 
 
-#work1_vela{
+#work1_vela,#work1_trip,#work1_skyline{
     height:auto;
     background-color: #011217;
     padding-top:3rem;
     padding-bottom:5rem;
 }
 
-
+#work1_trip{
+    background-color:#042853;
+}
 
 #work1_fitted .container{
     background-color:#EB560C;
@@ -525,7 +527,7 @@ body.work{
     padding-bottom:3rem;
 }
 
-#work1_vela .container{
+#work1_vela .container,#work1_trip .container,#work1_skyline .container{
 
     background-color: #011217; 
     display:flex;
@@ -537,15 +539,23 @@ body.work{
 
 }
 
+#work1_trip .container{
+     background-color: #042853; 
+}
+
 .icon{
     z-index:4;
 }
-#work1_fitted .describe, #work1_vela .describe {
+.work1 .describe {
     width: 50%;
 }
 #work1_vela .describe{
     padding-right:2rem;
-}   
+} 
+
+#work1_trip img{
+    padding-left:2rem;
+}  
 #work1_fitted h2,h3,p{
  
     margin-block-start: 0.6em;
@@ -1401,7 +1411,7 @@ a.button.portfolio_vela:active{
         justify-content: flex-end;
     }
 
-    #work1_fitted .container,#work1_vela .container{
+    #work1_fitted .container,#work1_vela .container,#work1_trip .container,#work1_skyline .container{
         display:block;
     }
 
@@ -1655,10 +1665,15 @@ a.button.portfolio_vela:active{
         padding-top:0;
         padding-bottom:2rem;
     }
-    #work1_fitted .describe, #work1_vela .describe {
+    #work1_fitted .describe, #work1_vela .describe,#work1_trip .describe,#work1_skyline .describe {
         padding-right: 0;
         width:auto;
     }
+    #work1_trip img,#work1_skyline img{
+        padding-left:0;
+        padding-top:3rem;
+    }
+
 
     .my-video-dimensions {
         width: 300px;
