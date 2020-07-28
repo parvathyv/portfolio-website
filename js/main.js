@@ -40,12 +40,15 @@ function myFunction() {
 /*function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }*/
-function openSidebar(x) {
+function openSidebar(x,y) {
 
     if (x.matches) { 
         document.getElementById("mySidenav").style.width = "150px";
-    } else {
-            document.getElementById("mySidenav").style.width = "250px";
+    } else 
+        {
+            if(y.matches){
+                document.getElementById("mySidenav").style.width = "450px";
+            } else{   document.getElementById("mySidenav").style.width = "250px";}
         }
 }
 
@@ -54,8 +57,9 @@ function openSidebar(x) {
 function openNav(){
 
     var x = window.matchMedia("(max-width: 500px)");
+    var y= window.matchMedia("(min-width: 1800px)");
     if(document.getElementById("menubutton")||document.getElementById("menubutton_vela")){
-        openSidebar(x);
+        openSidebar(x,y);
     }
 };
 
@@ -217,7 +221,7 @@ $( document ).ready(function() {
    $(window).scroll(function () {
 
         if(window.location.href.includes("index.html")||window.location.href.includes("//paroiyer.net.s3-website-us-east-1.amazonaws.com")){
-             console.log("ready now");
+            
             var fitted_height=document.getElementById('fitted_anim').clientHeight;
             var vela_height=document.getElementById('vela_anim').clientHeight;
             var trip_height=document.getElementById('trip_anim').clientHeight;
