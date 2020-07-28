@@ -220,7 +220,7 @@ $( document ).ready(function() {
    
    $(window).scroll(function () {
 
-        if(window.location.href.includes("index.html")||window.location.href.includes("//paroiyer.net.s3-website-us-east-1.amazonaws.com")){
+        if(window.location.href.includes("index.html")||(window.location.href=="//paroiyer.net.s3-website-us-east-1.amazonaws.com")){
             
             var fitted_height=document.getElementById('fitted_anim').clientHeight;
             var vela_height=document.getElementById('vela_anim').clientHeight;

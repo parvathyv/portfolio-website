@@ -232,7 +232,7 @@ main{
 }
 
 .col1 {
-    width:50%;height:40%;
+    width:50%;height:50%;
 }
 
 .col1 p{
@@ -1121,13 +1121,16 @@ a.button.portfolio_vela:active{
     width: 100%;
     max-width: 3000px; 
 }
-
+.feather_illus{
+    width:35%;
+    height:35%;
+}
 #intro .container {
-    height: 70vh;
+    height: 75vh;
     width:80%;
 }
     body{
-        font-size:28px;
+        font-size:18px;
 
     }
    .content_img div{
@@ -1144,6 +1147,7 @@ a.button.portfolio_vela:active{
     width:48px;
     height:48px;
    }
+
    footer,.fa-lg{
     font-size:1em;
    }
