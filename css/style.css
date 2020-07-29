@@ -998,6 +998,7 @@ a.button.learn_vela:active{
 
 a.button.portfolio_fitted{
     border:2px solid #F43710;
+    color:#A92201;
 }
 
 a.button.portfolio_fitted:visited{
@@ -1289,7 +1290,7 @@ a.button.portfolio_vela:active{
     }
     
   
-    .my-video-dimensions {
+    .my_video {
         width: 720px;
         height: 500px;
     }
@@ -1316,9 +1317,9 @@ a.button.portfolio_vela:active{
     body{
         font-size:16px;
     }
-    .my-video-dimensions {
-        width: 600px;
-        height: 420px;
+    .my_video {
+        width: 800px;
+        height: 580px;
     }
     
    .content_img div{
@@ -1553,16 +1554,16 @@ a.button.portfolio_vela:active{
         padding-top:5rem;
     }
 
-    .menu {
+    .menu,.menu1 {
         font-weight: 400;
         font-size: 1.2em;
         display: flex;
         max-width:100%;
     }
 
-    .menu a{display: none;}
+    .menu a,.menu1 a{display: none;}
    
-    .menu a.icon {
+    .menu a.icon,.menu1 a.icon {
         float: right;
         display: block;
     }
@@ -1577,9 +1578,9 @@ a.button.portfolio_vela:active{
     /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
     (display the links vertically instead of horizontally) */
 
-    .menu.responsive {position: relative;}
+    .menu.responsive,.menu1.responsive {position: relative;}
 
-    .menu.responsive a {
+    .menu.responsive a,.menu1.responsive a {
         float: none;
         display: block;
         padding-top: 0.7rem;
@@ -1589,7 +1590,7 @@ a.button.portfolio_vela:active{
         text-align: right;
     }
     
-    .menu.responsive .dropbtn{
+    .menu.responsive .dropbtn,.menu1.responsive .dropbtn{
         float:none;
         display:block;
     }
@@ -1708,7 +1709,7 @@ a.button.portfolio_vela:active{
     }
 
 
-    .my-video-dimensions {
+    .my_video {
         width: 300px;
         height: 200px;
     }

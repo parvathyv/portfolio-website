@@ -2,7 +2,10 @@
 
 
 function myFunction() {
-     var x=document.getElementById("myTopmenu");
+
+         var x=document.getElementById("myTopmenu");
+   
+
     /*console.log(window.location.href);
     var y;
     */
@@ -21,53 +24,21 @@ function myFunction() {
                 var el=document.getElementById("about_click");
                 el.remove();
             }
-        }else{
-          
-            if(window.location.href.includes("fitted.html")){
-                 //y = document.getElementById("myTopmenu3"); 
-                /*if(document.getElementById("work_click")){
-                    var el=document.getElementById("work_click");
-                    el.remove();
-                }*/
-            }else{
-          
-            if(window.location.href.includes("fitted_portfolio.html")){
-                
-                 //y = document.getElementById("myTopmenu4"); 
-                
-                if(document.getElementById("fitted_click")){
-                    var el=document.getElementById("fitted_click");
-                    el.remove();
-                }
-            }
-            else{
-          
-            if(window.location.href.includes("the5questiontrip.html")){
-                 //y = document.getElementById("myTopmenu6"); 
-                /*if(document.getElementById("work_click")){
-                    var el=document.getElementById("work_click");
-                    el.remove();
-                }*/
-            }else{
-          
-            if(window.location.href.includes("skyline.html")){
-                 //y = document.getElementById("myTopmenu7"); 
-                /*if(document.getElementById("work_click")){
-                    var el=document.getElementById("work_click");
-                    el.remove();
-                }*/}
-            }
-            }}
         }
+            
+        
     }
 
 
     //console.log(y);
-    if (x.className === "menu") {
-        x.className += " responsive";
-    } else {
-        x.className = "menu";
-    }
+   
+  
+        if (x.className === "menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "menu";
+        }
+ 
     
 
 }
@@ -92,7 +63,7 @@ function openSidebar(x,y) {
 function openNav(){
 
     var x = window.matchMedia("(max-width: 500px)");
-    var y= window.matchMedia("(min-width: 1800px)");
+      var y = window.matchMedia("(min-width: 1800px)");
     if(document.getElementById("menubutton")||document.getElementById("menubutton_vela")){
         openSidebar(x,y);
     }
@@ -439,3 +410,5 @@ $( document ).ready(function() {
     });
 
 });
+
+
