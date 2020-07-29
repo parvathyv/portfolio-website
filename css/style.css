@@ -799,7 +799,7 @@ body.portfolio{
 #interactions div:last-child{
     margin-right:0;
 }
-#my-video{
+.my_video{
     background-color: white;
     padding:0 0 0 0;
     margin:4rem auto;
@@ -1160,10 +1160,7 @@ a.button.portfolio_vela:active{
         padding-top:1rem;
         padding-bottom:1rem;
     }
-   .about img{
-    
-        padding-top:6rem;
-    }
+   
 
     #about_skills.wrapper{
         width:100%;
@@ -1297,9 +1294,7 @@ a.button.portfolio_vela:active{
         height: 500px;
     }
 
-    #responsive img{
-        padding-top:0;
-    }
+ 
     
     .portfolio .wrapper{
         padding-bottom:2rem;
@@ -1470,32 +1465,7 @@ a.button.portfolio_vela:active{
         padding-right:2rem;
     }
 
-    /*.menu {
-        font-weight: 400;
-        font-size: 1.1em;
-        display: flex;
-        max-width:100%;
-
-    }
-
-    .menu a{display: none;}
-    .menu a.icon {
-        float: right;
-        display: block;
-    }
-
-    /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
-    (display the links vertically instead of horizontally) 
-
-    .menu.responsive {position: relative;}
-
-    .menu.responsive a {
-        float: none;
-        display: block;
-        padding:0.7rem;
-        text-align: right;
-    }*/
-
+   
 
 
     .column{
@@ -1571,34 +1541,7 @@ a.button.portfolio_vela:active{
        
 }
 
-/*@media screen and(max-width:641px){
-    .menu {
-        font-weight: 400;
-        font-size: 1.1em;
-        display: flex;
-        max-width:100%;
 
-    }
-
-    .menu a{display: none;}
-    .menu a.icon {
-        float: right;
-        display: block;
-    }
-
-    /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens
-    (display the links vertically instead of horizontally) 
-
-    .menu.responsive {position: relative;}
-
-    .menu.responsive a {
-        float: none;
-        display: block;
-        padding:0.7rem;
-        text-align: right;
-    }
-
-}*/
 
 @media screen and (max-width: 500px) {
 
@@ -1615,16 +1558,15 @@ a.button.portfolio_vela:active{
         font-size: 1.2em;
         display: flex;
         max-width:100%;
-       
-
     }
 
     .menu a{display: none;}
+   
     .menu a.icon {
         float: right;
         display: block;
-
     }
+    
 
     .dropbtn{display:none;padding-left:0.3rem;padding-right:0.3rem;} 
 

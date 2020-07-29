@@ -2,11 +2,13 @@
 
 
 function myFunction() {
-   
-    var x = document.getElementById("myTopmenu");
-  
+     var x=document.getElementById("myTopmenu");
+    /*console.log(window.location.href);
+    var y;
+    */
     // To remove a menu element for Mobile
     if(window.location.href.includes("index.html")){
+       //y = document.getElementById("myTopmenu1"); 
        if(document.getElementById("index_click")){
             var el=document.getElementById("index_click");
             el.remove();
@@ -14,6 +16,7 @@ function myFunction() {
     }else{
         
         if(window.location.href.includes("about.html")){
+             //y = document.getElementById("myTopmenu2"); 
             if(document.getElementById("about_click")){
                 var el=document.getElementById("about_click");
                 el.remove();
@@ -21,19 +24,51 @@ function myFunction() {
         }else{
           
             if(window.location.href.includes("fitted.html")){
-                if(document.getElementById("work_click")){
+                 //y = document.getElementById("myTopmenu3"); 
+                /*if(document.getElementById("work_click")){
                     var el=document.getElementById("work_click");
+                    el.remove();
+                }*/
+            }else{
+          
+            if(window.location.href.includes("fitted_portfolio.html")){
+                
+                 //y = document.getElementById("myTopmenu4"); 
+                
+                if(document.getElementById("fitted_click")){
+                    var el=document.getElementById("fitted_click");
                     el.remove();
                 }
             }
+            else{
+          
+            if(window.location.href.includes("the5questiontrip.html")){
+                 //y = document.getElementById("myTopmenu6"); 
+                /*if(document.getElementById("work_click")){
+                    var el=document.getElementById("work_click");
+                    el.remove();
+                }*/
+            }else{
+          
+            if(window.location.href.includes("skyline.html")){
+                 //y = document.getElementById("myTopmenu7"); 
+                /*if(document.getElementById("work_click")){
+                    var el=document.getElementById("work_click");
+                    el.remove();
+                }*/}
+            }
+            }}
         }
     }
 
+
+    //console.log(y);
     if (x.className === "menu") {
         x.className += " responsive";
     } else {
         x.className = "menu";
     }
+    
 
 }
 
