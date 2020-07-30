@@ -507,12 +507,12 @@ input textarea::-ms-input-placeholder { /* Microsoft Edge */
 /*Work*/
 
 #work_header .container{
-    background-color: #EB560C;
+    background-color: #DD3804;
     z-index:3;
 }
 
 body.work{
-    background-color: #EB560C;
+    background-color: #DD3804;
 }
 
 
@@ -540,7 +540,7 @@ body.work{
 }
 
 #work1_fitted .container{
-    background-color:#EB560C;
+    background-color:#DD3804;
     display:flex;
     height:80%;
     padding-top:0;
@@ -598,9 +598,7 @@ body.work{
 }
 
 .work_image img{
-   
-   align-self:flex-end;
-  
+    align-content: flex-end;
 }
 
 
@@ -623,7 +621,7 @@ body.work{
 
 #work_skyline{
 
-    color: #EB560C;
+    color: #D92C01;
 }
 
 
@@ -686,7 +684,7 @@ body.portfolio{
 }
 
 .portfolio_header{
-    padding-top:100px;
+    padding-top:40px;
 }
 
 .containerfull{
@@ -780,7 +778,7 @@ body.portfolio{
     color:#0C71AC;
 }
 #fitted .light{
-    color:#F15A0C;
+    color:#A92201;
 }
 
 .work h2,.work h3,.work h4{
@@ -982,7 +980,7 @@ a.button.resume:active{
 
 
 a.button.learn_fitted:visited{
-    background: linear-gradient(to bottom, #F43710 0%, #A92201 100%);
+    background-color:#A51F03;
     color:#F6C00B;
     font-weight:700;
 }
@@ -1040,6 +1038,7 @@ a.button.portfolio_fitted:active{
 
 a.button.portfolio_vela{
     border:2px solid #036C93;
+    color:#0EB5F4;
 }
 
 a.button.portfolio_vela:visited{
@@ -1201,6 +1200,9 @@ a.button.portfolio_vela:active{
    padding-top:6rem;
 }
 
+
+
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -1221,6 +1223,9 @@ a.button.portfolio_vela:active{
         height:15vh;
 
     }
+    .scrolldown span{    
+   
+    bottom:8rem;}
 
     .describe h1{
         position:relative;
@@ -1359,7 +1364,7 @@ a.button.portfolio_vela:active{
     
     }
 
-    #scrolldown span {
+    .scrolldown span {
     opacity:0;
     }
 
@@ -1652,6 +1657,9 @@ a.button.portfolio_vela:active{
         padding-bottom: 2rem;
        
     }
+    .portfolio_header{
+    padding-top:100px;
+}
 
     #about_skills h3,#about_skills h4{
         padding-top:1rem;
