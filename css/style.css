@@ -18,20 +18,26 @@ body {
     overflow:auto;
 }
 
-h1, h2, h3, h4 {
+
+h1 {
     padding:1rem;
     font-weight: 700;
     line-height: 1.4;
-
-}
-
-h1 {
     font-size: 2em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     margin-inline-start: 1px;
     margin-inline-end: 1px;
 }
+
+
+h2, h3, h4 {
+    padding:1rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+}
+
 
 h2 {
     font-size: 1.8em;
@@ -76,7 +82,7 @@ img {
     height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 16;
     top: 15vh;
     left: 0;
     background-color: #EB3C0C;
@@ -84,10 +90,8 @@ img {
     transition: 0.5s;
     padding-bottom:1rem;
     padding-top: 40px;
-    /*webkit-box-shadow: 1px 1px 1px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 
-    box-shadow:         1px 1px 1px 1px #ccc;*/
-}
+   
+}   
 
 .vela_sidebar{
     background-color: #02212A;
@@ -131,7 +135,14 @@ img {
     font-size: 36px;
     margin-left: 50px;
 }
-.col1.story p, .col1.story h1{
+.col1.story p{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.col1.story h1
+{
     width:100%;
     margin-left:auto;
     margin-right:auto;
@@ -593,7 +604,7 @@ body.work{
 #trip{
 
     color: #042853;
-};
+}
 
 #skyline_work_header .container{
     background-color:#042853;
@@ -604,7 +615,7 @@ body.work{
 #work_skyline{
 
     color: #EB560C;
-};
+}
 
 
 

@@ -1,414 +1,245 @@
-/* Toggle between adding and removing the "responsive" class to menu when the user clicks on the icon */
-
-
+/*jslint browser */
+/* Toggle between adding and removing the "responsive" class
+to menu when the user clicks on the icon */
 function myFunction() {
-
-         var x=document.getElementById("myTopmenu");
-   
-
-    /*console.log(window.location.href);
-    var y;
-    */
+    var x=document.getElementById("myTopmenu");
+    var el;
     // To remove a menu element for Mobile
     if(window.location.href.includes("index.html")){
-       //y = document.getElementById("myTopmenu1"); 
-       if(document.getElementById("index_click")){
-            var el=document.getElementById("index_click");
+        if(document.getElementById("index_click")){
+            el=document.getElementById("index_click");
             el.remove();
-        } 
+        }
     }else{
-        
         if(window.location.href.includes("about.html")){
-             //y = document.getElementById("myTopmenu2"); 
             if(document.getElementById("about_click")){
-                var el=document.getElementById("about_click");
+                el=document.getElementById("about_click");
                 el.remove();
             }
         }
-            
-        
     }
-
-
-    //console.log(y);
-   
-  
-        if (x.className === "menu") {
-            x.className += " responsive";
-        } else {
-            x.className = "menu";
-        }
- 
-    
-
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
 }
 
-/*function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}*/
 function openSidebar(x,y) {
 
-    if (x.matches) { 
+    if (x.matches) {
+
         document.getElementById("mySidenav").style.width = "150px";
-    } else 
-        {
+    }else{
             if(y.matches){
                 document.getElementById("mySidenav").style.width = "450px";
-            } else{   document.getElementById("mySidenav").style.width = "250px";}
+            } else{document.getElementById("mySidenav").style.width = "250px";
         }
-}
-
-
-
-function openNav(){
-
-    var x = window.matchMedia("(max-width: 500px)");
-      var y = window.matchMedia("(min-width: 1800px)");
-    if(document.getElementById("menubutton")||document.getElementById("menubutton_vela")){
-        openSidebar(x,y);
     }
-};
-
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
 }
-
-
-var els = document.getElementsByClassName("menu_button");
-
-for(var i = 0; i < els.length; i++) {
-    var el = els[i];
-    el.addEventListener("click", function() {setTimeout(closeNavTimer() , 200)});
-}
-
 
 function closeNavTimer() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
 
-// code for the5questiontrip animation in JS
-/*
-var mls = document.getElementsByClassName("marker");
 
-for(var i = 1; i < mls.length+1; i++) {
-   
-    var idName="marker"+i;
-    var x = document.getElementById(idName);
-    //for svg element, className does not work, use setAttribute 
-    x.setAttribute("class","marker hide_anim");
-    var durationinms=i*3000+"ms";
-    x.style.animationDuration=durationinms;
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
-var qls = document.getElementsByClassName("question");
-
-for(var i = 1; i < qls.length+1; i++) {
-   
-    var idName="q"+i;
-    var x = document.getElementById(idName);
-    //for svg element, className does not work, use setAttribute 
-    x.setAttribute("class","question pop_anim");
-    if(i==1){
-        var delayinms=700+'ms';
-    }else{
-        var delayinms=((i*3000)-2000)+"ms";
-    }
-    x.style.animationDelay=delayinms;
-}
-
-
-var als = document.getElementsByClassName("answer");
-
-for(var i = 1; i < qls.length+1; i++) {
-   
-    var idName="a"+i;
-    var x = document.getElementById(idName);
-    //for svg element, className does not work, use setAttribute 
-    x.setAttribute("class","answer pop_anim");
-    if(i==1){
-        var delaynum=1900;
-        
-    }else{
-        delaynum=delaynum+3000;
-    }
-      
-    var delayinms=delaynum+"ms";  
-    x.style.animationDelay=delayinms;
-}
-
-var lls = document.getElementsByClassName("location");
-
-for(var i = 1; i < lls.length+1; i++) {
-   
-    var idName="loc"+i;
-    var x = document.getElementById(idName);
-    //for svg element, className does not work, use setAttribute 
-    x.setAttribute("class","location hide_anim");
-    if(i==1){
-        var durationnum=15500;
-        
-    }else{
-        durationnum=durationnum+300;
-        
-    }
-    var durationinms=durationnum+"ms";
-    x.style.animationDuration=durationinms;
-}
-
-var als = document.getElementsByClassName("answer");
-
-function answer_anim(i) {
-   
-    $(this).addClass("pop");
-    if (--i > -1) {
-      setTimeout(function () { answer_anim(i); }, 3000);
+function openNav(){
+    var x = window.matchMedia("(max-width: 500px)");
+    var y = window.matchMedia("(min-width: 1800px)");
+    if(document.getElementById("menubutton")||
+        document.getElementById("menubutton_vela")){
+        openSidebar(x,y);
     }
 }
 
-answer_anim(als.length);
-
-*/
-
-
-/*window.addEventListener("scroll", function(event) {
-        ypos = this.scrollY;
-        xpos =this.scrollX;
-     	
-}, false);*/
+$(".menu_button").each(function () {
+    $(this).click(function() {
+        setTimeout(closeNavTimer() , 200);
+    });
+});
 
 // Select all links with hashes, smooth scroll
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-    // On-page links
-    if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname) 
+
+$("a[href*='#']")
+// Remove links that don't actually link to anything
+.not("[href='#']")
+.not("[href='#0']")
+.click(function(event) {
+// On-page links
+if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')&&location.hostname === this.hostname)
     {
-      // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Figure out element to scroll to
+    var target = $(this.hash);
+        target = target.length ? target : $("[name=' + this.hash.slice(1) + ']");
       // Does a scroll target exist?
         if (target.length) {
         // Only prevent default if animation is actually gonna happen
             event.preventDefault();
-            $('html, body').animate({
+            $("html, body").animate({
             scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1500, function() {
           // Callback after animation
           // Must change focus!
             var $target = $(target);
             $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
+            /*if ($target.is(":focus")) {// Checking if the target was focused
                 return false;
-            } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            }
+            else {
+                // Adding tabindex for elements not focusable
+                $target.attr("tabindex","-1");
                 $target.focus(); // Set focus again
-            };
-        });
-      }
+                }*/
+            });
+        }
     }
 });
-
-
-
-
-
 // Animation on scroll
-$( document ).ready(function() {
-  
 
-   
-   $(window).scroll(function () {
-
-        if(window.location.href.includes("index.html")||(window.location.href=="paroiyer.net.s3-website-us-east-1.amazonaws.com")){
-            
-            var fitted_height=document.getElementById('fitted_anim').clientHeight;
-            var vela_height=document.getElementById('vela_anim').clientHeight;
-            var trip_height=document.getElementById('trip_anim').clientHeight;
-            var skyline_height=document.getElementById('skyline_anim').clientHeight;
+    $(window).scroll(function () {
+        if(window.location.href.includes("index.html")){
+            var fitted_height=document.getElementById("fitted_anim").clientHeight;
+            var vela_height=document.getElementById("vela_anim").clientHeight;
+            var trip_height=document.getElementById("trip_anim").clientHeight;
+            var skyline_height=document.getElementById("skyline_anim").clientHeight;
             var z=$(window).scrollTop();
             var offset=100;
             var tripoffset=300;
-            
-
-            $('.logo_cover').each(function () {
-             
-               
+            $(".logo_cover").each(function () {
                 if (z > (fitted_height)-offset) {
-
-                        $(this).addClass("fitted_logo_anim");
-                    } else {
+                    $(this).addClass("fitted_logo_anim");
+                } else {
                         $(this).removeClass("fitted_logo_anim");
                     }
             });
-           
 
-            $('.meditate').each(function () {
-             
-               
+            $(".meditate").each(function () {
                 if (z > (fitted_height)-offset) {
-                        $(this).addClass("animate_test");
-                    } else {
-                        $(this).removeClass("animate_test");
-                    }
+                    $(this).addClass("animate_test");
+                } else {
+                    $(this).removeClass("animate_test");
+                }
             });
 
-            $('.ocean').each(function () {
-              
-                    
-                        
+            $(".ocean").each(function () {
                 if (z > (fitted_height+vela_height)-offset) {
-                
-                        $(this).addClass("wave_anim");
-                    } else {
-                        $(this).removeClass("wave_anim");
-                    }
+                    $(this).addClass("wave_anim");
+                } else {
+                    $(this).removeClass("wave_anim");
+                }
             });
 
-            $('.surfer').each(function () {
-               
+            $(".surfer").each(function () {
                 if (z > (fitted_height+vela_height)-offset) {
-                        $(this).addClass("surfer_anim");
-                    } else {
+                    $(this).addClass("surfer_anim");
+                } else {
                         $(this).removeClass("surfer_anim");
                     }
             });
 
-            $('.surfboard').each(function () {
-               
+            $(".surfboard").each(function(){
                 if (z > (fitted_height+vela_height)-offset) {
                         $(this).addClass("surfboard_anim");
                     } else {
                         $(this).removeClass("surfboard_anim");
                     }
-            });
-
-
+                });
             var i=1;
-
-            $('.marker').each(function () {
-             
+            $(".marker").each(function () {
+                var durationms;
                 if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
-                        $(this).addClass("hide_anim");
-                        var durationms=i*3000;
-                       
-                        $(this).css('animation-duration',durationms  + 'ms');
-                        i++;
-                    } else {
-                        $(this).removeClass("hide_anim");
-                      
-                    }
+                    $(this).addClass("hide_anim");
+                    durationms=i*3000;
+                    $(this).css("animation-duration",durationms  + "ms");
+                    i+=1;
+                }else {
+                    $(this).removeClass("hide_anim");
+                }
             });
-
 
             var j=1;
-            $('.question').each(function () {
-             
+            $(".question").each(function () {
+                var delayms;
                 if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
-                        $(this).addClass("pop_anim");
-                        if(j==1){
-                            var delayms=700;
-                        }
-                        else{
-                        var delayms=((j*3000)-2000);
-                        }
-                        $(this).css('animation-delay',delayms  + 'ms');
-                        
-                    } else {
-                        $(this).removeClass("pop_anim");
-                      
+                    $(this).addClass("pop_anim");
+                    if(j===1){
+                        delayms=700;
                     }
-                    j++;
+                    else{
+                        delayms=((j*3000)-2000);
+                    }
+                    $(this).css("animation-delay",delayms  + "ms");
+                } else {
+                    $(this).removeClass("pop_anim");
+                }
+                j+=1;
             });
 
-
             var l=1;
-            $('.answer').each(function () {
-             
+            $(".answer").each(function () {
+                var delayams;
                 if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
-                        $(this).addClass("pop_anim");
-                        var delayams=1900+((l-1)*3000);
-                      
-                        $(this).css('animation-delay',delayams  + 'ms');
-                        
-                    } else {
-                        $(this).removeClass("pop_anim");
-                      
-                    }
-                    l++;
+                    $(this).addClass("pop_anim");
+                    delayams=1900+((l-1)*3000);
+                    $(this).css("animation-delay",delayams  + "ms");
+                } else {
+                    $(this).removeClass("pop_anim");
+                }
+                l+=1;
             });
 
             var k=1;
-            $('.location').each(function () {
-            
+            $(".location").each(function () {
+                var durationlocms;
                 if (z > (fitted_height+vela_height+trip_height)-tripoffset) {
-                        $(this).addClass("hide_anim");
-                        var durationlocms=15500+((k-1)*300);
-                       
-                        $(this).css('animation-duration',durationlocms  + 'ms');
-                        k++;
-                        
-                    } else {
-                        $(this).removeClass("hide_anim");
-                      
-                    }
-                   
+                    $(this).addClass("hide_anim");
+                    durationlocms=15500+((k-1)*300);
+                    $(this).css("animation-duration",durationlocms  + "ms");
+                    k+=1;
+                } else {
+                    $(this).removeClass("hide_anim");
+                }
             });
 
-     
-            $('.skyline_background').each(function () {
-             
+            $(".skyline_background").each(function () {
                 if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
-                        $(this).addClass("day_to_night_anim");
-                    } else {
-                        $(this).removeClass("day_to_night_anim");
-                      
-                    }
+                    $(this).addClass("day_to_night_anim");
+                } else {
+                    $(this).removeClass("day_to_night_anim");
+                }
             });
 
-
-
-
-            $('.moon').each(function () {
-             
+            $(".moon").each(function () {
                 if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
-                        $(this).addClass("rising_anim");
-                    } else {
-                        $(this).removeClass("rising_anim");
-                     
-                    }
+                    $(this).addClass("rising_anim");
+                } else {
+                    $(this).removeClass("rising_anim");
+                }
             });
 
-            $('.faniuel1').each(function () {
-             
+            $(".faniuel1").each(function () {
                 if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
-                        $(this).addClass("faniuel1_anim");
-                    } else {
-                        $(this).removeClass("faniuel1_anim");
-                    
-                    }
+                    $(this).addClass("faniuel1_anim");
+                } else {
+                    $(this).removeClass("faniuel1_anim");
+                }
             });
 
-             
-            $('.sanfran').each(function () {
-             
+            $(".sanfran").each(function () {
                 if (z > (fitted_height+vela_height+trip_height+skyline_height)-offset) {
-                        $(this).addClass("sanfran_anim");
-                    } else {
-                        $(this).removeClass("sanfran_anim");
-                       
-                    }
+                    $(this).addClass("sanfran_anim");
+                } else {
+                    $(this).removeClass("sanfran_anim");
+                }
             });
-
         }
     });
 
-});
+
 
 
