@@ -185,6 +185,10 @@ img {
     background-color:#000813;
     z-index:3;
 
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+
 }
 main{
     padding-top:9rem;
@@ -201,9 +205,13 @@ main{
 
 
 .column{
-    flex:50%;
-    display: flex;
-    justify-content: center;
+
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
+justify-content: flex-end;
+
 }
 
 .logo
@@ -214,9 +222,10 @@ main{
 .menu{
     font-weight: 400;
     font-size: 1.2em;
-    display:flex;
+    display:flex;justify-content: flex-end;
     max-width:60%;
     overflow:hidden;
+    padding-right:1.2rem;
 }
 
 .menu a{
@@ -1820,6 +1829,7 @@ a.button.portfolio_vela:active{
 
    .menu{
     overflow:visible;
+    padding-right:0.2rem;
    } 
    .dropdown-content{
     width:120px;
@@ -1840,13 +1850,6 @@ a.button.portfolio_vela:active{
         font-size:0.8em;
     }
 }
-
-
-
-
-
-
-
 
 @keyframes gradientfill {
     0% {
