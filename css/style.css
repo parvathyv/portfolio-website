@@ -1524,14 +1524,14 @@ a.button.portfolio_vela:active {
         padding: 0.5rem;
         border-radius: 50%;
         border: 1px solid white;
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         margin: 2px 5px 0 0;
     }
     .fa-bars {
         border: none;
         margin: 0;
-        padding: 0;
+        padding:0;
     }
     .about img {
         margin-top: 0;
@@ -1658,7 +1658,7 @@ a.button.portfolio_vela:active {
         margin-top: 0rem;
         top: 13vh;
         left: 0.3rem;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     .sidenav {
         top: 12vh;
@@ -1707,7 +1707,7 @@ a.button.portfolio_vela:active {
         margin-top: 2rem;
     }
     .dropdown {
-        padding-bottom: 1.3rem;
+        padding-bottom: 0.82rem;
     }
     .menu {
         overflow: visible;
