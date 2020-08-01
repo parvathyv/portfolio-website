@@ -75,7 +75,7 @@ $( ".menu_button" )
     .each( function() {
         $( this )
             .click( function() {
-                setTimeout( closeNavTimer(), 200 );
+                setTimeout( closeNavTimer(), 100 );
             } );
     } );
 // Select all links with hashes, smooth scroll

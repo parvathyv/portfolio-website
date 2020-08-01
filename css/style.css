@@ -116,8 +116,8 @@ img {
     border:2px solid #00873D;*/
     left: 3rem;
     cursor: pointer;
-    font-size: 1.5em;
-    color: #12EE98;
+    font-size: 2.5em;
+    color: #02633C;
 }
 
 #vela .menubutton {
@@ -1524,8 +1524,8 @@ a.button.portfolio_vela:active {
         padding: 0.5rem;
         border-radius: 50%;
         border: 1px solid white;
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         margin: 2px 5px 0 0;
     }
     .fa-bars {
@@ -1658,14 +1658,14 @@ a.button.portfolio_vela:active {
         margin-top: 0rem;
         top: 13vh;
         left: 0.3rem;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .sidenav {
         top: 12vh;
     }
     .sidenav a {
         padding-left: 15px;
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.4rem;
     }
     .modalbox img {
         width: 100%;
