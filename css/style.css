@@ -1212,45 +1212,20 @@ a.button.portfolio_vela:active {
         padding-top: 6rem;
     }
 
-    /*.clouds{
-        -moz-transform: scale(0.9) translate(-1%, -4%);
-        -webkit-transform: scale(0.9) translate(-1%, -4%);
-        -o-transform: scale(0.9) translate(-1%, -4%);
-        -ms-transform: scale(0.9) translate(-1%, -4%);
-        transform: scale(0.9) translate(-1%, -4%);
-    }  
-
-    .meditate{
-        -moz-transform: scale(0.8) translate(6%, 30%);
-        -webkit-transform: scale(0.8) translate(6%, 30%);
-        -o-transform: scale(0.8) translate(6%, 30%);
-        -ms-transform: scale(0.8) translate(6%, 30%);
-        transform: scale(0.8) translate(6%, 30%);
-    }  
-    .animate_test {
-        animation: meditate_move 10s linear;
-        animation-delay: 0.4s;
-        animation-iteration-count: 1;
+    #fitted_anim,#vela_anim,#trip_anim,#skyline_anim{
+        width:49.8%;
+        height:85%;
+        display:inline-block;
     }
-
-    @keyframes meditate_move {
-        0% {
-            transform: translate(0%, 0%);
-        }
-
-        2% {
-            transform: translate(0%, -1%);
-        }
-
-        20% {
-            transform: translate(0%, -10%);
-        }
-
-        100% {
-            transform: translate(0%, -70%);
-        }
-    }*/
     
+    #fitted_anim,#trip_anim{
+        margin-left:0.1rem;
+    }
+   
+    #index_footer{
+        margin-top:0;
+    }
+ 
 }
 
 @media screen and (max-width: 1440px) {

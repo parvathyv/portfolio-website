@@ -1,20 +1,9 @@
 /*jslint browser */
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
-if(window.location.href.includes("index.html")){
-    var m = window.matchMedia("(min-width: 1800px)");
-    var mySVG = document.getElementById('fitted_anim');
-    var mySVG1 = document.getElementById('vela_anim');
-    var mySVG2 = document.getElementById('trip_anim');
-   
-    if (m.matches){
-          //mySVG.setAttribute("viewBox", "-600 -600 2000 1600");
-           mySVG.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
-    }else{
-         mySVG.setAttribute("viewBox", "0 0 1200 1024");
-    }
-}
+var y = window.matchMedia("(min-width: 1800px)");
+
 function myFunction() {
     var x = document.getElementById("myTopmenu");
     var el;
@@ -40,7 +29,7 @@ function myFunction() {
 }
 
 function openSidebar(x, y) {
-    console.log("in here")
+    
     if (x.matches) {
         document.getElementById("mySidenav")
             .style.width = "150px";
@@ -67,7 +56,7 @@ function closeNav() {
 
 function openNav() {
     var x = window.matchMedia("(max-width: 500px)");
-    var y = window.matchMedia("(min-width: 1800px)");
+    
     if (document.getElementById("menubutton") || document.getElementById("menubutton_vela")) {
         openSidebar(x, y);
     }
@@ -133,8 +122,12 @@ $(window)
                 .scrollTop();
             var offset = 100;
             var tripoffset = 300;
+            var expr;
+
+
             $(".logo_cover")
                 .each(function() {
+
                     if (z > (fitted_height) - offset) {
                         $(this)
                             .addClass("fitted_logo_anim");
@@ -153,19 +146,29 @@ $(window)
                             .removeClass("animate_test");
                     }
                 });
+
+            if(y.matches){
+                expr =fitted_height;
+            }
+            else{
+                expr =fitted_height + vela_height;
+            }        
+
             $(".ocean")
                 .each(function() {
-                    if (z > (fitted_height + vela_height) - offset) {
-                        $(this)
-                            .addClass("wave_anim");
-                    } else {
-                        $(this)
-                            .removeClass("wave_anim");
-                    }
+                   
+                        if (z > (expr) - offset) {
+                            $(this)
+                                .addClass("wave_anim");
+                        } else {
+                            $(this)
+                                .removeClass("wave_anim");
+                        }
+                    
                 });
             $(".surfer")
                 .each(function() {
-                    if (z > (fitted_height + vela_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("surfer_anim");
                     } else {
@@ -175,7 +178,7 @@ $(window)
                 });
             $(".surfboard")
                 .each(function() {
-                    if (z > (fitted_height + vela_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("surfboard_anim");
                     } else {
@@ -183,11 +186,20 @@ $(window)
                             .removeClass("surfboard_anim");
                     }
                 });
+
+
+            if(y.matches){
+                expr =fitted_height+trip_height;
+            }
+            else{
+                expr =fitted_height + vela_height + trip_height;
+            }    
+                    
             var i = 1;
             $(".marker")
                 .each(function() {
                     var durationms;
-                    if (z > (fitted_height + vela_height + trip_height) - tripoffset) {
+                    if (z > (expr) - tripoffset) {
                         $(this)
                             .addClass("hide_anim");
                         durationms = i * 3000;
@@ -203,7 +215,7 @@ $(window)
             $(".question")
                 .each(function() {
                     var delayms;
-                    if (z > (fitted_height + vela_height + trip_height) - tripoffset) {
+                    if (z > (expr) - tripoffset) {
                         $(this)
                             .addClass("pop_anim");
                         if (j === 1) {
@@ -223,7 +235,7 @@ $(window)
             $(".answer")
                 .each(function() {
                     var delayams;
-                    if (z > (fitted_height + vela_height + trip_height) - tripoffset) {
+                    if (z > (expr) - tripoffset) {
                         $(this)
                             .addClass("pop_anim");
                         delayams = 1900 + ((l - 1) * 3000);
@@ -239,7 +251,7 @@ $(window)
             $(".location")
                 .each(function() {
                     var durationlocms;
-                    if (z > (fitted_height + vela_height + trip_height) - tripoffset) {
+                    if (z > (expr) - tripoffset) {
                         $(this)
                             .addClass("hide_anim");
                         durationlocms = 15500 + ((k - 1) * 300);
@@ -251,9 +263,12 @@ $(window)
                             .removeClass("hide_anim");
                     }
                 });
+
+            
+
             $(".skyline_background")
                 .each(function() {
-                    if (z > (fitted_height + vela_height + trip_height + skyline_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("day_to_night_anim");
                     } else {
@@ -263,7 +278,7 @@ $(window)
                 });
             $(".moon")
                 .each(function() {
-                    if (z > (fitted_height + vela_height + trip_height + skyline_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("rising_anim");
                     } else {
@@ -273,7 +288,7 @@ $(window)
                 });
             $(".faniuel1")
                 .each(function() {
-                    if (z > (fitted_height + vela_height + trip_height + skyline_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("faniuel1_anim");
                     } else {
@@ -283,7 +298,7 @@ $(window)
                 });
             $(".sanfran")
                 .each(function() {
-                    if (z > (fitted_height + vela_height + trip_height + skyline_height) - offset) {
+                    if (z > (expr) - offset) {
                         $(this)
                             .addClass("sanfran_anim");
                     } else {
