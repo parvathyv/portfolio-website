@@ -1,20 +1,20 @@
 /*jslint browser */
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
-/*if(window.location.href.includes("index.html")){
+if(window.location.href.includes("index.html")){
     var m = window.matchMedia("(min-width: 1800px)");
     var mySVG = document.getElementById('fitted_anim');
     var mySVG1 = document.getElementById('vela_anim');
     var mySVG2 = document.getElementById('trip_anim');
    
     if (m.matches){
-          mySVG.setAttribute("viewBox", "0 0 2000 1600");
+          //mySVG.setAttribute("viewBox", "-600 -600 2000 1600");
            mySVG.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
     }else{
          mySVG.setAttribute("viewBox", "0 0 1200 1024");
     }
-}*/
+}
 function myFunction() {
     var x = document.getElementById("myTopmenu");
     var el;
