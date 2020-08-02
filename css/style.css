@@ -179,6 +179,7 @@ img {
 
 #intro.wrapper {
     background-color: #000813;
+
 }
 
 .container {
@@ -266,6 +267,8 @@ main {
 .col1 p {
     padding: 0 2rem 0 0;
 }
+
+
 
 /*#intro a span,#vela_scroll a span {*/
 
@@ -578,6 +581,7 @@ p {
 .work_image img {
     align-content: flex-end;
 }
+
 
 #trip_work_header .container {
     background-color: #042853;
@@ -1120,6 +1124,16 @@ a.button.portfolio_vela:active {
     color: #086DF8;
 }
 
+.clouds{
+        transform:translateY(5%);
+        -moz-transform:translateY(5%);
+        -webkit-transform:translateY(5%);
+        -o-transform:translateY(5%);
+        -ms-transform:translateY(5%);
+        
+}
+
+
 @media screen and (min-width: 1800px) {
     .containerfull {
         padding-top: 2rem;
@@ -1225,6 +1239,7 @@ a.button.portfolio_vela:active {
     #index_footer{
         margin-top:0;
     }
+
  
 }
 
