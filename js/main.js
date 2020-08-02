@@ -40,13 +40,14 @@ function myFunction() {
 }
 
 function openSidebar(x, y) {
+    console.log("in here")
     if (x.matches) {
         document.getElementById("mySidenav")
             .style.width = "150px";
     } else {
         if (y.matches) {
             document.getElementById("mySidenav")
-                .style.width = "450px";
+                .style.width = "400px";
         } else {
             document.getElementById("mySidenav")
                 .style.width = "250px";
@@ -71,6 +72,7 @@ function openNav() {
         openSidebar(x, y);
     }
 }
+
 $(".menu_button")
     .each(function() {
         $(this)
