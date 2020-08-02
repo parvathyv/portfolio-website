@@ -1125,11 +1125,11 @@ a.button.portfolio_vela:active {
 }
 
 .clouds{
-        transform:translateY(5%);
-        -moz-transform:translateY(5%);
-        -webkit-transform:translateY(5%);
-        -o-transform:translateY(5%);
-        -ms-transform:translateY(5%);
+        transform:translateY(10%);
+      
+        -webkit-transform:translateY(10%);
+        -o-transform:translateY(10%);
+        -ms-transform:translateY(10%);
         
 }
 
