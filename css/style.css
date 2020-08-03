@@ -248,20 +248,22 @@ main {
     display: none;
 }
 
-.feather_illus {
-    align-self: flex-end;
-    width: 50%;
-    height: 100%;
-}
 
-.feather_illus img {
-    width: 60%;
-    overflow: hidden;
-}
+
 
 .col1 {
     width: 50%;
     height: 50%;
+}
+.col2{
+    height:20%;
+}
+.col3{
+    height:80%;
+}
+.col3 img {
+    max-width:500px;
+     
 }
 
 .col1 p {
@@ -1155,14 +1157,12 @@ a.button.portfolio_vela:active {
         max-width: 3000px;
     }
 
-    .feather_illus {
-        width: 35%;
-        height: 35%;
-    }
+    
 
     #intro .container {
-        height: 75vh;
+        height: 70vh;
         width: 80%;
+
     }
 
     body {
@@ -1170,7 +1170,7 @@ a.button.portfolio_vela:active {
     }
 
     .content_img div {
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
 
     .grid_work {
@@ -1400,9 +1400,7 @@ a.button.portfolio_vela:active {
         opacity: 0;
     }
 
-    .feather_illus img {
-        width: 80%;
-    }
+  
 
     .portfolio h1 {
         font-size: 1.8em;
@@ -1481,12 +1479,7 @@ a.button.portfolio_vela:active {
         width: auto;
     }
 
-    .feather_illus {
-        /* width: 60%;*/
-        margin: 0 auto;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
+   
 
     .sidenav {
         padding-top: 20px;
@@ -1603,7 +1596,7 @@ a.button.portfolio_vela:active {
 
 @media screen and (max-width: 500px) {
     body {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     main {
@@ -1911,6 +1904,19 @@ a.button.portfolio_vela:active {
     footer {
         font-size: 11px;
     }
+
+    
+    .col3{
+       display:none;
+         
+    }
+    /*.col3 img{
+        padding-top:1rem;
+        width:200px;
+        margin-left:20%;
+    }*/
+
+   
 }
 
 @media screen and (max-width: 320px) {
