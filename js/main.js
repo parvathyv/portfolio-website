@@ -24,34 +24,34 @@ if (window.location.href.includes("index.html")) {
 
     mother.addEventListener("click", fade_in_text2);
     details_mother.addEventListener("click", fade_out_text2);
-}    
+}
 
 function fade_in_text() {
-    my_illus.style.opacity="0.2";
+    my_illus.style.opacity = "0.2";
     details_designer.style.display = "block";
 
 }
 
 function fade_out_text() {
-    my_illus.style.opacity="1";
+    my_illus.style.opacity = "1";
     details_designer.style.display = "none";
 
 }
 
 function fade_in_text1() {
-    my_illus.style.opacity="0.2";
+    my_illus.style.opacity = "0.2";
     details_wife.style.display = "block";
 
 }
 
 function fade_out_text1() {
-    my_illus.style.opacity="1";
+    my_illus.style.opacity = "1";
     details_wife.style.display = "none";
 
 }
 
 function fade_in_text2() {
-     my_illus.style.opacity="0.2";
+    my_illus.style.opacity = "0.2";
     details_mother.style.display = "block";
 
 
@@ -59,7 +59,7 @@ function fade_in_text2() {
 }
 
 function fade_out_text2() {
-     my_illus.style.opacity="1";
+    my_illus.style.opacity = "1";
     details_mother.style.display = "none";
 
 }
@@ -197,13 +197,13 @@ $(window)
             var tripoffset = 300;
             var expr;
 
-        
 
-            if(z>(40)){
-                details_designer.style.opacity="0";
-                details_wife.style.opacity="0";
-                my_illus.style.opacity="1";
-                details_mother.style.opacity="0";
+
+            if (z > (40)) {
+                details_designer.style.opacity = "0";
+                details_wife.style.opacity = "0";
+                my_illus.style.opacity = "1";
+                details_mother.style.opacity = "0";
             }
 
             $(".logo_cover")
