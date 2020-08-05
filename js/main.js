@@ -3,6 +3,77 @@
 to menu when the user clicks on the icon */
 
 var y = window.matchMedia("(min-width: 1800px)");
+if (window.location.href.includes("index.html")) {
+
+    var my_illus = document.getElementById("my_illus");
+    var designer = document.getElementById("DESIGNER");
+    var details_designer = document.getElementById("details_designer");
+
+    var wife = document.getElementById("WIFE");
+    var details_wife = document.getElementById("details_wife");
+
+    var mother = document.getElementById("MOTHER");
+    var details_mother = document.getElementById("details_mother");
+
+
+    designer.addEventListener("click", fade_in_text);
+    details_designer.addEventListener("click", fade_out_text);
+
+    wife.addEventListener("click", fade_in_text1);
+    details_wife.addEventListener("click", fade_out_text1);
+
+    mother.addEventListener("click", fade_in_text2);
+    details_mother.addEventListener("click", fade_out_text2);
+}    
+
+function fade_in_text() {
+    my_illus.style.opacity="0.2";
+    details_designer.style.display = "block";
+
+}
+
+function fade_out_text() {
+    my_illus.style.opacity="1";
+    details_designer.style.display = "none";
+
+}
+
+function fade_in_text1() {
+    my_illus.style.opacity="0.2";
+    details_wife.style.display = "block";
+
+}
+
+function fade_out_text1() {
+    my_illus.style.opacity="1";
+    details_wife.style.display = "none";
+
+}
+
+function fade_in_text2() {
+     my_illus.style.opacity="0.2";
+    details_mother.style.display = "block";
+
+
+
+}
+
+function fade_out_text2() {
+     my_illus.style.opacity="1";
+    details_mother.style.display = "none";
+
+}
+
+
+/*function fade_out_text() {
+    story.style.display="none";
+    my_illus.style.display = "flex";
+    my_illus.style.justifyContent = "center";
+    my_illus.style.alignItems = "center";
+    my_illus.className+=" text_fade_out";
+}*/
+
+
 
 function myFunction() {
     var x = document.getElementById("myTopmenu");
@@ -29,7 +100,7 @@ function myFunction() {
 }
 
 function openSidebar(x, y) {
-    
+
     if (x.matches) {
         document.getElementById("mySidenav")
             .style.width = "150px";
@@ -56,7 +127,7 @@ function closeNav() {
 
 function openNav() {
     var x = window.matchMedia("(max-width: 500px)");
-    
+
     if (document.getElementById("menubutton") || document.getElementById("menubutton_vela")) {
         openSidebar(x, y);
     }
@@ -110,6 +181,8 @@ $("a[href*='#']")
 $(window)
     .scroll(function() {
         if (window.location.href.includes("index.html")) {
+            var my_illus_height = document.getElementById("my_illus")
+                .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")
                 .clientHeight;
             var vela_height = document.getElementById("vela_anim")
@@ -124,6 +197,14 @@ $(window)
             var tripoffset = 300;
             var expr;
 
+        
+
+            if(z>(40)){
+                details_designer.style.opacity="0";
+                details_wife.style.opacity="0";
+                my_illus.style.opacity="1";
+                details_mother.style.opacity="0";
+            }
 
             $(".logo_cover")
                 .each(function() {
@@ -147,24 +228,23 @@ $(window)
                     }
                 });
 
-            if(y.matches){
-                expr =fitted_height;
+            if (y.matches) {
+                expr = fitted_height;
+            } else {
+                expr = fitted_height + vela_height;
             }
-            else{
-                expr =fitted_height + vela_height;
-            }        
 
             $(".ocean")
                 .each(function() {
-                   
-                        if (z > (expr) - offset) {
-                            $(this)
-                                .addClass("wave_anim");
-                        } else {
-                            $(this)
-                                .removeClass("wave_anim");
-                        }
-                    
+
+                    if (z > (expr) - offset) {
+                        $(this)
+                            .addClass("wave_anim");
+                    } else {
+                        $(this)
+                            .removeClass("wave_anim");
+                    }
+
                 });
             $(".surfer")
                 .each(function() {
@@ -188,13 +268,12 @@ $(window)
                 });
 
 
-            if(y.matches){
-                expr =fitted_height+trip_height;
+            if (y.matches) {
+                expr = fitted_height + trip_height;
+            } else {
+                expr = fitted_height + vela_height + trip_height;
             }
-            else{
-                expr =fitted_height + vela_height + trip_height;
-            }    
-                    
+
             var i = 1;
             $(".marker")
                 .each(function() {
@@ -264,7 +343,7 @@ $(window)
                     }
                 });
 
-            
+
 
             $(".skyline_background")
                 .each(function() {

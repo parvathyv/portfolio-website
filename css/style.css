@@ -101,7 +101,7 @@ img {
     transition: 0.5s;
     padding-bottom: 1rem;
     padding-top: 40px;
-    opacity:0.9;
+    opacity: 0.9;
 }
 
 .vela_sidebar {
@@ -115,7 +115,7 @@ img {
     position: fixed;
     top: 15vh;
     /*border-radius:50%;*/
-  
+
     left: 3rem;
     cursor: pointer;
     font-size: 2.5em;
@@ -132,11 +132,11 @@ img {
     color: #fff;
     display: block;
     transition: 0.3s;
-    
+
 }
 
 .sidenav a:not(:first-child) {
-    border-bottom:0.1px solid #BC4206;  
+    border-bottom: 0.1px solid #BC4206;
 }
 
 .sidenav a:hover {
@@ -151,19 +151,8 @@ img {
     margin-left: 50px;
 }
 
-#menubutton_vela{
-    color:#238EB6;
-}
-.col1.story p {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.col1.story h1 {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+#menubutton_vela {
+    color: #238EB6;
 }
 
 /* user defined classes*/
@@ -205,15 +194,15 @@ img {
 }
 
 main {
-    padding-top: 9rem;
+    padding-top: 5rem;
 }
 
-#intro .container {
-    height: 70vh;
+#intro {
+    height: 90vh;
     background-color: #000813;
     position: relative;
     display: flex;
-    flex-flow: column wrap;
+
 }
 
 .column {
@@ -248,29 +237,133 @@ main {
     display: none;
 }
 
+/*#my_illus{
+width:100%;
 
+}*/
 
-
-.col1 {
-    width: 50%;
-    height: 50%;
-}
-.col2{
-    height:20%;
-}
-.col3{
-    height:80%;
-}
-.col3 img {
-    max-width:500px;
-     
+#DESIGNER:hover {
+    font-size: 48;
 }
 
-.col1 p {
-    padding: 0 2rem 0 0;
+#WIFE:hover {
+    font-size: 48;
 }
 
 
+
+#MOTHER:hover {
+    font-size: 48;
+}
+
+
+#details_designer {
+    position: fixed;
+    bottom: 8%;
+    opacity:1;
+    display: none;
+    right: 0;
+    width: 35%;
+    font-size: 1em;
+    border-radius: 10px;
+    background: #00174B;
+    padding: 0.5rem;
+}
+
+
+
+#details_wife {
+    position: fixed;
+    bottom: 25%;
+   
+    font-size: 1em;
+    left: 0;
+    display: none;
+    width: 35%;
+    border-radius: 10px;
+    background: #00174B;
+    padding: 0.5rem;
+}
+
+#details_mother {
+    position: fixed;
+    top: 22%;
+    display: none;
+    right: 0;
+       font-size: 1em;
+    width: 35%;
+    border-radius: 10px;
+    background: #00174B;
+    padding: 0.5rem;
+}
+
+#details_designer:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#details_wife:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#details_mother:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*
+#illus_group{
+    transform:translate(-200px,94px);
+}
+*/
+/*.col1 {
+    width:50%;
+    height:100%;
+    padding-top:2rem;
+    position:relative;
+    padding-left:2rem;
+    
+   
+}
+.story{
+    position:absolute;
+    bottom:6%;
+}
+*/
+/*.col2{
+    height:40%;
+}
+
+*/
+
+.fade_in_block {
+    animation: fade_in 9s linear;
+}
+
+@keyframes fade_in {
+    0% {
+        transform: translate(10%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+
+}
+
+#intro.containerfull  {
+   overflow:hidden;
+ 
+}
+
+#intro.containerfull svg {
+    padding-top: 5rem;
+    height: 80%;
+
+}
+
+
+#my_illus {
+    margin: 0 auto;
+}
 
 /*#intro a span,#vela_scroll a span {*/
 
@@ -280,6 +373,7 @@ main {
     left: 50%;
     width: 46px;
     height: 46px;
+    display: none;
     /* margin-left: -23px; */
     border: 1px solid #fff;
     border-radius: 100%;
@@ -304,7 +398,7 @@ main {
     box-sizing: border-box;
 }
 
-a:any-link{
+a:any-link {
     -webkit-text-decoration: none;
 }
 
@@ -499,12 +593,12 @@ body.work {
 }
 
 #work1_fitted.wrapper {
-    padding-top: 6rem;
+    padding-top: 10rem;
 }
 
 #work1_fitted {
     height: auto;
-    padding-bottom: 5rem;
+   
 }
 
 #work1_vela,
@@ -666,12 +760,18 @@ body.portfolio {
     background-color: white;
 }
 
-.containerfull h3,
+/*.containerfull h3,*/
 .containerfull p {
-    margin-left: 150px;
-    padding-bottom: 1rem;
-}
+    padding:2rem;
 
+}
+.containerfull p:nth-child(1) {
+    padding-bottom:0.5rem;
+
+}
+.containerfull p:nth-child(2){
+    padding-top:0;
+}
 .work_sections {
     width: 60%;
     margin: 0 auto;
@@ -1126,14 +1226,15 @@ a.button.portfolio_vela:active {
     color: #086DF8;
 }
 
-.clouds{
-        transform:translateY(10%);
-      
-        -webkit-transform:translateY(10%);
-        -o-transform:translateY(10%);
-        -ms-transform:translateY(10%);
-        
+.clouds {
+    transform: translateY(10%);
+
+    -webkit-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+
 }
+
 
 
 @media screen and (min-width: 1800px) {
@@ -1141,10 +1242,8 @@ a.button.portfolio_vela:active {
         padding-top: 2rem;
     }
 
-    .containerfull h3,
-    .containerfull p {
-        margin-left: 28vh;
-        padding-bottom: 1rem;
+    #intro.containerfull svg{
+        padding-top:7rem;
     }
 
     .container {
@@ -1157,10 +1256,8 @@ a.button.portfolio_vela:active {
         max-width: 3000px;
     }
 
-    
 
     #intro .container {
-        height: 70vh;
         width: 80%;
 
     }
@@ -1187,10 +1284,10 @@ a.button.portfolio_vela:active {
         height: 48px;
     }
 
-    footer,
-    .fa-lg {
+    footer {
         font-size: 1em;
     }
+
 
     .dropdown-content {
         width: 300px;
@@ -1226,28 +1323,39 @@ a.button.portfolio_vela:active {
         padding-top: 6rem;
     }
 
-    #fitted_anim,#vela_anim,#trip_anim,#skyline_anim{
-        width:49.8%;
-        height:85%;
-        display:inline-block;
-    }
-    
-    #fitted_anim,#trip_anim{
-        margin-left:0.1rem;
-    }
-   
-    #index_footer{
-        margin-top:0;
+    #work1_fitted .container {
+        padding-top: 0rem;
+        padding-bottom: 8rem;
     }
 
- 
+    #fitted_anim,
+    #vela_anim,
+    #trip_anim,
+    #skyline_anim {
+        width: 49.8%;
+        height: 85%;
+        display: inline-block;
+    }
+
+    #fitted_anim,
+    #trip_anim {
+        margin-left: 0.1rem;
+    }
+
+    #index_footer {
+        margin-top: 0;
+    }
+
+
 }
 
 @media screen and (max-width: 1440px) {
     body {
         font-size: 16px;
     }
-
+    #intro.containerfull svg{
+        padding-top:8rem;
+    }
     #intro .container {
         height: 85vh;
         background-color: #000813;
@@ -1255,6 +1363,9 @@ a.button.portfolio_vela:active {
         display: flex;
         flex-flow: column wrap;
     }
+    #work1_fitted.wrapper {
+    padding-top: 14rem;
+}
 
     .container.navbar {
         height: 15vh;
@@ -1289,6 +1400,7 @@ a.button.portfolio_vela:active {
     .grid_work img {
         padding-top: 0;
     }
+
 
     .wrapper {
         height: auto;
@@ -1372,7 +1484,10 @@ a.button.portfolio_vela:active {
     body {
         font-size: 16px;
     }
-
+      #intro.containerfull svg{
+        padding:5rem;
+        padding-top:10rem;
+    }
     .my_video {
         width: 800px;
         height: 580px;
@@ -1400,7 +1515,10 @@ a.button.portfolio_vela:active {
         opacity: 0;
     }
 
-  
+
+.portfolio_header {
+    padding-top: 180px;
+}
 
     .portfolio h1 {
         font-size: 1.8em;
@@ -1424,7 +1542,7 @@ a.button.portfolio_vela:active {
     }
 
     .sidenav .closebtn {
-        top: -2rem;
+     
         right: 15px;
         font-size: 36px;
         margin-left: 15px;
@@ -1479,7 +1597,7 @@ a.button.portfolio_vela:active {
         width: auto;
     }
 
-   
+
 
     .sidenav {
         padding-top: 20px;
@@ -1501,12 +1619,7 @@ a.button.portfolio_vela:active {
         display: block;
     }
 
-    .containerfull h3,
-    .containerfull p {
-        margin-left: 100px;
-        width: 70%;
-    }
-
+    
     .grid_work>div {
         flex: none;
     }
@@ -1532,8 +1645,9 @@ a.button.portfolio_vela:active {
 
     #work1_trip img,
     #work1_skyline img {
-        padding-top:6rem;
+        padding-top: 6rem;
     }
+
     .container.contact_details {
         display: block;
         height: auto;
@@ -1591,6 +1705,11 @@ a.button.portfolio_vela:active {
 
     .menubutton {
         font-size: 1.3em;
+
+    }
+      #intro.containerfull svg{
+        padding:3rem;
+        padding-top:2rem;
     }
 }
 
@@ -1602,7 +1721,9 @@ a.button.portfolio_vela:active {
     main {
         padding-top: 5rem;
     }
-
+    #intro.containerfull svg{
+        padding:0.5rem;
+    }
     .menu,
     .menu1 {
         font-weight: 400;
@@ -1811,11 +1932,7 @@ a.button.portfolio_vela:active {
         font-size: 1.2em;
     }
 
-    .containerfull h3,
-    .containerfull p {
-        margin-left: 44px;
-        width: 80%;
-    }
+    
 
     .content_img div {
         font-size: 12px;
@@ -1905,18 +2022,19 @@ a.button.portfolio_vela:active {
         font-size: 11px;
     }
 
-    
-    .col3{
-       display:none;
-         
+
+    .col3 {
+        display: none;
+
     }
+
     /*.col3 img{
         padding-top:1rem;
         width:200px;
         margin-left:20%;
     }*/
 
-   
+
 }
 
 @media screen and (max-width: 320px) {
