@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="43px" height="86px" viewBox="0 0 43 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Group 2</title>
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-313">
-            <stop stop-color="#0E91D5" offset="0%"></stop>
-            <stop stop-color="#0DB8D3" offset="50.275896%"></stop>
-            <stop stop-color="#074A7A" offset="100%"></stop>
-        </linearGradient>
-        <circle id="path-2mm" cx="200" cy="200" r="200"></circle>
-        <path d="M68.6781921,377.774958 L68.6781921,257.255224 L96.4169739,257.255224 C155.095166,257.255224 183.900824,229.301978 183.900824,177.977984 L183.900824,136.27724 C183.900824,111.999264 215.933883,73.9068505 280,22 C220.666667,21.3333333 159.472325,21.3333333 96.4169739,22 C33.3616231,22.6666667 1.22263184,34.3333333 2.04636308e-12,57 L2.04636308e-12,377.774958 L68.6781921,377.774958 Z M96.258847,210.97198 L60.2974691,210.97198 L60.2974691,102.443119 C75.7803524,80.066332 87.7674784,68.8779384 96.258847,68.8779384 C104.750216,68.8779384 132.663933,68.8779384 180,68.8779384 C149.068903,104.171655 133.603355,125.434458 133.603355,132.666346 L133.603355,180.748753 C133.603355,203.645137 120.463621,210.97198 96.258847,210.97198 Z M326,378 L326,0 L275,38.5214844 L275,378 L326,378 Z" id="path-4mm"></path>
-    </defs>
-    <g id="Page-1mm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD-Copymm" transform="translate(-89.000000, -58.000000)">
-            <g id="Group-2mm" transform="translate(89.000000, 58.000000)">
-                <mask id="mask-3" fill="white">
-                    <use xlink:href="#path-2mm"></use>
-                </mask>
-                <use id="Ovalmm" fill="url(#linearGradient-313)" xlink:href="#path-2mm"></use>
-                <g id="Groupmm" mask="url(#mask-3)">
-                    <g transform="translate(20.000000, 5.000000)">
-                        <mask id="mask-5" fill="white">
-                            <use xlink:href="#path-4mm"></use>
-                        </mask>
-                        <g id="ParvathyIyer" stroke="none" fill="none" fill-rule="nonzero"></g>
-                        <polygon id="Rectangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" mask="url(#mask-5)" points="-1 19 331 19 331 386 -1 386"></polygon>
-                    </g>
-                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="HomemadeApple-Regular, Homemade Apple" font-weight="normal">
+        <g id="Desktop-HD-Copy" transform="translate(-15.000000, 16.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(21.000000, -16.000000)">
+                <text id="p" font-size="24" letter-spacing="0.40479984">
+                    <tspan x="0" y="50">p</tspan>
+                </text>
+                <text id="i" font-size="40" letter-spacing="0.6746664">
+                    <tspan x="19" y="52">i</tspan>
+                </text>
             </g>
         </g>
     </g>

@@ -233,10 +233,13 @@ main {
     display: none;
 }
 
-/*#my_illus{
-width:100%;
 
-}*/
+.logo{
+    width:10%;
+    margin-left:20%;
+   
+    margin-bottom:-3.2rem;
+}
 
 #DESIGNER:hover {
     font-size: 48;
@@ -1488,6 +1491,12 @@ a.button.portfolio_vela:active {
     body {
         font-size: 16px;
     }
+    .logo{
+    width:12%;
+    margin-left:20%;
+   
+    margin-bottom:-3rem;
+    }
 
     #intro.containerfull svg {
         padding: 5rem;
@@ -1601,6 +1610,13 @@ a.button.portfolio_vela:active {
 
     .col1 {
         width: auto;
+    }
+
+    .logo{
+    width:14%;
+    margin-left:20%;
+   
+    margin-bottom:-2rem;
     }
 
 
@@ -1727,6 +1743,11 @@ a.button.portfolio_vela:active {
 
     main {
         padding-top: 5rem;
+    }
+    .logo{
+    
+   
+    margin-bottom:-0.5rem;
     }
 
     #intro {
