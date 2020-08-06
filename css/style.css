@@ -234,11 +234,11 @@ main {
 }
 
 
-.logo{
-    width:10%;
-    margin-left:20%;
-   
-    margin-bottom:-3.2rem;
+.logo {
+    width: 10%;
+    margin-left: 20%;
+
+    margin-bottom: -3.2rem;
 }
 
 #DESIGNER:hover {
@@ -1491,11 +1491,12 @@ a.button.portfolio_vela:active {
     body {
         font-size: 16px;
     }
-    .logo{
-    width:12%;
-    margin-left:20%;
-   
-    margin-bottom:-3rem;
+
+    .logo {
+        width: 12%;
+        margin-left: 20%;
+
+        margin-bottom: -3rem;
     }
 
     #intro.containerfull svg {
@@ -1612,11 +1613,11 @@ a.button.portfolio_vela:active {
         width: auto;
     }
 
-    .logo{
-    width:14%;
-    margin-left:20%;
-   
-    margin-bottom:-2rem;
+    .logo {
+        width: 14%;
+        margin-left: 20%;
+
+        margin-bottom: -2rem;
     }
 
 
@@ -1744,10 +1745,11 @@ a.button.portfolio_vela:active {
     main {
         padding-top: 5rem;
     }
-    .logo{
-    
-   
-    margin-bottom:-0.5rem;
+
+    .logo {
+
+
+        margin-bottom: -rem;
     }
 
     #intro {
