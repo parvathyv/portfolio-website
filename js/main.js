@@ -180,7 +180,7 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
-        if (window.location.href.includes("index.html")) {
+        if (window.location.href.includes("index.html")||(window.location.href=="//parvathyv.github.io/portfolio-website/")) {
             var my_illus_height = document.getElementById("my_illus")
                 .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")
