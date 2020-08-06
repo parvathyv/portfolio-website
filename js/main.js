@@ -7,10 +7,9 @@ var y = window.matchMedia("(min-width: 1800px)");
 if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") 
 {
 
-    
     var my_illus = document.getElementById("my_illus");
     var designer = document.getElementById("DESIGNER");
-    var details_designer = document.getElementById("details_designer");
+    var details_designer1 = document.getElementById("details_designer");
 
     var wife = document.getElementById("WIFE");
     var details_wife = document.getElementById("details_wife");
@@ -20,7 +19,7 @@ if (window.location.href.includes("index.html") || window.location.href == "http
 
 
     designer.addEventListener("click", fade_in_text);
-    details_designer.addEventListener("click", fade_out_text);
+    //details_designer1.addEventListener("click", fade_out_text);
 
     wife.addEventListener("click", fade_in_text1);
     details_wife.addEventListener("click", fade_out_text1);
@@ -30,15 +29,16 @@ if (window.location.href.includes("index.html") || window.location.href == "http
 }
 
 function fade_in_text() {
-    
+
     my_illus.style.opacity = "0.2";
-    details_designer.style.display = "block";
+    details_designer1.style.display = "block";
 
 }
 
 function fade_out_text() {
-    my_illus.style.opacity = "1";
-    details_designer.style.display = "none";
+    console.log("inhere");
+    document.getElementById("my_illus").style.opacity = "1";
+    document.getElementById("details_designer").style.display = "none";
 
 }
 
@@ -206,7 +206,7 @@ $(window)
 
 
             if (z > (30)) {
-                details_designer.style.opacity = "0";
+                details_designer1.style.opacity = "0";
                 details_wife.style.opacity = "0";
                 my_illus.style.opacity = "1";
                 details_mother.style.opacity = "0";

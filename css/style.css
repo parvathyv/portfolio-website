@@ -1500,7 +1500,7 @@ a.button.portfolio_vela:active {
     }
 
     #intro.containerfull svg {
-        padding: 5rem;
+        padding: 7rem;
         padding-top: 10rem;
     }
 
@@ -1732,8 +1732,9 @@ a.button.portfolio_vela:active {
     }
 
     #intro.containerfull svg {
-        padding: 3rem;
         padding-top: 2rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 }
 
@@ -1754,13 +1755,15 @@ a.button.portfolio_vela:active {
 
     #intro {
         padding-top: 0;
+        height:50vh;
     }
 
     #intro.containerfull svg {
-        padding-top: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
+  
 
     .menu,
     .menu1 {
@@ -1783,21 +1786,21 @@ a.button.portfolio_vela:active {
 
     #details_designer {
 
-        bottom: 2%;
+        bottom: 45%;
 
 
         width: 60%;
 
-        padding: 0;
+     
     }
 
     .containerfull p {
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     #details_wife {
 
-        bottom: 35%;
+        bottom: 40%;
 
 
 
@@ -1807,7 +1810,7 @@ a.button.portfolio_vela:active {
 
     #details_mother {
 
-        top: 22%;
+        top: 15%;
 
 
         width: 50%;
