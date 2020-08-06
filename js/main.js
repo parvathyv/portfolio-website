@@ -4,9 +4,10 @@ to menu when the user clicks on the icon */
 
 var y = window.matchMedia("(min-width: 1800px)");
 
-if ((window.location.href.includes("index.html") || (window.location.href == "https://parvathyv.github.io/portfolio-website/")) {
+if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") 
+{
 
-
+    
     var my_illus = document.getElementById("my_illus");
     var designer = document.getElementById("DESIGNER");
     var details_designer = document.getElementById("details_designer");
@@ -29,6 +30,7 @@ if ((window.location.href.includes("index.html") || (window.location.href == "ht
 }
 
 function fade_in_text() {
+    
     my_illus.style.opacity = "0.2";
     details_designer.style.display = "block";
 
@@ -82,7 +84,7 @@ function myFunction() {
     var el;
     // To remove a menu element for Mobile
 
-    if ((window.location.href.includes("index.html") || (window.location.href=="https://parvathyv.github.io/portfolio-website/")) {
+    if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") {
 
         if (document.getElementById("index_click")) {
             el = document.getElementById("index_click");
@@ -184,7 +186,7 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
-        if ((window.location.href.includes("index.html") || (window.location.href == "https://parvathyv.github.io/portfolio-website/")) {
+        if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")  {
             var my_illus_height = document.getElementById("my_illus")
                 .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")
@@ -203,7 +205,7 @@ $(window)
 
 
 
-            if (z > (40)) {
+            if (z > (30)) {
                 details_designer.style.opacity = "0";
                 details_wife.style.opacity = "0";
                 my_illus.style.opacity = "1";
