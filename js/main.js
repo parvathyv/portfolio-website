@@ -79,7 +79,7 @@ function myFunction() {
     var x = document.getElementById("myTopmenu");
     var el;
     // To remove a menu element for Mobile
-    if (window.location.href.includes("index.html")|(|window.location.href=="//parvathyv.github.io/portfolio-website/")) {
+    if (window.location.href.includes("index.html")|(|window.location.href=="parvathyv.github.io/portfolio-website/")) {
         if (document.getElementById("index_click")) {
             el = document.getElementById("index_click");
             el.remove();
