@@ -3,7 +3,7 @@
 to menu when the user clicks on the icon */
 
 var y = window.matchMedia("(min-width: 1800px)");
-if (window.location.href.includes("index.html")||(window.location.href=="parvathyv.github.io/portfolio-website/")) {
+if (window.location.href.includes("index.html")||(window.location.href=="https://parvathyv.github.io/portfolio-website/index.html")) {
 
     var my_illus = document.getElementById("my_illus");
     var designer = document.getElementById("DESIGNER");
@@ -79,7 +79,7 @@ function myFunction() {
     var x = document.getElementById("myTopmenu");
     var el;
     // To remove a menu element for Mobile
-    if (window.location.href.includes("index.html")|(|window.location.href=="parvathyv.github.io/portfolio-website/")) {
+    if (window.location.href.includes("index.html")|(|window.location.href=="https://parvathyv.github.io/portfolio-website/index.html")) {
         if (document.getElementById("index_click")) {
             el = document.getElementById("index_click");
             el.remove();
@@ -180,7 +180,7 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
-        if (window.location.href.includes("index.html")||(window.location.href=="//parvathyv.github.io/portfolio-website/")) {
+        if (window.location.href.includes("index.html")||(window.location.href=="https://parvathyv.github.io/portfolio-website/index.html/")) {
             var my_illus_height = document.getElementById("my_illus")
                 .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")
