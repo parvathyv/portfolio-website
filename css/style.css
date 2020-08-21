@@ -221,6 +221,7 @@ main {
     max-width: 60%;
     overflow: hidden;
     padding-right: 1.2rem;
+    padding-left:4rem;
 }
 
 .menu a {
@@ -452,8 +453,7 @@ a:any-link {
     height: 50vh;
     width: 80%;
     display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
+    
 }
 
 .contact_information {
@@ -482,7 +482,7 @@ a:any-link {
 
 .footer_header {
     width: 80%;
-    padding-top: 4rem;
+    padding-top: 1rem;
     margin: 0 auto;
     text-align: left;
 }
