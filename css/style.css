@@ -121,14 +121,16 @@ img {
     font-size: 2.5em;
     color: #02633C;
 }
-
+.menu_button{
+    background-color:#F67B0B ;
+}
 
 
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 4px 4px 4px 32px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -609,10 +611,19 @@ body.work {
     padding-bottom: 5rem;
 }
 
+#case_study{
+    margin:0 auto;
+  
+    z-index:9999;
+
+}
 #work1_trip {
     background-color: #042853;
 }
-
+.top_ul{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
 #work1_fitted .container {
     background-color: #DD3804;
     display: flex;
@@ -1108,6 +1119,22 @@ a.button.portfolio_fitted {
     border: 2px solid #F43710;
     color: #A92201;
 }
+a.button.portfolio_fitted.side {
+    margin-left:-1.2rem;
+    width:150px;
+    margin-top: 1.2rem;
+    font-size:0.8em;
+
+}
+
+a.button.portfolio_fitted.double {
+  
+    width:300px;
+    margin-left:3rem;
+    border-color:#00873D;
+  
+
+}
 
 a.button.portfolio_fitted:visited {
     background: linear-gradient(to bottom, #F43710 0%, #A92201 100%);
@@ -1299,9 +1326,9 @@ a.button.portfolio_vela:active {
     }
 
     .sidenav a {
-        font-size: 1.2em;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        font-size: 1em;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
     #about_skills.wrapper {
@@ -1425,13 +1452,106 @@ a.button.portfolio_vela:active {
     }
 
     .container.contact_details {
-        padding-bottom: 5rem;
-        padding-top: 1rem;
-    }
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.contact_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.contact_information p {
+    width: 80%;
+    padding: 0 0 0 0;
+}
+
+.phone,
+.email,
+.social {
+    margin-top: 0.5rem;
+}
 
     #index_footer {
-        margin-top: -2rem;
-    }
+    background-color: #011531;
+    margin-top: -6rem;
+    padding-bottom: 4rem;
+}
+
+.footer_header {
+    width: 80%;
+    padding-top: 4rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer h3 {
+    padding-top: 6rem;
+    padding-left: 0;
+}
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=text]::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.3;
+    /* Firefox */
+}
+
+input[type=text]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+input [type=text]::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+input textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+input textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+input textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
 
     .work_sections {
         padding-top: 2rem;
