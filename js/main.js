@@ -139,7 +139,7 @@ function openNav() {
     }
 }
 
-$(".menu_button")
+$(".close_button")
     .each(function() {
         $(this)
             .click(function() {

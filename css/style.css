@@ -10,7 +10,7 @@ body {
     background-color: white
         /*#02305E*/
     ;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     /* Sets the font size to 16px */
     font-weight: 300;
@@ -119,18 +119,21 @@ img {
     left: 3rem;
     cursor: pointer;
     font-size: 2.5em;
-    color: #02633C;
+    color: #02453B;
 }
 .menu_button{
     background-color:#F67B0B ;
 }
 
+.menu_button_vela{
+    background-color:#00080B ;
+}
 
 
 .sidenav a {
-    padding: 4px 4px 4px 32px;
+    padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -1065,7 +1068,7 @@ a.button.resume:visited {
 }
 
 #vela a:visited {
-    color: #3B87F8;
+    color: #81C1FF;
 }
 
 a.button.resume:hover,
@@ -1119,12 +1122,14 @@ a.button.portfolio_fitted {
     border: 2px solid #F43710;
     color: #A92201;
 }
-a.button.portfolio_fitted.side {
+
+
+
+.side{
     margin-left:-1.2rem;
     width:150px;
     margin-top: 1.2rem;
     font-size:0.8em;
-
 }
 
 a.button.portfolio_fitted.double {
@@ -1132,6 +1137,15 @@ a.button.portfolio_fitted.double {
     width:300px;
     margin-left:3rem;
     border-color:#00873D;
+  
+
+}
+
+a.button.portfolio_vela.double {
+  
+    width:300px;
+    margin-left:3rem;
+    border-color:#55D6EF;
   
 
 }
