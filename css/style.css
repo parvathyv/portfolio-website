@@ -1070,9 +1070,14 @@ a.button.resume:visited {
 #vela a:visited {
     color: #81C1FF;
 }
-
-#vela h4{
+.improv .top_ul{
+    padding-bottom:0;
+}
+#vela h4,#sol h4{
     padding-top: 2rem;
+}
+#sol img{
+    padding-top:0;
 }
 a.button.resume:hover,
 a.button.resume:focus {

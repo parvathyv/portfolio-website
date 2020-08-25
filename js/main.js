@@ -4,7 +4,7 @@ to menu when the user clicks on the icon */
 
 var y = window.matchMedia("(min-width: 1800px)");
 
-if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") 
+if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")
 {
 
     var my_illus = document.getElementById("my_illus");
