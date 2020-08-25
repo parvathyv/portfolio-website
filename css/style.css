@@ -1071,6 +1071,9 @@ a.button.resume:visited {
     color: #81C1FF;
 }
 
+#vela h4{
+    padding-top: 2rem;
+}
 a.button.resume:hover,
 a.button.resume:focus {
     background-color: #EC1D49;
