@@ -1,4 +1,14 @@
 /*jslint browser */
+
+$(document).ready(function() {
+    //Preloader
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+});
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
 
