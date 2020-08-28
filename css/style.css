@@ -121,19 +121,20 @@ img {
     font-size: 2.5em;
     color: #02453B;
 }
-.menu_button{
-    background-color:#F67B0B ;
+
+.menu_button {
+    background-color: #F67B0B;
 }
 
-.menu_button_vela{
-    background-color:#00080B ;
+.menu_button_vela {
+    background-color: #00080B;
 }
 
 
 .sidenav a {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -226,7 +227,7 @@ main {
     max-width: 60%;
     overflow: hidden;
     padding-right: 1.2rem;
-    padding-left:4rem;
+    padding-left: 4rem;
 }
 
 .menu a {
@@ -242,7 +243,7 @@ main {
 
 .logo {
     width: 12%;
-    margin-left:10%;
+    margin-left: 10%;
 
     padding-top: 2rem;
 }
@@ -458,7 +459,7 @@ a:any-link {
     height: 50vh;
     width: 80%;
     display: flex;
-    
+
 }
 
 .contact_information {
@@ -503,6 +504,7 @@ textarea {
     width: 90%;
     padding: 12px;
     background: transparent;
+
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 6px;
@@ -580,6 +582,10 @@ input textarea::-ms-input-placeholder {
     color: white;
 }
 
+.covers img {
+    margin-top: 5rem;
+
+}
 
 #about_header.container {
     background-color: #5B0130;
@@ -614,19 +620,22 @@ body.work {
     padding-bottom: 5rem;
 }
 
-#case_study{
-    margin:0 auto;
-  
-    z-index:9999;
+#case_study {
+    margin: 0 auto;
+
+    z-index: 9999;
 
 }
+
 #work1_trip {
     background-color: #042853;
 }
-.top_ul{
-    padding-top:1rem;
-    padding-bottom:1rem;
+
+.top_ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
 #work1_fitted .container {
     background-color: #DD3804;
     display: flex;
@@ -1070,15 +1079,20 @@ a.button.resume:visited {
 #vela a:visited {
     color: #81C1FF;
 }
-.improv .top_ul{
-    padding-bottom:0;
+
+.improv .top_ul {
+    padding-bottom: 0;
 }
-#vela h4,#sol h4{
+
+#vela h4,
+#sol h4 {
     padding-top: 2rem;
 }
-#sol img{
-    padding-top:0;
+
+#sol img {
+    padding-top: 0;
 }
+
 a.button.resume:hover,
 a.button.resume:focus {
     background-color: #EC1D49;
@@ -1133,28 +1147,28 @@ a.button.portfolio_fitted {
 
 
 
-.side{
-    margin-left:-1.2rem;
-    width:150px;
+.side {
+    margin-left: -1.2rem;
+    width: 150px;
     margin-top: 1.2rem;
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
 a.button.portfolio_fitted.double {
-  
-    width:300px;
-    margin-left:3rem;
-    border-color:#00873D;
-  
+
+    width: 300px;
+    margin-left: 3rem;
+    border-color: #00873D;
+
 
 }
 
 a.button.portfolio_vela.double {
-  
-    width:300px;
-    margin-left:3rem;
-    border-color:#55D6EF;
-  
+
+    width: 300px;
+    margin-left: 3rem;
+    border-color: #55D6EF;
+
 
 }
 
@@ -1333,14 +1347,18 @@ a.button.portfolio_vela:active {
     }
 
     .fa {
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
     }
 
     footer {
         font-size: 1em;
     }
 
+    .covers img {
+        margin-top: 7rem;
+
+    }
 
     .dropdown-content {
         width: 300px;
@@ -1469,111 +1487,117 @@ a.button.portfolio_vela:active {
         max-width: 100%;
     }
 
+    .covers img {
+        margin-top: 8rem;
+
+    }
+
     .menu a {
         padding: 0.7rem;
     }
 
     .container.contact_details {
-    height: 50vh;
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-}
+        height: 50vh;
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
 
-.contact_information {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-basis: 50%;
-}
+    .contact_information {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 50%;
+    }
 
-.contact_information p {
-    width: 80%;
-    padding: 0 0 0 0;
-}
+    .contact_information p {
+        width: 80%;
+        padding: 0 0 0 0;
+    }
 
-.phone,
-.email,
-.social {
-    margin-top: 0.5rem;
-}
+    .phone,
+    .email,
+    .social {
+        margin-top: 0.5rem;
+    }
 
     #index_footer {
-    background-color: #011531;
-    margin-top: -6rem;
-    padding-bottom: 4rem;
-}
+        background-color: #011531;
+        margin-top: -6rem;
+        padding-bottom: 4rem;
+    }
 
-.footer_header {
-    width: 80%;
-    padding-top: 4rem;
-    margin: 0 auto;
-    text-align: left;
-}
+    .footer_header {
+        width: 80%;
+        padding-top: 4rem;
+        margin: 0 auto;
+        text-align: left;
+    }
 
-footer h3 {
-    padding-top: 6rem;
-    padding-left: 0;
-}
-input[type=text],
-select,
-textarea {
-    width: 90%;
-    padding: 12px;
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-}
+    footer h3 {
+        padding-top: 6rem;
+        padding-left: 0;
+    }
 
-input[type=submit] {
-    background: transparent;
-    color: #fff;
-    border-radius: 10px;
-    padding: 12px 20px;
-    border: 1px solid white;
-    cursor: pointer;
-}
+    input[type=text],
+    select,
+    textarea {
+        width: 90%;
+        padding: 12px;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+    input[type=submit] {
+        background: transparent;
+        color: #fff;
+        border-radius: 10px;
+        padding: 12px 20px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
 
-input[type=text]::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 0.3;
-    /* Firefox */
-}
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
 
-input[type=text]:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-}
+    input[type=text]::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 0.3;
+        /* Firefox */
+    }
 
-input [type=text]::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-}
+    input[type=text]:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+    }
 
-input textarea::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1;
-    /* Firefox */
-}
+    input [type=text]::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+    }
 
-input textarea:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-}
+    input textarea::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1;
+        /* Firefox */
+    }
 
-input textarea::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-}
+    input textarea:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+    }
+
+    input textarea::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+    }
 
     .work_sections {
         padding-top: 2rem;
@@ -1634,6 +1658,8 @@ input textarea::-ms-input-placeholder {
         font-size: 16px;
     }
 
+
+
     .logo {
         width: 12%;
         margin-left: 20%;
@@ -1653,6 +1679,11 @@ input textarea::-ms-input-placeholder {
 
     .content_img div {
         font-size: 18px;
+    }
+
+    .covers img {
+        margin-top: 10rem;
+
     }
 
     .grid_work .item:nth-child(2) p,
@@ -1746,6 +1777,24 @@ input textarea::-ms-input-placeholder {
         margin-top: 0;
     }
 
+    a.button.portfolio_fitted.double {
+
+        width: 200px;
+        margin-left: 0;
+
+
+
+    }
+
+    a.button.portfolio_vela.double {
+
+        width: 200px;
+        margin-left: 0;
+
+
+
+    }
+
     #intro .container {
         height: auto;
         display: block;
@@ -1773,7 +1822,8 @@ input textarea::-ms-input-placeholder {
         padding: 0 0 0 32px;
     }
 
-    .sidenav .closebtn {
+    .sidenav .closebtn,
+    .sidenav.vela_sidebar.closebtn {
         top: -2rem;
         right: 15px;
         font-size: 28px;
@@ -1882,11 +1932,18 @@ input textarea::-ms-input-placeholder {
 
 @media screen and (max-width: 500px) {
     body {
-        font-size: 10px;
+        font-size: 11px;
+        font-weight: 400;
     }
 
     main {
         padding-top: 5rem;
+    }
+
+
+    .covers img {
+        margin-top: 8rem;
+
     }
 
     .logo {
@@ -1897,7 +1954,7 @@ input textarea::-ms-input-placeholder {
 
     #intro {
         padding-top: 0;
-        height:50vh;
+        height: 50vh;
     }
 
     #intro.containerfull svg {
@@ -1905,7 +1962,7 @@ input textarea::-ms-input-placeholder {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-  
+
 
     .menu,
     .menu1 {
@@ -1933,7 +1990,7 @@ input textarea::-ms-input-placeholder {
 
         width: 60%;
 
-     
+
     }
 
     .containerfull p {
