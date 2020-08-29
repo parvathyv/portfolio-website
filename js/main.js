@@ -14,7 +14,7 @@ to menu when the user clicks on the icon */
 
 var y = window.matchMedia("(min-width: 1800px)");
 
-if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")
+if (window.location.href.includes("about.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/about.html")
 {
 
     var my_illus = document.getElementById("my_illus");
@@ -41,7 +41,9 @@ if (window.location.href.includes("index.html") || window.location.href == "http
 function fade_in_text() {
 
     my_illus.style.opacity = "0.2";
+    
     details_designer1.style.display = "block";
+
 
 }
 
@@ -196,9 +198,23 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
+        
+         if (window.location.href.includes("about.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/about.html")  {
+          if ($(window)
+                .scrollTop() > (30)) {
+                details_designer1.style.opacity = "0";
+                details_wife.style.opacity = "0";
+               my_illus.style.opacity = "1";
+                details_mother.style.opacity = "0";
+
+            }
+         }   
+
+
         if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")  {
-            var my_illus_height = document.getElementById("my_illus")
+            var my_illus_height = document.getElementById("background_illus")
                 .clientHeight;
+                //var my_illus_height=0;
             var fitted_height = document.getElementById("fitted_anim")
                 .clientHeight;
             var vela_height = document.getElementById("vela_anim")
@@ -215,12 +231,12 @@ $(window)
 
 
 
-            if (z > (30)) {
+           /* if (z > (30)) {
                 details_designer1.style.opacity = "0";
                 details_wife.style.opacity = "0";
-                my_illus.style.opacity = "1";
+               // my_illus.style.opacity = "1";
                 details_mother.style.opacity = "0";
-            }
+            }*/
 
             $(".logo_cover")
                 .each(function() {

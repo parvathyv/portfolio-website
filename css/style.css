@@ -223,12 +223,12 @@ main {
     padding-top: 5rem;
 }
 
-#intro {
-    height: 90vh;
-    background-color: #000813;
-    position: relative;
-    display: flex;
 
+#intro svg{
+    max-height:1024px;
+}
+#intro.containerfull{
+background-color: #000813;
 }
 
 .column {
@@ -292,7 +292,7 @@ main {
     width: 35%;
     font-size: 1em;
     border-radius: 10px;
-    background: #00174B;
+    background: #5B0130;
     padding: 0.5rem;
 }
 
@@ -307,7 +307,7 @@ main {
     display: none;
     width: 35%;
     border-radius: 10px;
-    background: #00174B;
+    background: #5B0130;
     padding: 0.5rem;
 }
 
@@ -319,7 +319,7 @@ main {
     font-size: 1em;
     width: 35%;
     border-radius: 10px;
-    background: #00174B;
+    background: #5B0130;
     padding: 0.5rem;
 }
 
@@ -375,20 +375,31 @@ main {
 
 }
 
-#intro.containerfull {
+#about.containerfull {
     overflow: hidden;
+    background-color:#36001C;
+}
+
+
+
+
+
+
 
 }
 
-#intro.containerfull svg {
-    padding-top: 5rem;
-    height: 80%;
+#about.containerfull svg {
+    padding-top: 12rem;
+    padding-bottom:5rem;
+    
 
 }
 
 
 #my_illus {
     margin: 0 auto;
+    max-height:600px;
+    background-color: #36001C;
 }
 
 /*#intro a span,#vela_scroll a span {*/
@@ -472,6 +483,8 @@ a:any-link {
     max-width: 100%;
     max-height: 100%;
 }
+
+
 
 /*Footer*/
 
@@ -602,10 +615,6 @@ input textarea::-ms-input-placeholder {
     color: white;
 }
 
-.covers img {
-    margin-top: 5rem;
-
-}
 
 #about_header.container {
     background-color: #5B0130;
@@ -983,7 +992,7 @@ body.about {
 .content_img {
     font-size: 12px;
     width: 100%;
-    background: #36001C;
+    background: #260014;
 }
 
 .content_img div {
@@ -1020,6 +1029,7 @@ body.about {
 #about_skills.wrapper {
     background-color: #880148;
     height: auto;
+    padding-bottom:5rem;
 }
 
 #about_skills .container {
@@ -1328,11 +1338,18 @@ a.button.portfolio_vela:active {
     .containerfull {
         padding-top: 2rem;
     }
-
+    
     /*#intro.containerfull svg{
        padding-top:7rem;
     }*/
+    #about.containerfull svg {
+        margin-top: 12rem;
+        margin-bottom:5rem;
+      margin-left:auto;
+      margin-right:auto;
+     
 
+    }
     .container {
         margin-top: 0;
         margin-bottom: 0;
@@ -1344,10 +1361,7 @@ a.button.portfolio_vela:active {
     }
 
 
-    #intro .container {
-        width: 80%;
-
-    }
+    
 
     body {
         font-size: 18px;
@@ -1359,7 +1373,7 @@ a.button.portfolio_vela:active {
 
     .grid_work {
         font-size: 1em;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
     }
 
     .contact_information p {
@@ -1375,10 +1389,7 @@ a.button.portfolio_vela:active {
         font-size: 1em;
     }
 
-    .covers img {
-        margin-top: 7rem;
-
-    }
+   
 
     .dropdown-content {
         width: 300px;
@@ -1445,9 +1456,10 @@ a.button.portfolio_vela:active {
         font-size: 16px;
     }
 
-    #intro.containerfull svg {
-        padding-top: 8rem;
-    }
+    /*#about.containerfull svg {
+        padding-top: 12rem;
+        padding-bottom:5rem;
+    }*/
 
     #intro .container {
         height: 85vh;
@@ -1507,10 +1519,7 @@ a.button.portfolio_vela:active {
         max-width: 100%;
     }
 
-    .covers img {
-        margin-top: 8rem;
-
-    }
+   
 
     .menu a {
         padding: 0.7rem;
@@ -1687,11 +1696,14 @@ a.button.portfolio_vela:active {
         margin-bottom: -3rem;
     }
 
-    #intro.containerfull svg {
-        padding: 7rem;
-        padding-top: 10rem;
+    #about.containerfull svg {
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:12rem;
+        margin-bottom:5rem;
+        
     }
-
+         
     .my_video {
         width: 800px;
         height: 580px;
@@ -1701,10 +1713,7 @@ a.button.portfolio_vela:active {
         font-size: 18px;
     }
 
-    .covers img {
-        margin-top: 10rem;
-
-    }
+  
 
     .grid_work .item:nth-child(2) p,
     .grid_work .item:nth-child(4) p {
@@ -1943,10 +1952,12 @@ a.button.portfolio_vela:active {
 
     }
 
-    #intro.containerfull svg {
-        padding-top: 2rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
+    #about.containerfull svg {
+        margin-top: 12rem;
+      margin-left:auto;
+      margin-right:auto;
+     
+
     }
 }
 
@@ -1961,10 +1972,6 @@ a.button.portfolio_vela:active {
     }
 
 
-    .covers img {
-        margin-top: 8rem;
-
-    }
 
     .logo {
 
@@ -1977,10 +1984,12 @@ a.button.portfolio_vela:active {
         height: 50vh;
     }
 
-    #intro.containerfull svg {
-        padding-top: 2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
+     #about.containerfull svg {
+        margin-top: 12rem;
+      margin-left:auto;
+      margin-right:auto;
+     
+
     }
 
 
@@ -2085,10 +2094,7 @@ a.button.portfolio_vela:active {
         padding: 0;
     }
 
-    .about img {
-        margin-top: 0;
-        padding-top: 3rem;
-    }
+   
 
     .containerfull {
         margin-top: -2em;

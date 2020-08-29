@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="1024px" viewBox="0 0 1200 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desktop HD Copy</title>
+    <g id="Desktop-HD-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#042853" x="0" y="0" width="1200" height="1024"></rect>
+        <rect id="Rectangle-Copy-22" fill="#000813" x="0" y="0" width="1200" height="1024"></rect>
+        <text id="I-am-Parvathy-Iyer," font-family="Lato-Light, Lato" font-size="20" font-weight="300" line-spacing="30" letter-spacing="0.5" fill="#FFFFFF">
+            <tspan x="85" y="590">I am Parvathy Iyer, an UX Designer based in Austin, TX with a passion for human centered experiences via </tspan>
+            <tspan x="85" y="620">creative choices. My background in Design and Business Intelligence allow for a multidisciplinary approach to </tspan>
+            <tspan x="85" y="650">creating impactful solutions to problems by placing the user at the forefront of the process and the product.</tspan>
+        </text>
+        <text id="Hello." font-family="Lato-Bold, Lato" font-size="40" font-weight="bold" line-spacing="30" letter-spacing="1" fill="#FFFFFF">
+            <tspan x="85" y="549">Hello.</tspan>
+        </text>
+    </g>
+</svg>
