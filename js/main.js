@@ -18,18 +18,18 @@ if (window.location.href.includes("about.html") || window.location.href == "http
 {
 
     var my_illus = document.getElementById("my_illus");
-    var designer = document.getElementById("DESIGNER");
+    var designer = document.getElementById("designer_para");
     var details_designer1 = document.getElementById("details_designer");
 
-    var wife = document.getElementById("WIFE");
+    var wife = document.getElementById("wife_para");
     var details_wife = document.getElementById("details_wife");
 
-    var mother = document.getElementById("MOTHER");
+    var mother = document.getElementById("mother_para");
     var details_mother = document.getElementById("details_mother");
 
 
     designer.addEventListener("click", fade_in_text);
-    //details_designer1.addEventListener("click", fade_out_text);
+    details_designer1.addEventListener("click", fade_out_text);
 
     wife.addEventListener("click", fade_in_text1);
     details_wife.addEventListener("click", fade_out_text1);
@@ -39,22 +39,21 @@ if (window.location.href.includes("about.html") || window.location.href == "http
 }
 
 function fade_in_text() {
-
+ console.log("here");
     my_illus.style.opacity = "0.2";
     
     details_designer1.style.display = "block";
-
-
 }
 
 function fade_out_text() {
-    console.log("inhere");
+   console.log("hereo");
     document.getElementById("my_illus").style.opacity = "1";
     document.getElementById("details_designer").style.display = "none";
 
 }
 
 function fade_in_text1() {
+    console.log("here1");
     my_illus.style.opacity = "0.2";
     details_wife.style.display = "block";
 
@@ -63,13 +62,13 @@ function fade_in_text1() {
 function fade_out_text1() {
     my_illus.style.opacity = "1";
     details_wife.style.display = "none";
-
+console.log("hereo1");
 }
 
 function fade_in_text2() {
     my_illus.style.opacity = "0.2";
     details_mother.style.display = "block";
-
+console.log("here2");
 
 
 }
@@ -77,7 +76,7 @@ function fade_in_text2() {
 function fade_out_text2() {
     my_illus.style.opacity = "1";
     details_mother.style.display = "none";
-
+console.log("here02");
 }
 
 
